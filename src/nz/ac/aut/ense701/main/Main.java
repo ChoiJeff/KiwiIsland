@@ -16,6 +16,8 @@ public class Main
      * 
      * @param args the command line arguments
      */
+    
+    // to test commitment.
     public static void main(String[] args) 
     {
         // create the game object
