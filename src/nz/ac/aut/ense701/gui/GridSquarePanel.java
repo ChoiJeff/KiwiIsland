@@ -1,6 +1,8 @@
 package nz.ac.aut.ense701.gui;
 
 import java.awt.Color;
+import java.util.ArrayList;
+import java.util.List;
 import javax.swing.border.Border;
 import javax.swing.border.LineBorder;
 import nz.ac.aut.ense701.gameModel.Game;
@@ -26,8 +28,22 @@ public class GridSquarePanel extends javax.swing.JPanel
         this.game   = game;
         this.row    = row;
         this.column = column;
+        neighbour = new ArrayList<GridSquarePanel>();
         initComponents();
     }
+    
+    public int getRow(){
+        return row;
+    }
+    
+    public int getColumn(){
+        return column;
+    }
+    
+    public void addNeighbour(GridSquarePanel panel)
+    {
+        neighbour.add(panel);
+    }        
 
     /**
      * Updates the representation of the grid square panel.
@@ -102,6 +118,7 @@ public class GridSquarePanel extends javax.swing.JPanel
     
     private Game game;
     private int row, column;
+    private List<GridSquarePanel> neighbour;
     
     private static final Border normalBorder = new LineBorder(Color.BLACK, 1);
     private static final Border activeBorder = new LineBorder(Color.RED, 3);
