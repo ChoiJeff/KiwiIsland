@@ -600,7 +600,9 @@ public class KiwiCountUI
         {
             for ( int col = 0 ; col < columns ; col++ )
             {
+                
                 final GridSquarePanel panel = new GridSquarePanel(game, row, col);
+                // mouse event that clicks a panel nearby player's location to move to the next terrain if it is available.
                 panel.addMouseListener(new MouseListener() {
                     @Override
                     public void mouseClicked(MouseEvent e) {
