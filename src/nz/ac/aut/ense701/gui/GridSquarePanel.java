@@ -32,10 +32,12 @@ public class GridSquarePanel extends javax.swing.JPanel
         initComponents();
     }
     
+    // the reason to add this method is to access to each panel's location
     public int getRow(){
         return row;
     }
     
+    // the reason to add this method is to access to each panel's location
     public int getColumn(){
         return column;
     }
