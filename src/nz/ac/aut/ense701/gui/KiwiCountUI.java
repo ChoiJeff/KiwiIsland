@@ -2,11 +2,14 @@ package nz.ac.aut.ense701.gui;
 
 import java.awt.Component;
 import java.awt.GridLayout;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import javax.swing.JOptionPane;
 import nz.ac.aut.ense701.gameModel.Game;
 import nz.ac.aut.ense701.gameModel.GameEventListener;
 import nz.ac.aut.ense701.gameModel.GameState;
 import nz.ac.aut.ense701.gameModel.MoveDirection;
+import nz.ac.aut.ense701.gameModel.Position;
 
 /*
  * User interface form for Kiwi Island.
@@ -27,7 +30,7 @@ public class KiwiCountUI
     public KiwiCountUI(Game game) 
     {
         assert game != null : "Make sure game object is created before UI";
-        this.game = game;
+        this.game = game; 
         setAsGameListener();
         initComponents();
         initIslandGrid();
@@ -597,7 +600,43 @@ public class KiwiCountUI
         {
             for ( int col = 0 ; col < columns ; col++ )
             {
-                pnlIsland.add(new GridSquarePanel(game, row, col));
+                final GridSquarePanel panel = new GridSquarePanel(game, row, col);
+                panel.addMouseListener(new MouseListener() {
+                    @Override
+                    public void mouseClicked(MouseEvent e) {
+                        if(game.getPlayer().getPosition().getRow() - 1 == panel.getRow() && game.getPlayer().getPosition().getColumn() == panel.getColumn())
+                            game.playerMove(MoveDirection.NORTH);    
+                        if(game.getPlayer().getPosition().getRow() == panel.getRow() && game.getPlayer().getPosition().getColumn() + 1 == panel.getColumn())
+                            game.playerMove(MoveDirection.EAST);
+                        if(game.getPlayer().getPosition().getRow() + 1 == panel.getRow() && game.getPlayer().getPosition().getColumn() == panel.getColumn())
+                            game.playerMove(MoveDirection.SOUTH);
+                        if(game.getPlayer().getPosition().getRow() == panel.getRow() && game.getPlayer().getPosition().getColumn() - 1 == panel.getColumn())
+                            game.playerMove(MoveDirection.WEST);
+                    }
+
+                    @Override
+                    public void mousePressed(MouseEvent e) {
+                        
+                    }
+
+                    @Override
+                    public void mouseReleased(MouseEvent e) {
+                        
+                    }
+
+                    @Override
+                    public void mouseEntered(MouseEvent e) {
+                       
+                    }
+
+                    @Override
+                    public void mouseExited(MouseEvent e) {
+                        
+                    }
+                });
+                
+                pnlIsland.add(panel);
+                //pnlIsland.add(new GridSquarePanel(game, row, col));
             }
         }
     }
@@ -625,4 +664,6 @@ public class KiwiCountUI
     // End of variables declaration//GEN-END:variables
 
     private Game game;
+   
+    
 }
