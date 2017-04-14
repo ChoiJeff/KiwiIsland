@@ -28,6 +28,7 @@ public class GridSquarePanel extends javax.swing.JPanel
         this.game   = game;
         this.row    = row;
         this.column = column;
+        neighbour = new ArrayList<GridSquarePanel>();
         initComponents();
     }
     
@@ -40,6 +41,11 @@ public class GridSquarePanel extends javax.swing.JPanel
     public int getColumn(){
         return column;
     }
+    
+    public void addNeighbour(GridSquarePanel panel)
+    {
+        neighbour.add(panel);
+    }        
 
     /**
      * Updates the representation of the grid square panel.
@@ -70,7 +76,7 @@ public class GridSquarePanel extends javax.swing.JPanel
             
             // change the color of "KC" in order to recognize easily.
             if(lblText.getText().equals("KC"))
-                lblText.setForeground(Color.ORANGE);
+                lblText.setForeground(Color.GREEN);
             // Set the colour. 
             if ( squareVisible && !squareExplored ) 
             {
@@ -118,6 +124,7 @@ public class GridSquarePanel extends javax.swing.JPanel
     
     private Game game;
     private int row, column;
+    private List<GridSquarePanel> neighbour;
     
     private static final Border normalBorder = new LineBorder(Color.BLACK, 1);
     private static final Border activeBorder = new LineBorder(Color.RED, 3);
