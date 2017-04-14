@@ -73,6 +73,10 @@ public class GridSquarePanel extends javax.swing.JPanel
         {
             // Set the text of the JLabel according to the occupant
             lblText.setText(game.getOccupantStringRepresentation(row,column));
+            
+            // change the color of "KC" in order to recognize easily.
+            if(lblText.getText().equals("KC"))
+                lblText.setForeground(Color.GREEN);
             // Set the colour. 
             if ( squareVisible && !squareExplored ) 
             {
