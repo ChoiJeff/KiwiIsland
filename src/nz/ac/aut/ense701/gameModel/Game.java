@@ -474,7 +474,7 @@ public class Game
     /**
      * Count any kiwis in this position
      */
-    public void countKiwi() 
+    public void countKiwi(Game game) 
     {
         //check if there are any kiwis here
         for (Occupant occupant : island.getOccupants(player.getPosition())) {
@@ -482,11 +482,17 @@ public class Game
                 Kiwi kiwi = (Kiwi) occupant;
                 if (!kiwi.counted()) {
                     kiwi.count();
+                    kiwi.setStringRepresentation("KC"); // kiwi counted.
                     kiwiCount++;
                 }
             }
         }
         updateGameState();
+    }
+    
+    public void kiwiCounted()
+    {
+        
     }
        
     /**
