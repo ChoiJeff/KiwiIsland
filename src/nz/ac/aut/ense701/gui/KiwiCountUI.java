@@ -98,7 +98,7 @@ public class KiwiCountUI
         
         // update player information
         int[] playerValues = game.getPlayerValues();
-        txtPlayerName.setText(game.getPlayerName());
+        txtPlayerName.setText(game.getPlayerName()); //////////////////////////////////// change when player name input added
         progPlayerStamina.setMaximum(playerValues[Game.MAXSTAMINA_INDEX]);
         progPlayerStamina.setValue(playerValues[Game.STAMINA_INDEX]);
         progBackpackWeight.setMaximum(playerValues[Game.MAXWEIGHT_INDEX]);
@@ -108,6 +108,7 @@ public class KiwiCountUI
         
         //Update Kiwi and Predator information
         txtKiwisCounted.setText(Integer.toString(game.getKiwiCount()) );
+        txtEndangeredCounted.setText(Integer.toString(game.getEndangeredCount()) );
         txtPredatorsLeft.setText(Integer.toString(game.getPredatorsRemaining()));
         
         // update inventory list
@@ -158,6 +159,8 @@ public class KiwiCountUI
         lblKiwisCounted = new javax.swing.JLabel();
         txtKiwisCounted = new javax.swing.JLabel();
         txtPredatorsLeft = new javax.swing.JLabel();
+        lblEndangeredCounted = new javax.swing.JLabel();
+        txtEndangeredCounted = new javax.swing.JLabel();
         javax.swing.JPanel pnlMovement = new javax.swing.JPanel();
         btnMoveNorth = new javax.swing.JButton();
         btnMoveSouth = new javax.swing.JButton();
@@ -178,13 +181,14 @@ public class KiwiCountUI
         setTitle("Kiwi Count");
 
         pnlContent.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        pnlContent.setPreferredSize(new java.awt.Dimension(872, 658));
         pnlContent.setLayout(new java.awt.BorderLayout(10, 0));
 
         javax.swing.GroupLayout pnlIslandLayout = new javax.swing.GroupLayout(pnlIsland);
         pnlIsland.setLayout(pnlIslandLayout);
         pnlIslandLayout.setHorizontalGroup(
             pnlIslandLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 540, Short.MAX_VALUE)
+            .addGap(0, 501, Short.MAX_VALUE)
         );
         pnlIslandLayout.setVerticalGroup(
             pnlIslandLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -299,6 +303,19 @@ public class KiwiCountUI
         gridBagConstraints.gridy = 4;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         pnlPlayerData.add(txtPredatorsLeft, gridBagConstraints);
+
+        lblEndangeredCounted.setText("Other Counted:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        pnlPlayerData.add(lblEndangeredCounted, gridBagConstraints);
+
+        txtEndangeredCounted.setText("0");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        pnlPlayerData.add(txtEndangeredCounted, gridBagConstraints);
 
         pnlPlayer.add(pnlPlayerData, java.awt.BorderLayout.WEST);
 
@@ -553,6 +570,7 @@ public class KiwiCountUI
     private void btnCollectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCollectActionPerformed
         Object obj = listObjects.getSelectedValue();
         game.collectItem(obj);
+        listObjects.setFocusable(false);
     }//GEN-LAST:event_btnCollectActionPerformed
 
     private void btnDropActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDropActionPerformed
@@ -663,6 +681,7 @@ public class KiwiCountUI
     private javax.swing.JButton btnMoveSouth;
     private javax.swing.JButton btnMoveWest;
     private javax.swing.JButton btnUse;
+    private javax.swing.JLabel lblEndangeredCounted;
     private javax.swing.JLabel lblKiwisCounted;
     private javax.swing.JLabel lblPredators;
     private javax.swing.JList listInventory;
@@ -671,6 +690,7 @@ public class KiwiCountUI
     private javax.swing.JProgressBar progBackpackSize;
     private javax.swing.JProgressBar progBackpackWeight;
     private javax.swing.JProgressBar progPlayerStamina;
+    private javax.swing.JLabel txtEndangeredCounted;
     private javax.swing.JLabel txtKiwisCounted;
     private javax.swing.JLabel txtPlayerName;
     private javax.swing.JLabel txtPredatorsLeft;
