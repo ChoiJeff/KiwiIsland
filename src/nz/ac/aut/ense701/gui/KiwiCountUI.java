@@ -2,6 +2,8 @@ package nz.ac.aut.ense701.gui;
 
 import java.awt.Component;
 import java.awt.GridLayout;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import javax.swing.JOptionPane;
@@ -20,7 +22,7 @@ import nz.ac.aut.ense701.gameModel.Position;
 
 public class KiwiCountUI 
     extends javax.swing.JFrame 
-    implements GameEventListener
+    implements GameEventListener, KeyListener
 {
 
     /**
@@ -32,6 +34,8 @@ public class KiwiCountUI
         assert game != null : "Make sure game object is created before UI";
         this.game = game; 
         setAsGameListener();
+        addKeyListener(this); // Key Bindings
+        setFocusable(true); // Key Bindings
         initComponents();
         initIslandGrid();
         update();
@@ -553,6 +557,9 @@ public class KiwiCountUI
 
     private void btnDropActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDropActionPerformed
         game.dropItem(listInventory.getSelectedValue());
+        // focus is changed via the cycle of current layout, this will need to be changed if layout is changed
+        // currently focus goes to listObjects after this button is used
+        listObjects.setFocusable(false);
     }//GEN-LAST:event_btnDropActionPerformed
 
     private void listObjectsValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_listObjectsValueChanged
@@ -567,6 +574,9 @@ public class KiwiCountUI
 
     private void btnUseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUseActionPerformed
         game.useItem( listInventory.getSelectedValue());
+        // focus is changed via the cycle of current layout, this will need to be changed if layout is changed
+        // currently focus goes to listObjects after this button is used
+        listObjects.setFocusable(false);
     }//GEN-LAST:event_btnUseActionPerformed
 
     private void listInventoryValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_listInventoryValueChanged
@@ -580,7 +590,8 @@ public class KiwiCountUI
     }//GEN-LAST:event_listInventoryValueChanged
 
     private void btnCountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCountActionPerformed
-        game.countKiwi(game);
+//        game.countKiwi(game); // I'm not sure why it was this way in the beginning
+        game.countKiwi();
     }//GEN-LAST:event_btnCountActionPerformed
     
     /**
@@ -666,6 +677,32 @@ public class KiwiCountUI
     // End of variables declaration//GEN-END:variables
 
     private Game game;
+
+  @Override
+    public void keyTyped(KeyEvent e) {
+           // No action to be taken
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+        if(e.getKeyChar()=='a'||e.getKeyChar()=='A'||e.getKeyCode()== KeyEvent.VK_LEFT){
+            game.playerMove(MoveDirection.WEST);
+        }
+        if(e.getKeyChar()=='d'||e.getKeyChar()=='D'||e.getKeyCode()== KeyEvent.VK_RIGHT){
+            game.playerMove(MoveDirection.EAST);
+        }
+        if(e.getKeyChar()=='w'||e.getKeyChar()=='W'||e.getKeyCode()== KeyEvent.VK_UP){
+            game.playerMove(MoveDirection.NORTH);
+        }
+        if(e.getKeyChar()=='s'||e.getKeyChar()=='S'||e.getKeyCode()== KeyEvent.VK_DOWN){
+            game.playerMove(MoveDirection.SOUTH);
+        }
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+        // No action to be taken
+    }
    
     
 }
