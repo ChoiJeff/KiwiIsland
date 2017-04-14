@@ -474,7 +474,7 @@ public class Game
     /**
      * Count any kiwis in this position
      */
-    public void countKiwi(Game game) 
+    public void countKiwi() 
     {
         //check if there are any kiwis here
         for (Occupant occupant : island.getOccupants(player.getPosition())) {

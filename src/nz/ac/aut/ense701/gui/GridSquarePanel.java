@@ -71,6 +71,7 @@ public class GridSquarePanel extends javax.swing.JPanel
             // change the color of "KC" in order to recognize easily.
             if(lblText.getText().equals("KC"))
                 lblText.setForeground(Color.ORANGE);
+            
             // Set the colour. 
             if ( squareVisible && !squareExplored ) 
             {
