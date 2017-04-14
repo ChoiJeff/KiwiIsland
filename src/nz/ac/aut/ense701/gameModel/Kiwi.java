@@ -9,6 +9,7 @@ package nz.ac.aut.ense701.gameModel;
 public class Kiwi  extends Fauna
 {
     private boolean counted;
+    private String representation;
     /**
      * Constructor for objects of class Kiwi
      * @param pos the position of the kiwi object
@@ -19,6 +20,7 @@ public class Kiwi  extends Fauna
     {
         super(pos, name, description);
         counted = false;
+        representation  = "K"; 
     } 
     
     /**
@@ -40,6 +42,11 @@ public class Kiwi  extends Fauna
     @Override
     public String getStringRepresentation() 
     {
-        return "K";
-    }     
+        return representation;
+    }
+    
+    public void setStringRepresentation(String representation)
+    {
+        this.representation = representation;
+    }
 }
