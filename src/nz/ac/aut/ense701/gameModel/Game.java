@@ -841,20 +841,22 @@ public class Game
             {
                 occupant = new Fauna(occPos, occName, occDesc);
             }
-            //            else if(occType.equals("k")){
-//                occupant = new Kakapo(occPos, occName, occDesc);
-//                // totalEndangered++;
-//            }
-//            else if(occType.equals("t")){
-//                occupant = new Tuatara(occPos, occName, occDesc);
-//                // totalEndangered++;
-//            }
-//            else if(occType.equals("B")){
-//                occupant = new Bat(occPos, occName, occDesc);
-//                // totalEndangered++;               
-//            }
-                
-            // add other fauna ////////////////////////////////////////////////////////////////////////////////////////
+                        else if(occType.equals("k")){
+                occupant = new Kakapo(occPos, occName, occDesc);
+                // totalEndangered++;
+            }
+            else if(occType.equals("W")){
+                occupant = new Weta(occPos, occName, occDesc);
+//                 totalEndangered++;
+            }
+            else if(occType.equals("t")){
+                occupant = new Tuatara(occPos, occName, occDesc);
+                // totalEndangered++;
+            }
+            else if(occType.equals("B")){
+                occupant = new Bat(occPos, occName, occDesc);
+                // totalEndangered++;               
+            }
             if ( occupant != null ) island.addOccupant(occPos, occupant);
         }
     }    
