@@ -590,8 +590,8 @@ public class KiwiCountUI
     }//GEN-LAST:event_listInventoryValueChanged
 
     private void btnCountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCountActionPerformed
-//        game.countKiwi(game); // I'm not sure why it was this way in the beginning
-        game.countKiwi();
+
+        game.countKiwi(game);
     }//GEN-LAST:event_btnCountActionPerformed
     
     /**
