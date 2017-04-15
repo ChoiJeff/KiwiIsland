@@ -5,6 +5,8 @@
  */
 package nz.ac.aut.ense701.main;
 
+import java.awt.Color;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import nz.ac.aut.ense701.gameModel.Game;
 import nz.ac.aut.ense701.gui.KiwiCountUI;
@@ -18,6 +20,20 @@ public class WelcomeScreen extends javax.swing.JFrame {
     public WelcomeScreen() {
         setTitle("Welcome Player!");
         initComponents();
+        txtWelcome.setVerticalAlignment(JLabel.TOP);
+        txtWelcome.setText("<html>Welcome to Kiwi Island!!!<br>"
+                + "<br>Click to move around the map or use:"
+                + "<br>\"w\" or up arrow for up"
+                + "<br>\"s\" or down arrow for down"
+                + "<br>\"a\" or left arrow for left"
+                + "<br>\"d\" or right arrow for right"
+                + "<br><br>To win either:"
+                + "<br>- Trap all the predators"
+                + "<br>- Count all the Kiwi and trap 80% of the predators"
+                + "<br><br>Pick up traps and use them on predators"
+                + "<br>Pick up and use food so you don't run out of stamina"
+                + "<br>Avoid hazrads, they will hurt you!");
+        txtWelcome.setForeground(Color.blue);
         game = new Game();
         
     }
@@ -35,8 +51,7 @@ public class WelcomeScreen extends javax.swing.JFrame {
         startButton = new javax.swing.JButton();
         txtName = new javax.swing.JTextField();
         lblName = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        welcomeTxt = new javax.swing.JTextArea();
+        txtWelcome = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -56,33 +71,28 @@ public class WelcomeScreen extends javax.swing.JFrame {
 
         lblName.setText("Name:");
 
-        welcomeTxt.setBackground(java.awt.SystemColor.activeCaptionBorder);
-        welcomeTxt.setColumns(20);
-        welcomeTxt.setRows(5);
-        jScrollPane1.setViewportView(welcomeTxt);
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(txtWelcome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(0, 154, Short.MAX_VALUE)
                         .addComponent(lblName)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(startButton))
-                    .addComponent(jScrollPane1))
+                        .addComponent(startButton)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 242, Short.MAX_VALUE)
+                .addComponent(txtWelcome, javax.swing.GroupLayout.DEFAULT_SIZE, 242, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -158,10 +168,9 @@ public class WelcomeScreen extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblName;
     private javax.swing.JButton startButton;
     private javax.swing.JTextField txtName;
-    private javax.swing.JTextArea welcomeTxt;
+    private javax.swing.JLabel txtWelcome;
     // End of variables declaration//GEN-END:variables
 }
