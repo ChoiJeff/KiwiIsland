@@ -32,7 +32,7 @@ public class WelcomeScreen extends javax.swing.JFrame {
                 + "<br>- Count all the Kiwi and trap 80% of the predators"
                 + "<br><br>Pick up traps and use them on predators"
                 + "<br>Pick up and use food so you don't run out of stamina"
-                + "<br>Avoid hazrads, they will hurt you!");
+                + "<br>Avoid hazrads, they will hurt you!"); ////////////////////////// welcome text
         txtWelcome.setForeground(Color.blue);
         game = new Game();
         
