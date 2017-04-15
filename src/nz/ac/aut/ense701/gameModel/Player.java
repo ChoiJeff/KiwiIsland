@@ -46,6 +46,18 @@ public class Player
        this.backpack = new HashSet<Item>();
     }   
     
+    public Player(Position position, double maxStamina,
+                  double maxBackpackWeight, double maxBackpackSize)
+    {
+       this.position          = position;
+       this.maxStamina        = maxStamina;
+       this.stamina = maxStamina;
+       this.maxBackpackWeight = maxBackpackWeight;
+       this.maxBackpackSize = maxBackpackSize;
+       this.alive = true;
+       this.backpack = new HashSet<Item>();
+    }  
+    
     /*****************************************************************************************************
      * Accessor methods
      ****************************************************************************************************/

@@ -12,6 +12,7 @@ import nz.ac.aut.ense701.gameModel.GameEventListener;
 import nz.ac.aut.ense701.gameModel.GameState;
 import nz.ac.aut.ense701.gameModel.MoveDirection;
 import nz.ac.aut.ense701.gameModel.Position;
+import nz.ac.aut.ense701.main.WelcomeScreen;
 
 /*
  * User interface form for Kiwi Island.
@@ -31,6 +32,7 @@ public class KiwiCountUI
      */
     public KiwiCountUI(Game game) 
     {
+        this.setVisible(true);
         assert game != null : "Make sure game object is created before UI";
         this.game = game; 
         setAsGameListener();
@@ -57,7 +59,11 @@ public class KiwiCountUI
                     this, 
                     game.getLoseMessage(), "Game over!",
                     JOptionPane.INFORMATION_MESSAGE);
-            game.createNewGame();
+//            game.createNewGame();
+               dispose();
+               WelcomeScreen welcome = new WelcomeScreen();
+               welcome.show();
+               
         }
         else if ( game.getState() == GameState.WON )
         {
@@ -65,13 +71,16 @@ public class KiwiCountUI
                     this, 
                     game.getWinMessage(), "Well Done!",
                     JOptionPane.INFORMATION_MESSAGE);
-            game.createNewGame();
+//            game.createNewGame();
+               dispose();
+               WelcomeScreen welcome = new WelcomeScreen();
+               welcome.show();
         }
         else if (game.messageForPlayer())
         {
             JOptionPane.showMessageDialog(
                     this, 
-                    game.getPlayerMessage(), "Important Information",
+                    game.getPlayerMessage(), "Important Information", //////// use this to do pop up facts maybe?
                     JOptionPane.INFORMATION_MESSAGE);   
         }
     }
