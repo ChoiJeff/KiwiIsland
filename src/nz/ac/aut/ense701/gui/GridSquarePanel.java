@@ -6,6 +6,8 @@ import java.util.List;
 import javax.swing.border.Border;
 import javax.swing.border.LineBorder;
 import nz.ac.aut.ense701.gameModel.Game;
+import nz.ac.aut.ense701.gameModel.Kiwi;
+import nz.ac.aut.ense701.gameModel.Occupant;
 import nz.ac.aut.ense701.gameModel.Terrain;
 
 /*
@@ -75,9 +77,40 @@ public class GridSquarePanel extends javax.swing.JPanel
             lblText.setText(game.getOccupantStringRepresentation(row,column));
             
             // change the color of "KC" in order to recognize easily.
-            if(lblText.getText().equals("KC"))
-                lblText.setForeground(Color.GREEN);
+            if(lblText.getText().contains("KC")){
+                String text = lblText.getText();
+                text = text.replaceAll("C", "");               
+                text = "<html><body>" + text.replaceAll("K", "<span style=\"color:orange\">K</span>") +"</body></html>";              
+                lblText.setText(text);
+            }
+            else if(lblText.getText().equals("kC"))   {
+                String text = lblText.getText();
+                text = text.replaceAll("C", "");               
+                text = "<html><body>" + text.replaceAll("k", "<span style=\"color:orange\">k</span>") +"</body></html>";              
+                lblText.setText(text);
+            }
+            else if(lblText.getText().equals("BC"))   {
+                String text = lblText.getText();
+                text = text.replaceAll("C", "");               
+                text = "<html><body>" + text.replaceAll("B", "<span style=\"color:orange\">B</span>") +"</body></html>";              
+                lblText.setText(text);
+            }
+            else if(lblText.getText().equals("tC")){
+                String text = lblText.getText();
+                text = text.replaceAll("C", "");               
+                text = "<html><body>" + text.replaceAll("t", "<span style=\"color:orange\">t</span>") +"</body></html>";              
+                lblText.setText(text);
+            }
+            else if(lblText.getText().equals("WC")){
+                String text = lblText.getText();
+                text = text.replaceAll("C", "");               
+                text = "<html><body>" + text.replaceAll("W", "<span style=\"color:orange\">W</span>") +"</body></html>";              
+                lblText.setText(text);
+            }
             // Set the colour. 
+            
+            
+            
             if ( squareVisible && !squareExplored ) 
             {
                 // When explored the colour is brighter
