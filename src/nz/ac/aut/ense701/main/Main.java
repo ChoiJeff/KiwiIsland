@@ -22,6 +22,9 @@ public class Main
     {
         // create the game object
         final Game game = new Game();
+        // create welcome screen gui?
+        //enter name pass that name to game.player
+        
         // create the GUI for the game
         final KiwiCountUI  gui  = new KiwiCountUI(game);
         // make the GUI visible

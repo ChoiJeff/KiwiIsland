@@ -49,7 +49,8 @@ public class Game
         totalKiwis = 0;
         predatorsTrapped = 0;
         kiwiCount = 0;
-        initialiseIslandFromFile("IslandData.txt");
+        //initialiseIslandFromFile("IslandData.txt"); original
+        initialiseIslandFromFile("IslandData2.txt"); // for testing with added fauna
         drawIsland();
         state = GameState.PLAYING;
         winMessage = "";
@@ -216,6 +217,14 @@ public class Game
     }
     
     /**
+     * How many endangered species counted
+     * @return 
+     */
+    public int getEndangeredCount(){
+        return endangeredCount;
+    }
+    
+    /**
      * How many predators are left?
      * @return number remaining
      */
@@ -287,17 +296,37 @@ public class Game
     }
     
     /**
-     * Is this object a countable kiwi
+     * Is this object a countable kiwi or endangered species
      * @param itemToCount
-     * @return true if is an item is a kiwi.
+     * @return true if is an item is a kiwi or an endangered species.
      */
     public boolean canCount(Object itemToCount)
     {
-        boolean result = (itemToCount != null)&&(itemToCount instanceof Kiwi);
-        if(result)
+        boolean result = (itemToCount != null)&&(itemToCount instanceof Kiwi
+                || itemToCount instanceof Kakapo
+                || itemToCount instanceof Bat
+                || itemToCount instanceof Weta
+                || itemToCount instanceof Tuatara); 
+        if(result && itemToCount instanceof Kiwi)
         {
             Kiwi kiwi = (Kiwi) itemToCount;
             result = !kiwi.counted();
+        }
+        else if(result && itemToCount instanceof Kakapo){
+            Kakapo kakapo = (Kakapo) itemToCount;
+            result = !kakapo.counted();
+        }
+        else if(result && itemToCount instanceof Bat){
+            Bat bat = (Bat) itemToCount;
+            result = !bat.counted();
+        }
+        else if(result && itemToCount instanceof Weta){
+            Weta weta = (Weta) itemToCount;
+            result = !weta.counted();
+        }
+        else if(result && itemToCount instanceof Tuatara){
+            Tuatara tuatara = (Tuatara) itemToCount;
+            result = !tuatara.counted();
         }
         return result;
     }
@@ -473,6 +502,7 @@ public class Game
     
     /**
      * Count any kiwis in this position
+     * modified to use for count other endangered also
      */
     public void countKiwi() 
     {
@@ -486,10 +516,36 @@ public class Game
                     kiwiCount++;
                 }
             }
+            else if(occupant instanceof Bat){
+                Bat bat = (Bat) occupant;
+                if(!bat.counted()){
+                    bat.count();
+                    bat.setStringRepresentation("BC");
+                    endangeredCount++;
+                }
+            }
+            else if(occupant instanceof Kakapo){
+                Kakapo kakapo = (Kakapo) occupant;
+                if(!kakapo.counted()){
+                    kakapo.count();
+                    kakapo.setStringRepresentation("kC");
+                    endangeredCount++;
+                }
+            }
+            else if(occupant instanceof Tuatara){
+                Tuatara tuatara = (Tuatara) occupant;
+                tuatara.setStringRepresentation("tC");
+                endangeredCount++;
+            }
+            else if(occupant instanceof Weta){
+                Weta weta = (Weta) occupant;
+                weta.setStringRepresentation("WC");
+                endangeredCount++;
+            }
         }
         updateGameState();
     }
-    
+       
     public void kiwiCounted()
     {
         
@@ -583,6 +639,7 @@ public class Game
                 this.setWinMessage(message);
             }
         }
+        ////////////////////////////////////////////////////// Additional Win conditions?
         // notify listeners about changes
             notifyGameEventListeners();
     }
@@ -778,7 +835,7 @@ public class Game
      */
     private void setUpPlayer(Scanner input) 
     {
-        String playerName              = input.next();
+        String playerName              = input.next(); ////////////////////////////// change this later when player name input is featured
         int    playerPosRow            = input.nextInt();
         int    playerPosCol            = input.nextInt();
         double playerMaxStamina        = input.nextDouble();
@@ -790,6 +847,15 @@ public class Game
                 playerMaxStamina, 
                 playerMaxBackpackWeight, playerMaxBackpackSize);
         island.updatePlayerPosition(player);
+    }
+    
+    
+    /**
+     * Use this to set player name from gui input
+     * @param name 
+     */
+    public void setPlayerName(String name){
+        player.setName(name);
     }
 
     /**
@@ -835,11 +901,27 @@ public class Game
             else if ( occType.equals("P") )
             {
                 occupant = new Predator(occPos, occName, occDesc);
-                totalPredators++;
+                totalPredators++;                
             }
             else if ( occType.equals("F") )
             {
                 occupant = new Fauna(occPos, occName, occDesc);
+            }
+            else if(occType.equals("k")){
+                occupant = new Kakapo(occPos, occName, occDesc);
+                totalEndangered++;
+            }
+            else if(occType.equals("W")){
+                occupant = new Weta(occPos, occName, occDesc);
+                totalEndangered++;
+            }
+            else if(occType.equals("t")){
+                occupant = new Tuatara(occPos, occName, occDesc);
+                totalEndangered++;
+            }
+            else if(occType.equals("B")){
+                occupant = new Bat(occPos, occName, occDesc);
+                totalEndangered++;               
             }
             if ( occupant != null ) island.addOccupant(occPos, occupant);
         }
@@ -852,6 +934,8 @@ public class Game
     private int kiwiCount;
     private int totalPredators;
     private int totalKiwis;
+    private int totalEndangered; ////////////// will need if new win condition
+    private int endangeredCount; ///////////// will use for bonus points
     private int predatorsTrapped;
     private Set<GameEventListener> eventListeners;
     
