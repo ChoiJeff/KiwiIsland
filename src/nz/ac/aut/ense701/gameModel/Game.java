@@ -843,7 +843,7 @@ public class Game
         double playerMaxBackpackSize   = input.nextDouble();
         
         Position pos = new Position(island, playerPosRow, playerPosCol);
-        player = new Player(pos, playerName, 
+        player = new Player(pos, /// took out setting name ////////////////////////////////////////
                 playerMaxStamina, 
                 playerMaxBackpackWeight, playerMaxBackpackSize);
         island.updatePlayerPosition(player);
