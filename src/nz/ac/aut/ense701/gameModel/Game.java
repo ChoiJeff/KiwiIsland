@@ -504,7 +504,7 @@ public class Game
      * Count any kiwis in this position
      * modified to use for count other endangered also
      */
-    public void countKiwi() ///// why was this changed in the first place?
+    public void countKiwi() 
     {
         //check if there are any kiwis here
         for (Occupant occupant : island.getOccupants(player.getPosition())) {
