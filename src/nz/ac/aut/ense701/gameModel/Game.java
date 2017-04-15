@@ -520,7 +520,7 @@ public class Game
                 Bat bat = (Bat) occupant;
                 if(!bat.counted()){
                     bat.count();
-                    // can change string representation / add tag here
+                    bat.setStringRepresentation("BC");
                     endangeredCount++;
                 }
             }
@@ -528,19 +528,19 @@ public class Game
                 Kakapo kakapo = (Kakapo) occupant;
                 if(!kakapo.counted()){
                     kakapo.count();
-                    // can change string representation / add tag here
+                    kakapo.setStringRepresentation("kC");
                     endangeredCount++;
                 }
             }
             else if(occupant instanceof Tuatara){
                 Tuatara tuatara = (Tuatara) occupant;
-                // can change string representation / add tag here
-                    endangeredCount++;
+                tuatara.setStringRepresentation("tC");
+                endangeredCount++;
             }
             else if(occupant instanceof Weta){
                 Weta weta = (Weta) occupant;
-                // can change string representation / add tag here
-                    endangeredCount++;
+                weta.setStringRepresentation("WC");
+                endangeredCount++;
             }
         }
         updateGameState();
