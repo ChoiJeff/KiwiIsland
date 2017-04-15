@@ -138,6 +138,7 @@ public class GridSquarePanel extends javax.swing.JPanel
             // set border colour according to 
             // whether the player is in the grid square or not
             setBorder(game.hasPlayer(row,column) ? activeBorder : normalBorder);
+            
         }
         else
         {
@@ -179,4 +180,5 @@ public class GridSquarePanel extends javax.swing.JPanel
     
     private static final Border normalBorder = new LineBorder(Color.BLACK, 1);
     private static final Border activeBorder = new LineBorder(Color.RED, 3);
+    private static final Border countBorder = new LineBorder(Color.ORANGE, 3);  // to add new border line.
 }
