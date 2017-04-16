@@ -533,14 +533,21 @@ public class Game
                 }
             }
             else if(occupant instanceof Tuatara){
-                Tuatara tuatara = (Tuatara) occupant;
-                tuatara.setStringRepresentation("tC");
-                endangeredCount++;
+                Tuatara tuatara = (Tuatara) occupant; 
+                if(!tuatara.counted()){
+                    tuatara.count();
+                    tuatara.setStringRepresentation("tC");
+                    endangeredCount++;
+                }
             }
             else if(occupant instanceof Weta){
                 Weta weta = (Weta) occupant;
-                weta.setStringRepresentation("WC");
-                endangeredCount++;
+                if(!weta.counted()){
+                    weta.count();
+                    weta.setStringRepresentation("WC");
+                    endangeredCount++;
+                }
+                
             }
         }
         updateGameState();
