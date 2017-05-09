@@ -12,18 +12,30 @@ public class Predator extends Fauna
 
     /**
      * Constructor for objects of class Predator
-     * @param pos the position of the predator object
+     * @param position the position of the predator object
      * @param name the name of the predator object
      * @param description a longer description of the predator object
      */
-    public Predator(Position pos, String name, String description) 
+    
+    // Add variables in order to access to each predator's position.
+    private Position position;     
+    private String name;
+    private String description;
+    public Predator(Position position, String name, String description) 
     {
-        super(pos, name, description);
+        super(position, name, description);
+        this.position = position;
+        this.name = name;
+        this.description = description;
     } 
  
+    public Position getPosition()       // to access to each predator's position
+    {
+        return position;
+    }
     
 
-
+    
     @Override
     public String getStringRepresentation() 
     {
