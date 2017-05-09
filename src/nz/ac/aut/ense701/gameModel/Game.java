@@ -142,6 +142,18 @@ public class Game
         return isMovePossible;
     }
     
+    public boolean isPredatorMovePossible(MoveDirection direction, Occupant predator)
+    {
+        boolean isMovePossible = false;
+        
+        Position newPosition = predator.getPosition().getNewPosition(direction);
+        if( (newPosition != null) && newPosition.isOnIsland() )
+        {
+            
+        }    
+        return false;
+    }        
+    
       /**
      * Get terrain for position
      * @param row
@@ -589,7 +601,36 @@ public class Game
         return successfulMove;
     }
     
-    
+    public void predatorsMove()
+    {        
+        boolean successfulMove = false;
+        MoveDirection direction = null;
+        for(Occupant predator : predators){
+            int random = (int) (Math.random() * 4);     // to move predator one step randomly.
+            switch(random){
+                case 0:
+                    direction = MoveDirection.EAST;
+                break;
+                
+                case 1:
+                    direction = MoveDirection.WEST;
+                break;
+                
+                case 2:
+                    direction = MoveDirection.NORTH;
+                break;
+                
+                case 3:
+                    direction = MoveDirection.SOUTH;
+                break;
+            }   // end of switch
+            
+            if(isPredatorMovePossible(direction, predator)){
+                
+            }
+        }
+        //if()
+    }
     
     /**
      * Adds a game event listener.
@@ -950,7 +991,7 @@ public class Game
     private int endangeredCount; ///////////// will use for bonus points
     private int predatorsTrapped;
     private Set<GameEventListener> eventListeners;
-    private List<Occupant> predators;
+    private List<Occupant> predators;       // to keep the list of predators.
     
     private final double MIN_REQUIRED_CATCH = 0.8;
         
