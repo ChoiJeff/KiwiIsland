@@ -3,7 +3,9 @@ package nz.ac.aut.ense701.gameModel;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 import java.util.Set;
@@ -46,6 +48,7 @@ public class Game
     public void createNewGame()
     {
         totalPredators = 0;
+        predators = new ArrayList<Occupant>();  // to keep the list of predators
         totalKiwis = 0;
         predatorsTrapped = 0;
         kiwiCount = 0;
@@ -908,7 +911,9 @@ public class Game
             else if ( occType.equals("P") )
             {
                 occupant = new Predator(occPos, occName, occDesc);
-                totalPredators++;                
+                totalPredators++; 
+                predators.add(occupant);    // to add each predator into the ArrayList 
+                                            // so that the programmer can access to that
             }
             else if ( occType.equals("F") )
             {
@@ -945,6 +950,7 @@ public class Game
     private int endangeredCount; ///////////// will use for bonus points
     private int predatorsTrapped;
     private Set<GameEventListener> eventListeners;
+    private List<Occupant> predators;
     
     private final double MIN_REQUIRED_CATCH = 0.8;
         
