@@ -203,6 +203,10 @@ public class Island
         previousPlayerPos = position;
     }
     
+    public void updatePredatorPosition(Predator predator){  // to set each predator visible to test whether or not predator moves.
+        Position position = predator.getPosition();
+        setVisible(position);
+    }
     
     /**
      * Attempts to add an occupant to a specified position on the island.
