@@ -41,4 +41,14 @@ public class Predator extends Fauna
     {
         return "P";
     }    
+    
+    public void moveToPosition(Position newPosition)    // to change the current predator's position to new position.
+    {
+        if( (position == null))
+        {
+            throw new IllegalArgumentException("Null parameters");
+        }else{
+            this.position = newPosition;
+        }  
+    }
 }
