@@ -48,7 +48,7 @@ public class Game
     public void createNewGame()
     {
         totalPredators = 0;
-        predators = new ArrayList<Occupant>();  // to keep the list of predators
+        predators = new ArrayList<Predator>();  // to keep the list of predators
         totalKiwis = 0;
         predatorsTrapped = 0;
         kiwiCount = 0;
@@ -147,11 +147,17 @@ public class Game
         boolean isMovePossible = false;
         
         Position newPosition = predator.getPosition().getNewPosition(direction);
-        if( (newPosition != null) && newPosition.isOnIsland() )
+        if( (newPosition != null) && newPosition.isOnIsland() &&        // to check the condition whether or not predator's new position 
+                island.getTerrain(newPosition) != Terrain.WATER)        // is on the Water to avoid predator go to water.
         {
+            Terrain newTerrain = island.getTerrain(newPosition);
             
-        }    
-        return false;
+            isMovePossible = true;  // need to think of what should put
+        }
+        else{
+            isMovePossible = false; // need to be changed
+        }
+        return isMovePossible;
     }        
     
       /**
@@ -601,11 +607,11 @@ public class Game
         return successfulMove;
     }
     
-    public void predatorsMove()
+    public boolean predatorsMove()
     {        
         boolean successfulMove = false;
         MoveDirection direction = null;
-        for(Occupant predator : predators){
+        for(Predator predator : predators){
             int random = (int) (Math.random() * 4);     // to move predator one step randomly.
             switch(random){
                 case 0:
@@ -626,9 +632,20 @@ public class Game
             }   // end of switch
             
             if(isPredatorMovePossible(direction, predator)){
+                Position newPostion = predator.getPosition().getNewPosition(direction);
+                Terrain terrain = island.getTerrain(newPostion);
                 
+                predator.moveToPosition(newPostion);
+                
+                island.updatePredatorPosition(predator);
+                successfulMove = true;
+                
+                //updateGameState();   
             }
         }
+        updateGameState();
+        island.draw();
+        return successfulMove;
         //if()
     }
     
@@ -953,8 +970,9 @@ public class Game
             {
                 occupant = new Predator(occPos, occName, occDesc);
                 totalPredators++; 
-                predators.add(occupant);    // to add each predator into the ArrayList 
-                                            // so that the programmer can access to that
+                predators.add((Predator)occupant);    // to add each predator into the ArrayList 
+                                                      // so that the programmer can access to that
+                island.updatePredatorPosition((Predator)occupant);    // to set each predator visible to test whether or not each predator moves                                    
             }
             else if ( occType.equals("F") )
             {
@@ -991,7 +1009,7 @@ public class Game
     private int endangeredCount; ///////////// will use for bonus points
     private int predatorsTrapped;
     private Set<GameEventListener> eventListeners;
-    private List<Occupant> predators;       // to keep the list of predators.
+    private List<Predator> predators;       // to keep the list of predators.
     
     private final double MIN_REQUIRED_CATCH = 0.8;
         
