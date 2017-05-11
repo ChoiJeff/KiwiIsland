@@ -313,7 +313,7 @@ public class Island
                 GridSquare g = islandGrid[row][col];
                 // create string with occupants
                 String cellOccupant = g.hasPlayer() ? "@" : " ";
-                //cellOccupant += g.hasPredator() ? "P" : " ";        
+                //cellOccupant += g.hasPredator() ? "P" : " "; 
                 cellOccupant += g.getOccupantStringRepresentation();
                 for ( int i = cellOccupant.length() ; i < CELL_SIZE ; i++ ) {
                     cellOccupant += " ";
