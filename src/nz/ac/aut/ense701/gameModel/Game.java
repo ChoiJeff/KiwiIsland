@@ -54,6 +54,7 @@ public class Game
         kiwiCount = 0;
         //initialiseIslandFromFile("IslandData.txt"); original
         initialiseIslandFromFile("IslandData2.txt"); // for testing with added fauna
+        //initialiseIslandFromFile("IslandData3.txt"); // for testing with predator
         drawIsland();
         state = GameState.PLAYING;
         winMessage = "";
