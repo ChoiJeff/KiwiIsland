@@ -151,7 +151,7 @@ public class Game
         if( (newPosition != null) && newPosition.isOnIsland() &&        // to check the condition whether or not predator's new position 
                 island.getTerrain(newPosition) != Terrain.WATER)        // is on the Water to avoid predator go to water.
         {
-            Terrain newTerrain = island.getTerrain(newPosition);
+            //Terrain newTerrain = island.getTerrain(newPosition);
             
             isMovePossible = true;  // need to think of what should put
         }
@@ -634,11 +634,15 @@ public class Game
             
             if(isPredatorMovePossible(direction, predator)){
                 Position newPostion = predator.getPosition().getNewPosition(direction);
-                Terrain terrain = island.getTerrain(newPostion);
+                //Terrain terrain = island.getTerrain(newPostion);
                 
-                predator.moveToPosition(newPostion);
+                //predator.moveToPosition(newPostion);
+                Position previous = predator.getPosition();
                 
-                island.updatePredatorPosition(predator);
+                Occupant occupant = predator;
+                
+                island.removeOccupant(previous, occupant);
+                island.addOccupant(newPostion, occupant);
                 successfulMove = true;
                 
                 //updateGameState();   
@@ -765,6 +769,7 @@ public class Game
             Occupant occupant = island.getPredator(current);
             //Predator has been trapped so remove
             island.removeOccupant(current, occupant); 
+            predators.remove((Object)occupant);         // check which predator deleted from the list of predator.
             predatorsTrapped++;
         }
         
