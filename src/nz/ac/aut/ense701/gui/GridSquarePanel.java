@@ -79,13 +79,13 @@ public class GridSquarePanel extends javax.swing.JPanel
         {
             // Set the text of the JLabel according to the occupant
             String textRepre = game.getOccupantStringRepresentation(row,column);
-            //lblText.setText(game.getOccupantStringRepresentation(row,column));
+            lblText.setText("");
             
             // Sand
             if(color.equals(Color.YELLOW)){
                 if(textRepre.equals("B"))
                     img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg"));
-                else if(textRepre.equals("BC")){
+                else if(textRepre.equals("BC")){    // C stands for count.
                     img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg"));
                     setBorder(countBorder);
                 }else if(textRepre.equals("F"))
@@ -356,6 +356,8 @@ public class GridSquarePanel extends javax.swing.JPanel
             
             if ( squareVisible && !squareExplored ) 
             {
+                
+                lblText.setText("");
                 // When explored the colour is brighter
                 /*
                 color = new Color(Math.min(255, color.getRed()   + 128), 
