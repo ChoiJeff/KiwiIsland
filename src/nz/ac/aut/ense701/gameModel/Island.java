@@ -205,7 +205,16 @@ public class Island
     
     public void updatePredatorPosition(Predator predator){  // to set each predator visible to test whether or not predator moves.
         Position position = predator.getPosition();
+        getGridSquare(position).setPredator(predator);
+        
+        // remove predator from previous square
+        if ( predator.getPreviousPredatorPos() != null )
+        {
+            getGridSquare(predator.getPreviousPredatorPos()).setPredator(null);
+        }
         setVisible(position);
+        
+        predator.setPreviousPredatorPos(position);
     }
     
     /**
@@ -304,6 +313,7 @@ public class Island
                 GridSquare g = islandGrid[row][col];
                 // create string with occupants
                 String cellOccupant = g.hasPlayer() ? "@" : " ";
+                //cellOccupant += g.hasPredator() ? "P" : " ";        
                 cellOccupant += g.getOccupantStringRepresentation();
                 for ( int i = cellOccupant.length() ; i < CELL_SIZE ; i++ ) {
                     cellOccupant += " ";
