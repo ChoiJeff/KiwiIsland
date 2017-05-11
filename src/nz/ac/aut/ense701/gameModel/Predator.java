@@ -7,7 +7,7 @@ package nz.ac.aut.ense701.gameModel;
  * @author AS
  * @version July 2011
  */
-public class Predator extends Fauna
+public class Predator extends Occupant
 {
 
     /**
@@ -18,7 +18,8 @@ public class Predator extends Fauna
      */
     
     // Add variables in order to access to each predator's position.
-    private Position position;     
+    private Position position;  
+    private Position previousPredatorPos;
     private String name;
     private String description;
     public Predator(Position position, String name, String description) 
@@ -27,6 +28,7 @@ public class Predator extends Fauna
         this.position = position;
         this.name = name;
         this.description = description;
+        this.previousPredatorPos = null;
     } 
  
     public Position getPosition()       // to access to each predator's position
@@ -34,7 +36,13 @@ public class Predator extends Fauna
         return position;
     }
     
-
+    public Position getPreviousPredatorPos(){
+        return previousPredatorPos;
+    }
+    
+    public void setPreviousPredatorPos(Position previousPredatorPos){
+        this.previousPredatorPos = previousPredatorPos;
+    }
     
     @Override
     public String getStringRepresentation() 
