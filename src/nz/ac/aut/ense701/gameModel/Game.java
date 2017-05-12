@@ -615,6 +615,7 @@ public class Game
             player.moveToPosition(newPosition, terrain);
             island.updatePlayerPosition(player);
             successfulMove = true;
+            points++;   // one point per player moves.
                     
             // Is there a hazard?
             checkForHazard();
