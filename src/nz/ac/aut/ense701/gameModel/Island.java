@@ -208,13 +208,13 @@ public class Island
         getGridSquare(position).setPredator(predator);
         
         // remove predator from previous square
-        if ( predator.getPreviousPredatorPos() != null )
-        {
-            getGridSquare(predator.getPreviousPredatorPos()).setPredator(null);
-        }
+//        if ( predator.getPreviousPredatorPos() != null )
+//        {
+//            getGridSquare(predator.getPreviousPredatorPos()).setPredator(null);
+//        }
         setVisible(position);
         
-        predator.setPreviousPredatorPos(position);
+//        predator.setPreviousPredatorPos(position);
     }
     
     /**
