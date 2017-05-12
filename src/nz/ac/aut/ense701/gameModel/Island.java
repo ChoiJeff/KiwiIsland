@@ -225,13 +225,13 @@ public class Island
     public void updatePredatorPosition(Predator predator){  // to set each predator visible to test whether or not predator moves.
         Position position = predator.getPosition();
         Position previousPos = predator.getPreviousPredatorPos();
-        //getGridSquare(position).setPredator(predator);
+        getGridSquare(position).setPredator(predator);
         
         // remove predator from previous square
-//        if ( predator.getPreviousPredatorPos() != null )
-//        {
-//            getGridSquare(predator.getPreviousPredatorPos()).setPredator(null);
-//        }
+        if ( predator.getPreviousPredatorPos() != null )
+        {
+            getGridSquare(predator.getPreviousPredatorPos()).setPredator(null);
+        }
         setVisible(position);
         setUnvisible(previousPos);
         
@@ -257,7 +257,7 @@ public class Island
         if ( success ) // Can fail if square already full or occupant already there
         { 
             //update the occupants address
-            occupant.setPosition(position);
+            occupant.setPosition(position); //// this is not working
         }
         return success;
     }    

@@ -53,8 +53,8 @@ public class Game
         predatorsTrapped = 0;
         kiwiCount = 0;
         //initialiseIslandFromFile("IslandData.txt"); original
-        initialiseIslandFromFile("IslandData2.txt"); // for testing with added fauna
-        //initialiseIslandFromFile("IslandData3.txt"); // for testing with predator
+        //("IslandData2.txt"); // for testing with added fauna
+        initialiseIslandFromFile("IslandData3.txt"); // for testing with predator
         drawIsland();
         state = GameState.PLAYING;
         winMessage = "";
@@ -150,7 +150,8 @@ public class Game
         Position newPosition = predator.getPosition().getNewPosition(direction);
         if( (newPosition != null) && newPosition.isOnIsland() &&        // to check the condition whether or not predator's new position 
                 island.getTerrain(newPosition) != Terrain.WATER // is on the Water to avoid predator go to water.
-                && !island.getOccupantStringRepresentation(newPosition).contains("H")) // does not contain a Hazard /// check this    
+                && !island.getOccupantStringRepresentation(newPosition).contains("H") // does not contain a Hazard /// check this  
+                && !island.hasPredator(newPosition)) // does not already have a predator   
         {
             //Terrain newTerrain = island.getTerrain(newPosition);
             
@@ -714,30 +715,25 @@ public class Game
             
             if(isPredatorMovePossible(direction, predator)){
                 Position newPostion = predator.getPosition().getNewPosition(direction);
-                Position previous = predator.getPosition();
-                predator.setPreviousPredatorPos(previous);
                 //Terrain terrain = island.getTerrain(newPostion);
                 
-                predator.moveToPosition(newPostion);
-                island.updatePredatorPosition(predator);
-                
+                //predator.moveToPosition(newPostion);
+                Position previous = predator.getPosition();
                 
                 Occupant occupant = predator;
                 
-                island.removeOccupant(previous, occupant);
-                island.addOccupant(newPostion, occupant);
+                island.removeOccupant(previous, occupant); //////////////////
+                
+                island.addOccupant(newPostion, occupant); //////////////////////
                 
                 
-                if(island.hasKiwi(newPostion)){ // if it is true then predator kill the kiwi
-                    eatKiwi(predator);
-                }
                 successfulMove = true;
                 
                 //updateGameState();   
             }
         }
         updateGameState();
-        island.draw();
+        drawIsland();
         return successfulMove;
         //if()
     }
@@ -865,6 +861,7 @@ public class Game
         return hadPredator;
     }
     
+
     // to kill kiwi by predator if predator and kiwi in the same positioin.
     private void eatKiwi(Predator predator) {
         Position predatorPos = predator.getPosition();
@@ -876,6 +873,7 @@ public class Game
         points -= 10;
     }
     
+
     /**
      * Checks if the player has met a hazard and applies hazard impact.
      * Fatal hazards kill player and end game.
