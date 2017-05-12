@@ -53,8 +53,8 @@ public class Game
         predatorsTrapped = 0;
         kiwiCount = 0;
         //initialiseIslandFromFile("IslandData.txt"); original
-        initialiseIslandFromFile("IslandData2.txt"); // for testing with added fauna
-        //initialiseIslandFromFile("IslandData3.txt"); // for testing with predator
+        //("IslandData2.txt"); // for testing with added fauna
+        initialiseIslandFromFile("IslandData3.txt"); // for testing with predator
         drawIsland();
         state = GameState.PLAYING;
         winMessage = "";
@@ -609,6 +609,7 @@ public class Game
         boolean successfulMove = false;
         if ( isPlayerMovePossible(direction) )
         {
+            predatorsMove();
             Position newPosition = player.getPosition().getNewPosition(direction);
             Terrain  terrain     = island.getTerrain(newPosition);
             
@@ -683,7 +684,6 @@ public class Game
                 }
             }
             
-
             updateGameState();            
         }
         return successfulMove;
@@ -693,49 +693,52 @@ public class Game
     {        
         boolean successfulMove = false;
         MoveDirection direction = null;
-        for(Predator predator : predators){
-            int random = (int) (Math.random() * 4);     // to move predator one step randomly.
-            switch(random){
-                case 0:
-                    direction = MoveDirection.EAST;
-                break;
-                
-                case 1:
-                    direction = MoveDirection.WEST;
-                break;
-                
-                case 2:
-                    direction = MoveDirection.NORTH;
-                break;
-                
-                case 3:
-                    direction = MoveDirection.SOUTH;
-                break;
-            }   // end of switch
-            
-            if(isPredatorMovePossible(direction, predator)){
-                Position newPostion = predator.getPosition().getNewPosition(direction);
-                Position previous = predator.getPosition();
-                predator.setPreviousPredatorPos(previous);
-                //Terrain terrain = island.getTerrain(newPostion);
-                // this is to test a change
-                
-                predator.moveToPosition(newPostion);
-                island.updatePredatorPosition(predator);
-                
-                
-                Occupant occupant = predator;
-                
-                island.removeOccupant(previous, occupant);
-                island.addOccupant(newPostion, occupant);
-                
-                
-                if(island.hasKiwi(newPostion)){ // if it is true then predator kill the kiwi
-                    eatKiwi(predator);
+        int rand = (int) (Math.random() * 10); 
+        if(rand>6){
+            for(Predator predator : predators){
+                int random = (int) (Math.random() * 4);     // to move predator one step randomly.
+                switch(random){
+                    case 0:
+                        direction = MoveDirection.EAST;
+                    break;
+
+                    case 1:
+                        direction = MoveDirection.WEST;
+                    break;
+
+                    case 2:
+                        direction = MoveDirection.NORTH;
+                    break;
+
+                    case 3:
+                        direction = MoveDirection.SOUTH;
+                    break;
+                }   // end of switch
+
+                if(isPredatorMovePossible(direction, predator)){
+                    Position newPostion = predator.getPosition().getNewPosition(direction);
+                    Position previous = predator.getPosition();
+                    predator.setPreviousPredatorPos(previous);
+                    //Terrain terrain = island.getTerrain(newPostion);
+                    // this is to test a change
+
+                    predator.moveToPosition(newPostion);
+                    island.updatePredatorPosition(predator);
+
+
+                    Occupant occupant = predator;
+
+                    island.removeOccupant(previous, occupant);
+                    island.addOccupant(newPostion, occupant);
+
+
+                    if(island.hasKiwi(newPostion)){ // if it is true then predator kill the kiwi
+                        eatKiwi(predator);
+                    }
+                    successfulMove = true;
+
+                    //updateGameState();   
                 }
-                successfulMove = true;
-                
-                //updateGameState();   
             }
         }
         updateGameState();
