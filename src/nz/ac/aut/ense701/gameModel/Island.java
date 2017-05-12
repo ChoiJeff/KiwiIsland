@@ -235,7 +235,9 @@ public class Island
         setVisible(position);
         setUnvisible(previousPos);
         
+
         //predator.setPreviousPredatorPos(position);
+
     }
     
     /**
