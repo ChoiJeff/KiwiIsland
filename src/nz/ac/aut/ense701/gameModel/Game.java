@@ -733,7 +733,10 @@ public class Game
 
 
                     if(island.hasKiwi(newPostion)){ // if it is true then predator kill the kiwi
-                        eatKiwi(predator);
+                        int eatChance = (int) Math.random()*4; 
+                        if(eatChance == 2){ // 25% chance to eat Kiwi
+                            eatKiwi(predator);
+                        }
                     }
                     successfulMove = true;
 
