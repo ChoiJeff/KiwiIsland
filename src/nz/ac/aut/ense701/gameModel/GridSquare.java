@@ -171,6 +171,10 @@ public class GridSquare
         this.visible = true;
     }
     
+    public void setUnvisible(){
+        this.visible = false;
+    }
+    
     /**
      * Sets the player on the grid square.
      * 
