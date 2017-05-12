@@ -53,8 +53,8 @@ public class Game
         predatorsTrapped = 0;
         kiwiCount = 0;
         //initialiseIslandFromFile("IslandData.txt"); original
-        //("IslandData2.txt"); // for testing with added fauna
-        initialiseIslandFromFile("IslandData3.txt"); // for testing with predator
+        initialiseIslandFromFile("IslandData2.txt"); // for testing with added fauna
+        //("IslandData3.txt"); // for testing with predator
         drawIsland();
         state = GameState.PLAYING;
         winMessage = "";
@@ -733,8 +733,8 @@ public class Game
 
 
                     if(island.hasKiwi(newPostion)){ // if it is true then predator kill the kiwi
-                        int eatChance = (int) Math.random()*4; 
-                        if(eatChance == 2){ // 25% chance to eat Kiwi
+                        int eatChance = (int) (Math.random()*2); 
+                        if(eatChance ==1){ // 50% chance to eat Kiwi
                             eatKiwi(predator);
                         }
                     }
@@ -882,6 +882,7 @@ public class Game
         //Kiwi has been catched so remove
         island.removeOccupant(predatorPos, occupant);
         setPlayerMessage("Opps! predator eats kiwi");   // It is a notification that let player knows that predator successfully eat the kiwi 
+        totalKiwis--;
         points -= 10;
     }
     
