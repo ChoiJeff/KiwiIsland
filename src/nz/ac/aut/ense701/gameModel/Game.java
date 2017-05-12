@@ -866,6 +866,7 @@ public class Game
     }
     
     // to kill kiwi by predator if predator and kiwi in the same positioin.
+    // test
     private void eatKiwi(Predator predator) {
         Position predatorPos = predator.getPosition();
 
