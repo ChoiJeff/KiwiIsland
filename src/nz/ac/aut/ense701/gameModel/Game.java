@@ -50,7 +50,10 @@ public class Game
         predatorsTrapped = 0;
         kiwiCount = 0;
         //initialiseIslandFromFile("IslandData.txt"); original
-        initialiseIslandFromFile("IslandData2.txt"); // for testing with added fauna
+        //initialiseIslandFromFile("IslandData2.txt"); // for testing with added fauna
+        initialiseIslandFromFile("IslandData3.txt"); // for testing with single predator
+        //initialiseIslandFromFile("IslandData4.txt");//for testing randon map 1
+        //initialiseIslandFromFile("IslandData5.txt");//for testing randon map 2
         drawIsland();
         state = GameState.PLAYING;
         winMessage = "";
