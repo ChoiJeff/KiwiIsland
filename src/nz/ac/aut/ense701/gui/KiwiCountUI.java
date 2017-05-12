@@ -742,12 +742,15 @@ public class KiwiCountUI
         }
         if(e.getKeyChar()=='d'||e.getKeyChar()=='D'||e.getKeyCode()== KeyEvent.VK_RIGHT){
             game.playerMove(MoveDirection.EAST);
+            game.predatorsMove(); 
         }
         if(e.getKeyChar()=='w'||e.getKeyChar()=='W'||e.getKeyCode()== KeyEvent.VK_UP){
             game.playerMove(MoveDirection.NORTH);
+            game.predatorsMove(); 
         }
         if(e.getKeyChar()=='s'||e.getKeyChar()=='S'||e.getKeyCode()== KeyEvent.VK_DOWN){
             game.playerMove(MoveDirection.SOUTH);
+            game.predatorsMove(); 
         }
     }
 

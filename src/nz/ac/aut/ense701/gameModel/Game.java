@@ -733,7 +733,7 @@ public class Game
             }
         }
         updateGameState();
-        island.draw();
+        drawIsland();
         return successfulMove;
         //if()
     }
