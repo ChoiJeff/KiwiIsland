@@ -19,6 +19,7 @@ public class GridSquare
     private boolean visible;
     private boolean explored;
     private Player  player;
+    private Predator predator;  // to access to the predator.
     private Set<Occupant> occupants;
   
     /**
@@ -31,7 +32,8 @@ public class GridSquare
         this.explored  = false;
         this.visible   = false;
         this.occupants = new HashSet<Occupant>(); 
-        this.player    = null;        
+        this.player    = null;
+        this.predator = null;      // default value for the predator.
     }
     
     /**************************************************************************************************
@@ -78,6 +80,15 @@ public class GridSquare
     public boolean hasPlayer()
     {
         return (this.player != null);
+    }
+    
+    /**
+     * Check if the predator is in this square.
+     * 
+     * @return true if the predator is in square, false if not. 
+     */
+    public boolean hasPredator(){
+        return (this.predator != null);
     }
      
     /**
@@ -170,6 +181,10 @@ public class GridSquare
     {
         this.player = player;
     }  
+    
+    public void setPredator(Predator predator){
+        this.predator = predator;
+    }
     
     /**
      * Adds an occupant to a GridSquare if the occupant is not already there 
