@@ -872,7 +872,7 @@ public class Game
         Occupant occupant = island.getKiwi(predatorPos);
         //Kiwi has been catched so remove
         island.removeOccupant(predatorPos, occupant);
-        
+        setPlayerMessage("Opps! predator eats kiwi");   // It is a notification that let player knows that predator successfully eat the kiwi 
         points -= 10;
     }
     
