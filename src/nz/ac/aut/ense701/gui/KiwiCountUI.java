@@ -738,7 +738,7 @@ public class KiwiCountUI
     public void keyPressed(KeyEvent e) {
         if(e.getKeyChar()=='a'||e.getKeyChar()=='A'||e.getKeyCode()== KeyEvent.VK_LEFT){
             game.playerMove(MoveDirection.WEST);
-            game.predatorsMove();       // to test  that whether or not predator moves around among squares.
+            //game.predatorsMove();       // to test  that whether or not predator moves around among squares.
         }
         if(e.getKeyChar()=='d'||e.getKeyChar()=='D'||e.getKeyCode()== KeyEvent.VK_RIGHT){
             game.playerMove(MoveDirection.EAST);
