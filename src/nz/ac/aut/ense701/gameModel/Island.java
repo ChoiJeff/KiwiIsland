@@ -309,7 +309,7 @@ public class Island
         }
         return predator;
     }
-      public Kiwi getKiwi(Position position) 
+    public Kiwi getKiwi(Position position) 
     {
         GridSquare square = getGridSquare(position);
         Occupant[] occupants = square.getOccupants();

@@ -15,7 +15,7 @@ import nz.ac.aut.ense701.gui.KiwiCountUI;
  *
  * @author JeffChoi
  */
-////// - test
+////// test for Dominic
 public class WelcomeScreen extends javax.swing.JFrame {
     
     public WelcomeScreen() {
