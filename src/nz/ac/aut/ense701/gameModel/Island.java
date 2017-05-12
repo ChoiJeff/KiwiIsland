@@ -161,6 +161,25 @@ public class Island
         return isPredator;
     } 
     
+    public boolean hasKiwi(Position position) 
+    {
+        GridSquare square = getGridSquare(position);
+        Occupant[] occupants = square.getOccupants();
+        boolean isKiwi = false;
+        if(occupants.length>0)
+        {
+            int i = 0;
+            while ( i < occupants.length && !isKiwi ) {
+                Occupant occupant = occupants[i];
+                isKiwi = occupant instanceof Kiwi ;
+                i++;
+            }
+    
+                    
+        }
+        return isKiwi;
+    } 
+    
     /************************************************************************************************************************
      * Mutator methods
     *************************************************************************************************************************/
@@ -205,16 +224,18 @@ public class Island
     
     public void updatePredatorPosition(Predator predator){  // to set each predator visible to test whether or not predator moves.
         Position position = predator.getPosition();
-        getGridSquare(position).setPredator(predator);
+        Position previousPos = predator.getPreviousPredatorPos();
+        //getGridSquare(position).setPredator(predator);
         
         // remove predator from previous square
-        if ( predator.getPreviousPredatorPos() != null )
-        {
-            getGridSquare(predator.getPreviousPredatorPos()).setPredator(null);
-        }
+//        if ( predator.getPreviousPredatorPos() != null )
+//        {
+//            getGridSquare(predator.getPreviousPredatorPos()).setPredator(null);
+//        }
         setVisible(position);
+        setUnvisible(previousPos);
         
-        predator.setPreviousPredatorPos(position);
+        //predator.setPreviousPredatorPos(position);
     }
     
     /**
@@ -286,6 +307,26 @@ public class Island
         }
         return predator;
     }
+      public Kiwi getKiwi(Position position) 
+    {
+        GridSquare square = getGridSquare(position);
+        Occupant[] occupants = square.getOccupants();
+        Kiwi kiwi = null;
+        if(occupants.length>0)
+        {
+            int i = 0;
+            while ( i < occupants.length && (kiwi == null )) {
+                Occupant occupant = occupants[i];
+                if(occupant instanceof Kiwi)
+                {
+                    kiwi = (Kiwi) occupant;
+                }
+                i++;
+            }       
+        }
+        return kiwi;
+    }
+     
     /**
      * Produces a textual representation of the island on the console.
      * This exists  for debugging purposes during early development.
@@ -332,6 +373,7 @@ public class Island
             System.out.println(rowTerrain);
         }
         System.out.println(horizontalLine);
+        System.out.println();
     }
 
     /*****************************************************************************************************************************
@@ -366,7 +408,14 @@ public class Island
         {
             islandGrid[position.getRow()][position.getColumn()].setVisible();
         }
-    } 
+    }
+    
+    private void setUnvisible(Position position){
+        if ( (position != null) && position.isOnIsland() )
+        {
+            islandGrid[position.getRow()][position.getColumn()].setUnvisible();
+        }
+    }
     
     /**
      * Get a grid square with a particular position.
