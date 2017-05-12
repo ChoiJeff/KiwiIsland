@@ -61,7 +61,7 @@ public class Game
         loseMessage = "";
         playerMessage = "";
         notifyGameEventListeners();
-    }
+        }
 
     /***********************************************************************************************************************
      * Accessor methods for game data
@@ -254,6 +254,11 @@ public class Game
     public int getPredatorsRemaining()
     {
         return totalPredators - predatorsTrapped;
+    }
+    
+    public int getPoints()
+    {
+        return points;
     }
     
     /**
@@ -537,6 +542,8 @@ public class Game
                     kiwi.count();
                     kiwi.setStringRepresentation("KC"); // kiwi counted.
                     kiwiCount++;
+                    points += 10;
+                    
                 }
             }
             else if(occupant instanceof Bat){
@@ -545,6 +552,8 @@ public class Game
                     bat.count();
                     bat.setStringRepresentation("BC");
                     endangeredCount++;
+                    points += 5;
+                    
                 }
             }
             else if(occupant instanceof Kakapo){
@@ -553,6 +562,8 @@ public class Game
                     kakapo.count();
                     kakapo.setStringRepresentation("kC");
                     endangeredCount++;
+                    points += 5;
+                    
                 }
             }
             else if(occupant instanceof Tuatara){
@@ -561,6 +572,8 @@ public class Game
                     tuatara.count();
                     tuatara.setStringRepresentation("tC");
                     endangeredCount++;
+                    points += 5;
+                    
                 }
             }
             else if(occupant instanceof Weta){
@@ -569,6 +582,8 @@ public class Game
                     weta.count();
                     weta.setStringRepresentation("WC");
                     endangeredCount++;
+                    points += 5;
+                    
                 }
                 
             }
@@ -595,7 +610,7 @@ public class Game
         {
             Position newPosition = player.getPosition().getNewPosition(direction);
             Terrain  terrain     = island.getTerrain(newPosition);
-
+            
             // move the player to new position
             player.moveToPosition(newPosition, terrain);
             island.updatePlayerPosition(player);
@@ -603,6 +618,70 @@ public class Game
                     
             // Is there a hazard?
             checkForHazard();
+            
+            occupants = getOccupantsPlayerPosition();
+            if(occupants != null){
+                for (Occupant i : occupants) {
+                    if("Kiwi".equals(i.getName())){         //All kiwi facts were sourced from http://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/kiwi/facts/
+                        if (numKiwi==0){
+                            setPlayerMessage("There are about 68,000 kiwi left in all of New Zealand.");
+                            numKiwi++;
+                        }else if (numKiwi==1){
+                            setPlayerMessage("We are losing 2% of our unmanaged kiwi every year –that's around 20 per week.");
+                            numKiwi++;
+                        } else if (numKiwi==2){
+                            setPlayerMessage("Kiwi are mostly nocturnal.");
+                            numKiwi++;
+                        } else if (numKiwi==3){
+                            setPlayerMessage("Kiwi nest in burrows, hollow logs or under dense vegetation.");
+                            numKiwi++;
+                        } else if (numKiwi==4){
+                            setPlayerMessage("Kiwi are the only bird to have nostrils at the end of their very long bill. Their nostrils are used to probe in the ground, sniffing out invertebrates to eat, along with some fallen fruit.");
+                            numKiwi++;
+                        } else if (numKiwi==5){
+                            setPlayerMessage("The egg averages 15% of the female's body weight (compared to 2% for the ostrich).");
+                            numKiwi++;
+                        } else if (numKiwi==6){
+                            setPlayerMessage("Females are larger than males (up to 3.3 kg and 45 cm).");
+                            numKiwi++;
+                        } else if (numKiwi==7){
+                            setPlayerMessage("Kiwi are long-lived, and depending on the species live for between 25 and 50 years.");
+                            numKiwi++;
+                        } 
+                    } else if("Oystercatcher".equals(i.getName())){     // All oystercatcher facts were sourced from http://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/variable-oystercatcher-torea/
+                        setPlayerMessage("Qystercatchers eat a wide range of coastal invertebrates, including molluscs and crustaceans.");
+                    } else if("Crab".equals(i.getName())){
+                        setPlayerMessage("You found a Crab!!");
+                    } else if("Fernbird".equals(i.getName())){          // All fernbird facts were sourced from http://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/fernbird-matata/
+                        setPlayerMessage("Fernbird are heard more often than seen. Calls are often the only evidence that they are present in a wetland.");
+                    } else if("Heron".equals(i.getName())){             // All heron facts were sourced from http://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/white-heron-kotuku/
+                        setPlayerMessage("The white heron is specially adapted for wading in shallow, muddy waterways.");
+                    } else if("Robin".equals(i.getName())){             // All robin facts were sourced from http://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/nz-robin-toutouwai/
+                        setPlayerMessage("Robin are friendly and trusting, often coming to within a couple of metres of people.");
+                    } else if("Tui".equals(i.getName())){               // All tui facts were sourced from http://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/tui/
+                        setPlayerMessage("Tūī will live where there is a balance of ground cover, shrubs and trees.");
+                    } else if("Rat".equals(i.getName())){               // All rat and kiore facts were sourced from http://www.doc.govt.nz/nature/pests-and-threats/animal-pests/rats/
+                        setPlayerMessage("Rats eat native animals and their eggs.");
+                    } else if("Cat".equals(i.getName())){
+                        setPlayerMessage("Cats can do alot of damage to our native species by hunting vurnerable birds such as kiwi.");
+                    } else if("Kiore".equals(i.getName())){
+                        setPlayerMessage("Kiore eat a wide range of native fruit and plants, which puts them in competition with the native wildlife for food.");
+                    } else if("Stoat".equals(i.getName())){             // All stoat facts were sourced from http://www.doc.govt.nz/nature/pests-and-threats/animal-pests/stoats/
+                        setPlayerMessage("Stoats are known predators of many native birds and feed heavily on reptiles and invertebrates.");
+                    } else if("Possum".equals(i.getName())){            // All possum facts were sourced from http://www.doc.govt.nz/nature/pests-and-threats/animal-pests/possums/
+                        setPlayerMessage("Possums compete with native birds for habitat and for food such as insects and berries.");
+                    } else if("Bat".equals(i.getName())){               // All bat facts were sourced from http://www.doc.govt.nz/nature/native-animals/bats-pekapeka/long-tailed-bat/
+                        setPlayerMessage("New Zealand's bats are rapidly heading towards extinction caused by rat plagues.");
+                    } else if("Weta".equals(i.getName())){              // All weta facts were sourced from http://www.doc.govt.nz/nature/native-animals/invertebrates/weta/
+                        setPlayerMessage("Weta are nocturnal and live in a variety of habitats including grassland, shrub land, forests, and caves. ");
+                    } else if("Tuatara".equals(i.getName())){           // All tuatara facts were sourced from http://www.doc.govt.nz/nature/native-animals/reptiles-and-frogs/tuatara/
+                        setPlayerMessage("Tuatara are New Zealand’s largest reptile, with adult males measuring up to about a half metre in length and weighing up to 1.5 kg when fully grown.");
+                    } else if("Kakapo".equals(i.getName())){           // All kakapo facts were sourced from http://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/kakapo/
+                        setPlayerMessage("The kākāpō (night parrot) is one of New Zealand’s unique treasures with fewer than 160 known surviving birds.");
+                    }
+                }
+            }
+            
 
             updateGameState();            
         }
@@ -689,19 +768,19 @@ public class Game
         if ( !player.isAlive() )
         {
             state = GameState.LOST;
-            message = "Sorry, you have lost the game. " + this.getLoseMessage();
+            message = "Sorry, you have lost the game. " + this.getLoseMessage()+" You scored: "+points+" Points.";
             this.setLoseMessage(message);
         }
         else if (!playerCanMove() )
         {
             state = GameState.LOST;
-            message = "Sorry, you have lost the game. You do not have sufficient stamina to move.";
+            message = "Sorry, you have lost the game. You do not have sufficient stamina to move. You scored: "+points+" Points.";
             this.setLoseMessage(message);
         }
         else if(predatorsTrapped == totalPredators)
         {
             state = GameState.WON;
-            message = "You win! You have done an excellent job and trapped all the predators.";
+            message = "You win! You have done an excellent job and trapped all the predators. You scored: "+points+" Points.";
             this.setWinMessage(message);
         }
         else if(kiwiCount == totalKiwis)
@@ -709,7 +788,7 @@ public class Game
             if(predatorsTrapped >= totalPredators * MIN_REQUIRED_CATCH)
             {
                 state = GameState.WON;
-                message = "You win! You have counted all the kiwi and trapped at least 80% of the predators.";
+                message = "You win! You have counted all the kiwi and trapped at least 80% of the predators. You scored: "+points+" Points.";
                 this.setWinMessage(message);
             }
         }
@@ -772,6 +851,7 @@ public class Game
             island.removeOccupant(current, occupant); 
             predators.remove((Object)occupant);         // check which predator deleted from the list of predator.
             predatorsTrapped++;
+            points  += 5;
         }
         
         return hadPredator;
@@ -1023,9 +1103,12 @@ public class Game
     private String winMessage = "";
     private String loseMessage  = "";
     private String playerMessage  = "";   
+    
+    private Occupant occupants[];
+    private int numKiwi = 0;
+    private int points = 0;
+                        
 
     
-
-
 
 }
