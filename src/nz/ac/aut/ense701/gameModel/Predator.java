@@ -7,26 +7,56 @@ package nz.ac.aut.ense701.gameModel;
  * @author AS
  * @version July 2011
  */
-public class Predator extends Fauna
+public class Predator extends Occupant
 {
 
     /**
      * Constructor for objects of class Predator
-     * @param pos the position of the predator object
+     * @param position the position of the predator object
      * @param name the name of the predator object
      * @param description a longer description of the predator object
      */
-    public Predator(Position pos, String name, String description) 
+    
+    // Add variables in order to access to each predator's position.
+    private Position position;  
+    private Position previousPredatorPos;
+    private String name;
+    private String description;
+    public Predator(Position position, String name, String description) 
     {
-        super(pos, name, description);
+        super(position, name, description);
+        this.position = position;
+        this.name = name;
+        this.description = description;
+        this.previousPredatorPos = null;
     } 
  
+    public Position getPosition()       // to access to each predator's position
+    {
+        return position;
+    }
     
-
-
+    public Position getPreviousPredatorPos(){
+        return previousPredatorPos;
+    }
+    
+    public void setPreviousPredatorPos(Position previousPredatorPos){
+        this.previousPredatorPos = previousPredatorPos;
+    }
+    
     @Override
     public String getStringRepresentation() 
     {
         return "P";
     }    
+    
+    public void moveToPosition(Position newPosition)    // to change the current predator's position to new position.
+    {
+        if( (position == null))
+        {
+            throw new IllegalArgumentException("Null parameters");
+        }else{
+            this.position = newPosition;
+        }  
+    }
 }

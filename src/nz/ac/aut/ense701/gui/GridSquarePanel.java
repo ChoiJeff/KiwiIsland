@@ -85,7 +85,7 @@ public class GridSquarePanel extends javax.swing.JPanel
             if(color.equals(Color.YELLOW)){
                 if(textRepre.equals("B"))
                     img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg"));
-                else if(textRepre.equals("BC")){
+                else if(textRepre.equals("BC")){    // C stands for count.
                     img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg"));
                     setBorder(countBorder);
                 }else if(textRepre.equals("F"))
