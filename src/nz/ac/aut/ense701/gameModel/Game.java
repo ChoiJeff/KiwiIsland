@@ -3,7 +3,9 @@ package nz.ac.aut.ense701.gameModel;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 import java.util.Set;
@@ -46,11 +48,13 @@ public class Game
     public void createNewGame()
     {
         totalPredators = 0;
+        predators = new ArrayList<Predator>();  // to keep the list of predators
         totalKiwis = 0;
         predatorsTrapped = 0;
         kiwiCount = 0;
         //initialiseIslandFromFile("IslandData.txt"); original
         initialiseIslandFromFile("IslandData2.txt"); // for testing with added fauna
+        //initialiseIslandFromFile("IslandData3.txt"); // for testing with predator
         drawIsland();
         state = GameState.PLAYING;
         winMessage = "";
@@ -138,6 +142,25 @@ public class Game
         }
         return isMovePossible;
     }
+    
+    public boolean isPredatorMovePossible(MoveDirection direction, Occupant predator)
+    {
+        boolean isMovePossible = false;
+        
+        Position newPosition = predator.getPosition().getNewPosition(direction);
+        if( (newPosition != null) && newPosition.isOnIsland() &&        // to check the condition whether or not predator's new position 
+                island.getTerrain(newPosition) != Terrain.WATER // is on the Water to avoid predator go to water.
+                && !island.getOccupantStringRepresentation(newPosition).contains("H")) // does not contain a Hazard /// check this    
+        {
+            //Terrain newTerrain = island.getTerrain(newPosition);
+            
+            isMovePossible = true;  // need to think of what should put
+        }
+        else{
+            isMovePossible = false; // need to be changed
+        }
+        return isMovePossible;
+    }        
     
       /**
      * Get terrain for position
@@ -665,7 +688,51 @@ public class Game
         return successfulMove;
     }
     
-    
+    public boolean predatorsMove()
+    {        
+        boolean successfulMove = false;
+        MoveDirection direction = null;
+        for(Predator predator : predators){
+            int random = (int) (Math.random() * 4);     // to move predator one step randomly.
+            switch(random){
+                case 0:
+                    direction = MoveDirection.EAST;
+                break;
+                
+                case 1:
+                    direction = MoveDirection.WEST;
+                break;
+                
+                case 2:
+                    direction = MoveDirection.NORTH;
+                break;
+                
+                case 3:
+                    direction = MoveDirection.SOUTH;
+                break;
+            }   // end of switch
+            
+            if(isPredatorMovePossible(direction, predator)){
+                Position newPostion = predator.getPosition().getNewPosition(direction);
+                //Terrain terrain = island.getTerrain(newPostion);
+                
+                //predator.moveToPosition(newPostion);
+                Position previous = predator.getPosition();
+                
+                Occupant occupant = predator;
+                
+                island.removeOccupant(previous, occupant);
+                island.addOccupant(newPostion, occupant);
+                successfulMove = true;
+                
+                //updateGameState();   
+            }
+        }
+        updateGameState();
+        island.draw();
+        return successfulMove;
+        //if()
+    }
     
     /**
      * Adds a game event listener.
@@ -782,6 +849,7 @@ public class Game
             Occupant occupant = island.getPredator(current);
             //Predator has been trapped so remove
             island.removeOccupant(current, occupant); 
+            predators.remove((Object)occupant);         // check which predator deleted from the list of predator.
             predatorsTrapped++;
             points  += 5;
         }
@@ -988,7 +1056,10 @@ public class Game
             else if ( occType.equals("P") )
             {
                 occupant = new Predator(occPos, occName, occDesc);
-                totalPredators++;                
+                totalPredators++; 
+                predators.add((Predator)occupant);    // to add each predator into the ArrayList 
+                                                      // so that the programmer can access to that
+                island.updatePredatorPosition((Predator)occupant);    // to set each predator visible to test whether or not each predator moves                                    
             }
             else if ( occType.equals("F") )
             {
@@ -1025,6 +1096,7 @@ public class Game
     private int endangeredCount; ///////////// will use for bonus points
     private int predatorsTrapped;
     private Set<GameEventListener> eventListeners;
+    private List<Predator> predators;       // to keep the list of predators.
     
     private final double MIN_REQUIRED_CATCH = 0.8;
         
