@@ -615,6 +615,7 @@ public class Game
             player.moveToPosition(newPosition, terrain);
             island.updatePlayerPosition(player);
             successfulMove = true;
+            points++;   // one point per player moves.
                     
             // Is there a hazard?
             checkForHazard();
@@ -714,15 +715,24 @@ public class Game
             
             if(isPredatorMovePossible(direction, predator)){
                 Position newPostion = predator.getPosition().getNewPosition(direction);
-                //Terrain terrain = island.getTerrain(newPostion);
-                
-                //predator.moveToPosition(newPostion);
                 Position previous = predator.getPosition();
+                predator.setPreviousPredatorPos(previous);
+                //Terrain terrain = island.getTerrain(newPostion);
+                // this is to test a change
+                
+                predator.moveToPosition(newPostion);
+                island.updatePredatorPosition(predator);
+                
                 
                 Occupant occupant = predator;
                 
                 island.removeOccupant(previous, occupant);
                 island.addOccupant(newPostion, occupant);
+                
+                
+                if(island.hasKiwi(newPostion)){ // if it is true then predator kill the kiwi
+                    eatKiwi(predator);
+                }
                 successfulMove = true;
                 
                 //updateGameState();   
@@ -855,6 +865,18 @@ public class Game
         }
         
         return hadPredator;
+    }
+    
+    // to kill kiwi by predator if predator and kiwi in the same positioin.
+    // test
+    private void eatKiwi(Predator predator) {
+        Position predatorPos = predator.getPosition();
+
+        Occupant occupant = island.getKiwi(predatorPos);
+        //Kiwi has been catched so remove
+        island.removeOccupant(predatorPos, occupant);
+        setPlayerMessage("Opps! predator eats kiwi");   // It is a notification that let player knows that predator successfully eat the kiwi 
+        points -= 10;
     }
     
     /**
