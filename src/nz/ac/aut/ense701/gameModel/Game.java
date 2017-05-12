@@ -150,7 +150,8 @@ public class Game
         Position newPosition = predator.getPosition().getNewPosition(direction);
         if( (newPosition != null) && newPosition.isOnIsland() &&        // to check the condition whether or not predator's new position 
                 island.getTerrain(newPosition) != Terrain.WATER // is on the Water to avoid predator go to water.
-                && !island.getOccupantStringRepresentation(newPosition).contains("H")) // does not contain a Hazard /// check this    
+                && !island.getOccupantStringRepresentation(newPosition).contains("H") // does not contain a Hazard /// check this    
+                && !island.hasPredator(newPosition)) // does not already have a predator
         {
             //Terrain newTerrain = island.getTerrain(newPosition);
             
