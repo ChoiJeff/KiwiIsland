@@ -717,6 +717,7 @@ public class Game
                 Position previous = predator.getPosition();
                 predator.setPreviousPredatorPos(previous);
                 //Terrain terrain = island.getTerrain(newPostion);
+                // this is to test a change
                 
                 predator.moveToPosition(newPostion);
                 island.updatePredatorPosition(predator);
