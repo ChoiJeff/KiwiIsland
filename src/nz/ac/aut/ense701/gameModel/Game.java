@@ -617,6 +617,7 @@ public class Game
             player.moveToPosition(newPosition, terrain);
             island.updatePlayerPosition(player);
             successfulMove = true;
+            points++;   // one point per player moves.
                     
             // Is there a hazard?
             checkForHazard();
@@ -736,6 +737,8 @@ public class Game
                         int eatChance = (int) (Math.random()*2); 
                         if(eatChance ==1){ // 50% chance to eat Kiwi
                             eatKiwi(predator);
+                        }else{  // add dialog if predator fail to eat kiwi
+                            setPlayerMessage("Watch out! A predator almost ate a kiwi! Luckily the kiwi escaped!");
                         }
                     }
                     successfulMove = true;
