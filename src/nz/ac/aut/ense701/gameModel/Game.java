@@ -743,7 +743,7 @@ public class Game
                     // this is to test a change
 
                     predator.moveToPosition(newPostion);
-                    island.updatePredatorPosition(predator);
+                    //island.updatePredatorPosition(predator); // this is testing method to track of predator's position.
 
 
                     Occupant occupant = predator;
