@@ -74,7 +74,6 @@ public class Game
                 initialiseIslandFromFile("IslandData8.txt");
             break;
         }
-        
         drawIsland();
         state = GameState.PLAYING;
         winMessage = "";
