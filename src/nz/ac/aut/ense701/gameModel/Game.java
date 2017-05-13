@@ -53,13 +53,8 @@ public class Game
         predatorsTrapped = 0;
         kiwiCount = 0;
         //initialiseIslandFromFile("IslandData.txt"); original
-        //initialiseIslandFromFile("IslandData2.txt"); // for testing with added fauna
-        //initialiseIslandFromFile("IslandData3.txt"); // for testing with 1 predator
-        //initialiseIslandFromFile("IslandData4.txt");//for testing map 1
-        //initialiseIslandFromFile("IslandData5.txt");//for testing map 2
-        //initialiseIslandFromFile("IslandData6.txt");//for testing map 3
-        //initialiseIslandFromFile("IslandData7.txt");//for testing map 4
-        initialiseIslandFromFile("IslandData8.txt");//for testing map 5
+        initialiseIslandFromFile("IslandData2.txt"); // for testing with added fauna
+        //("IslandData3.txt"); // for testing with predator
         drawIsland();
         state = GameState.PLAYING;
         winMessage = "";
