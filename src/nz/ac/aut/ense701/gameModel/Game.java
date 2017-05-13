@@ -61,7 +61,7 @@ public class Game
         loseMessage = "";
         playerMessage = "";
         notifyGameEventListeners();
-        }
+    }
 
     /***********************************************************************************************************************
      * Accessor methods for game data
