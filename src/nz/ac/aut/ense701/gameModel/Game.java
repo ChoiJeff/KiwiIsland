@@ -61,7 +61,7 @@ public class Game
         loseMessage = "";
         playerMessage = "";
         notifyGameEventListeners();
-        }
+    }
 
     /***********************************************************************************************************************
      * Accessor methods for game data
@@ -150,7 +150,8 @@ public class Game
         Position newPosition = predator.getPosition().getNewPosition(direction);
         if( (newPosition != null) && newPosition.isOnIsland() &&        // to check the condition whether or not predator's new position 
                 island.getTerrain(newPosition) != Terrain.WATER // is on the Water to avoid predator go to water.
-                && !island.getOccupantStringRepresentation(newPosition).contains("H")) // does not contain a Hazard /// check this    
+                && !island.getOccupantStringRepresentation(newPosition).contains("H") // does not contain a Hazard /// check this    
+                && !island.hasPredator(newPosition)) // does not already have a predator
         {
             //Terrain newTerrain = island.getTerrain(newPosition);
             
@@ -608,6 +609,7 @@ public class Game
         boolean successfulMove = false;
         if ( isPlayerMovePossible(direction) )
         {
+            predatorsMove();
             Position newPosition = player.getPosition().getNewPosition(direction);
             Terrain  terrain     = island.getTerrain(newPosition);
             
@@ -615,6 +617,7 @@ public class Game
             player.moveToPosition(newPosition, terrain);
             island.updatePlayerPosition(player);
             successfulMove = true;
+            points++;   // one point per player moves.
                     
             // Is there a hazard?
             checkForHazard();
@@ -682,7 +685,6 @@ public class Game
                 }
             }
             
-
             updateGameState();            
         }
         return successfulMove;
@@ -692,40 +694,57 @@ public class Game
     {        
         boolean successfulMove = false;
         MoveDirection direction = null;
-        for(Predator predator : predators){
-            int random = (int) (Math.random() * 4);     // to move predator one step randomly.
-            switch(random){
-                case 0:
-                    direction = MoveDirection.EAST;
-                break;
-                
-                case 1:
-                    direction = MoveDirection.WEST;
-                break;
-                
-                case 2:
-                    direction = MoveDirection.NORTH;
-                break;
-                
-                case 3:
-                    direction = MoveDirection.SOUTH;
-                break;
-            }   // end of switch
-            
-            if(isPredatorMovePossible(direction, predator)){
-                Position newPostion = predator.getPosition().getNewPosition(direction);
-                //Terrain terrain = island.getTerrain(newPostion);
-                
-                //predator.moveToPosition(newPostion);
-                Position previous = predator.getPosition();
-                
-                Occupant occupant = predator;
-                
-                island.removeOccupant(previous, occupant);
-                island.addOccupant(newPostion, occupant);
-                successfulMove = true;
-                
-                //updateGameState();   
+        int rand = (int) (Math.random() * 10); 
+        if(rand>6){
+            for(Predator predator : predators){
+                int random = (int) (Math.random() * 4);     // to move predator one step randomly.
+                switch(random){
+                    case 0:
+                        direction = MoveDirection.EAST;
+                    break;
+
+                    case 1:
+                        direction = MoveDirection.WEST;
+                    break;
+
+                    case 2:
+                        direction = MoveDirection.NORTH;
+                    break;
+
+                    case 3:
+                        direction = MoveDirection.SOUTH;
+                    break;
+                }   // end of switch
+
+                if(isPredatorMovePossible(direction, predator)){
+                    Position newPostion = predator.getPosition().getNewPosition(direction);
+                    Position previous = predator.getPosition();
+                    predator.setPreviousPredatorPos(previous);
+                    //Terrain terrain = island.getTerrain(newPostion);
+                    // this is to test a change
+
+                    predator.moveToPosition(newPostion);
+                    island.updatePredatorPosition(predator);
+
+
+                    Occupant occupant = predator;
+
+                    island.removeOccupant(previous, occupant);
+                    island.addOccupant(newPostion, occupant);
+
+
+                    if(island.hasKiwi(newPostion)){ // if it is true then predator kill the kiwi
+                        int eatChance = (int) (Math.random()*2); 
+                        if(eatChance ==1){ // 50% chance to eat Kiwi
+                            eatKiwi(predator);
+                        }else{  // add dialog if predator fail to eat kiwi
+                            setPlayerMessage("Watch out! A predator almost ate a kiwi! Luckily the kiwi escaped!");
+                        }
+                    }
+                    successfulMove = true;
+
+                    //updateGameState();   
+                }
             }
         }
         updateGameState();
@@ -792,6 +811,11 @@ public class Game
                 this.setWinMessage(message);
             }
         }
+        else if(totalKiwis == 6){ // too many kiwis have been killed need to change this if number different numbers of kiwis on maps
+            state = GameState.LOST;
+            message = "Sorry, you have lost the game. Too many kiwis have been lost due to your poor conservation efforts! You scored: "+points+" Points.";
+            this.setLoseMessage(message);
+        }
         ////////////////////////////////////////////////////// Additional Win conditions?
         // notify listeners about changes
             notifyGameEventListeners();
@@ -855,6 +879,19 @@ public class Game
         }
         
         return hadPredator;
+    }
+    
+    // to kill kiwi by predator if predator and kiwi in the same positioin.
+    // test
+    private void eatKiwi(Predator predator) {
+        Position predatorPos = predator.getPosition();
+
+        Occupant occupant = island.getKiwi(predatorPos);
+        //Kiwi has been catched so remove
+        island.removeOccupant(predatorPos, occupant);
+        setPlayerMessage("Opps! predator eats kiwi");   // It is a notification that let player knows that predator successfully eat the kiwi 
+        totalKiwis--;
+        points -= 10;
     }
     
     /**
