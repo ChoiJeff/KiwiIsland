@@ -123,6 +123,32 @@ public class GridSquarePanel extends javax.swing.JPanel
                 else if(textRepre.equals("WC")){
                     img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg"));
                     setBorder(countBorder);
+                }else if(textRepre.equals("PB") || textRepre.equals("BP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg"));
+                }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg"));
+                    setBorder(countBorder);
+                }else if(textRepre.equals("Pk") || textRepre.equals("kP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg"));
+                }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg"));
+                    setBorder(countBorder);
+                }else if(textRepre.equals("Pt") || textRepre.equals("tP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg"));
+                }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg"));
+                    setBorder(countBorder);
+                }else if(textRepre.equals("PW") || textRepre.equals("WP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg"));
+                }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg"));
+                    setBorder(countBorder);
+                }else if(textRepre.equals("PF") || textRepre.equals("FP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Fauna.jpg"));
+                }else if(textRepre.equals("PE") || textRepre.equals("EP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Item.jpg"));
+                }else if(textRepre.equals("PT") || textRepre.equals("TP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tool.jpg"));
                 }
                 else
                     img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand.jpg"));  
@@ -171,7 +197,34 @@ public class GridSquarePanel extends javax.swing.JPanel
                 else if(textRepre.equals("WC")){
                     img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Weta.jpg"));    
                     setBorder(countBorder);
-                } else
+                }else if(textRepre.equals("PB") || textRepre.equals("BP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Bat.jpg"));
+                }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Bat.jpg"));
+                    setBorder(countBorder);
+                }else if(textRepre.equals("Pk") || textRepre.equals("kP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Kakapo.jpg"));
+                }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Kakapo.jpg"));
+                    setBorder(countBorder);
+                }else if(textRepre.equals("Pt") || textRepre.equals("tP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Tuatara.jpg"));
+                }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Tuatara.jpg"));
+                    setBorder(countBorder);
+                }else if(textRepre.equals("PW") || textRepre.equals("WP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Weta.jpg"));
+                }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Weta.jpg"));
+                    setBorder(countBorder);
+                }else if(textRepre.equals("PF") || textRepre.equals("FP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Fauna.jpg"));
+                }else if(textRepre.equals("PE") || textRepre.equals("EP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Item.jpg"));
+                }else if(textRepre.equals("PT") || textRepre.equals("TP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Tool.jpg"));
+                } 
+                else
                     img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Forrest.jpg"));  
             }
             
@@ -219,7 +272,34 @@ public class GridSquarePanel extends javax.swing.JPanel
                 } else if(textRepre.equals("WC")){
                     img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Weta.jpg"));    
                     setBorder(countBorder);
-                }else
+                }else if(textRepre.equals("PB") || textRepre.equals("BP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Bat.jpg"));
+                }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Bat.jpg"));
+                    setBorder(countBorder);
+                }else if(textRepre.equals("Pk") || textRepre.equals("kP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Kakapo.jpg"));
+                }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Kakapo.jpg"));
+                    setBorder(countBorder);
+                }else if(textRepre.equals("Pt") || textRepre.equals("tP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Tuatara.jpg"));
+                }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Tuatara.jpg"));
+                    setBorder(countBorder);
+                }else if(textRepre.equals("PW") || textRepre.equals("WP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Weta.jpg"));
+                }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Weta.jpg"));
+                    setBorder(countBorder);
+                }else if(textRepre.equals("PF") || textRepre.equals("FP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Fauna.jpg"));
+                }else if(textRepre.equals("PE") || textRepre.equals("EP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Item.jpg"));
+                }else if(textRepre.equals("PT") || textRepre.equals("TP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Tool.jpg"));
+                }
+                else
                     img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land.jpg"));   
             }
             
@@ -266,7 +346,34 @@ public class GridSquarePanel extends javax.swing.JPanel
                 } else if(textRepre.equals("WC")){
                     img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Weta.jpg"));    
                     setBorder(countBorder);
-                } else
+                }else if(textRepre.equals("PB") || textRepre.equals("BP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Bat.jpg"));
+                }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Bat.jpg"));
+                    setBorder(countBorder);
+                }else if(textRepre.equals("Pk") || textRepre.equals("kP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Kakapo.jpg"));
+                }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Kakapo.jpg"));
+                    setBorder(countBorder);
+                }else if(textRepre.equals("Pt") || textRepre.equals("tP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Tuatara.jpg"));
+                }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Tuatara.jpg"));
+                    setBorder(countBorder);
+                }else if(textRepre.equals("PW") || textRepre.equals("WP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Weta.jpg"));
+                }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Weta.jpg"));
+                    setBorder(countBorder);
+                }else if(textRepre.equals("PF") || textRepre.equals("FP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Fauna.jpg"));
+                }else if(textRepre.equals("PE") || textRepre.equals("EP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Item.jpg"));
+                }else if(textRepre.equals("PT") || textRepre.equals("TP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Tool.jpg"));
+                } 
+                else
                     img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Scrub.jpg"));  
             }
             
@@ -314,6 +421,32 @@ public class GridSquarePanel extends javax.swing.JPanel
                 } else if(textRepre.equals("WC")){
                     img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Water with Weta.jpg"));    
                     setBorder(countBorder);
+                }else if(textRepre.equals("PB") || textRepre.equals("BP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Bat.jpg"));
+                }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Bat.jpg"));
+                    setBorder(countBorder);
+                }else if(textRepre.equals("Pk") || textRepre.equals("kP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Kakapo.jpg"));
+                }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Kakapo.jpg"));
+                    setBorder(countBorder);
+                }else if(textRepre.equals("Pt") || textRepre.equals("tP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Tuatara.jpg"));
+                }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Tuatara.jpg"));
+                    setBorder(countBorder);
+                }else if(textRepre.equals("PW") || textRepre.equals("WP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Weta.jpg"));
+                }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Weta.jpg"));
+                    setBorder(countBorder);
+                }else if(textRepre.equals("PF") || textRepre.equals("FP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Fauna.jpg"));
+                }else if(textRepre.equals("PE") || textRepre.equals("EP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Item.jpg"));
+                }else if(textRepre.equals("PT") || textRepre.equals("TP")){
+                    img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Tool.jpg"));
                 } 
                 else
                     img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Water.jpg"));  
