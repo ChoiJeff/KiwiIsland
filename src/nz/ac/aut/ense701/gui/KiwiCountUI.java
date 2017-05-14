@@ -62,7 +62,8 @@ public class KiwiCountUI
 //            game.createNewGame();
                dispose();
                WelcomeScreen welcome = new WelcomeScreen();
-               welcome.show();
+//               welcome.show();
+               welcome.setVisible(true);
                
         }
         else if ( game.getState() == GameState.WON )
@@ -74,7 +75,8 @@ public class KiwiCountUI
 //            game.createNewGame();
                dispose();
                WelcomeScreen welcome = new WelcomeScreen();
-               welcome.show();
+//               welcome.show();
+               welcome.setVisible(true);
         }
         else if (game.messageForPlayer())
         {
