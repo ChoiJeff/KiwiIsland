@@ -118,7 +118,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Bat.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("BC")){    // C stands for count.
@@ -127,7 +127,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Bat.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -137,7 +137,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Fauna.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Fauna.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("H")){
@@ -146,7 +146,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Hazard.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Hazard.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("E")){
@@ -155,7 +155,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Item.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Item.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("k")){
@@ -164,7 +164,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("kC")){
@@ -173,7 +173,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -183,7 +183,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PKC") || textRepre.equals("KCP")){
@@ -192,7 +192,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -202,7 +202,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Kiwi.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("KC")){
@@ -211,7 +211,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Kiwi.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -221,7 +221,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Predator.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Predator.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("T")){
@@ -230,7 +230,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Tool.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Tool.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("t")){
@@ -239,7 +239,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("tC")){
@@ -248,7 +248,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -258,7 +258,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Weta.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("WC")){
@@ -267,7 +267,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Weta.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -277,7 +277,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
@@ -286,7 +286,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -296,7 +296,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
@@ -305,7 +305,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -315,7 +315,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
@@ -324,7 +324,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -334,7 +334,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
@@ -342,7 +342,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -352,7 +352,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Fauna.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Fauna.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PE") || textRepre.equals("EP")){
@@ -361,7 +361,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Item.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Item.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PT") || textRepre.equals("TP")){
@@ -370,7 +370,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Tool.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Tool.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }
@@ -393,7 +393,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Bat.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("BC")){    // C stands for count.
@@ -402,7 +402,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Bat.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -412,7 +412,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Fauna.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Fauna.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("H")){
@@ -421,7 +421,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Hazard.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Hazard.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("E")){
@@ -430,7 +430,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Item.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Item.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("k")){
@@ -439,7 +439,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kakapo.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("kC")){
@@ -448,7 +448,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kakapo.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -458,7 +458,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kiwi and Predator.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kiwi and Predator.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PKC") || textRepre.equals("KCP")){
@@ -467,7 +467,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kiwi and Predator.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kiwi and Predator.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -477,7 +477,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kiwi.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kiwi.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("KC")){
@@ -486,7 +486,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kiwi.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kiwi.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -496,7 +496,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Predator.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Predator.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("T")){
@@ -505,7 +505,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Tool.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Tool.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("t")){
@@ -514,7 +514,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Tuatara.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("tC")){
@@ -523,7 +523,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Tuatara.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -533,7 +533,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Weta.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("WC")){
@@ -542,7 +542,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Weta.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -552,7 +552,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Bat.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
@@ -561,7 +561,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Bat.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -571,7 +571,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Kakapo.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
@@ -590,7 +590,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Tuatara.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
@@ -599,7 +599,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Tuatara.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -609,7 +609,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Weta.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
@@ -617,7 +617,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Weta.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -627,7 +627,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Fauna.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Fauna.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PE") || textRepre.equals("EP")){
@@ -636,7 +636,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Item.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Item.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PT") || textRepre.equals("TP")){
@@ -645,7 +645,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Tool.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Tool.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }
@@ -655,7 +655,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Forrest.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }    
@@ -668,7 +668,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Bat.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("BC")){    // C stands for count.
@@ -677,7 +677,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Bat.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -687,7 +687,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Fauna.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Fauna.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("H")){
@@ -696,7 +696,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Hazard.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Hazard.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("E")){
@@ -705,7 +705,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Item.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Item.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("k")){
@@ -714,7 +714,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kakapo.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("kC")){
@@ -723,7 +723,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kakapo.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -733,7 +733,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kiwi and Predator.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kiwi and Predator.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PKC") || textRepre.equals("KCP")){
@@ -742,7 +742,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kiwi and Predator.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kiwi and Predator.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -752,7 +752,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kiwi.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kiwi.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("KC")){
@@ -761,7 +761,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kiwi.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kiwi.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -771,7 +771,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Predator.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Predator.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("T")){
@@ -780,7 +780,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Tool.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Tool.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("t")){
@@ -789,7 +789,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Tuatara.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("tC")){
@@ -798,7 +798,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Tuatara.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -808,7 +808,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Weta.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("WC")){
@@ -817,7 +817,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Weta.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -827,7 +827,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Bat.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
@@ -836,7 +836,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Bat.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -846,7 +846,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Kakapo.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
@@ -855,7 +855,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Kakapo.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -865,7 +865,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Tuatara.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
@@ -874,7 +874,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Tuatara.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -884,7 +884,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Weta.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
@@ -892,7 +892,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Weta.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -902,7 +902,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Fauna.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Fauna.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PE") || textRepre.equals("EP")){
@@ -911,7 +911,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Item.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Item.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PT") || textRepre.equals("TP")){
@@ -920,7 +920,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Tool.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Tool.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }
@@ -943,7 +943,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Bat.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("BC")){    // C stands for count.
@@ -952,7 +952,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Bat.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -962,7 +962,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Fauna.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Fauna.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("H")){
@@ -971,7 +971,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Hazard.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Hazard.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("E")){
@@ -980,7 +980,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Item.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Item.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("k")){
@@ -989,7 +989,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kakapo.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("kC")){
@@ -998,7 +998,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kakapo.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -1008,7 +1008,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kiwi and Predator.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kiwi and Predator.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PKC") || textRepre.equals("KCP")){
@@ -1017,7 +1017,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kiwi and Predator.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kiwi and Predator.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -1027,7 +1027,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kiwi.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kiwi.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("KC")){
@@ -1036,7 +1036,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kiwi.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kiwi.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -1046,7 +1046,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Predator.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Predator.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("T")){
@@ -1055,7 +1055,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Tool.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Tool.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("t")){
@@ -1064,7 +1064,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Tuatara.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("tC")){
@@ -1073,7 +1073,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Tuatara.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -1083,7 +1083,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Weta.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("WC")){
@@ -1092,7 +1092,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Weta.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -1102,7 +1102,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Bat.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
@@ -1111,7 +1111,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Bat.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -1121,7 +1121,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Kakapo.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
@@ -1130,7 +1130,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Kakapo.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -1140,7 +1140,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Tuatara.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
@@ -1149,7 +1149,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Tuatara.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -1159,7 +1159,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Weta.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
@@ -1167,7 +1167,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Weta.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -1177,7 +1177,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Fauna.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Fauna.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PE") || textRepre.equals("EP")){
@@ -1186,7 +1186,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Item.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Item.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PT") || textRepre.equals("TP")){
@@ -1195,7 +1195,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Tool.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Tool.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }
@@ -1205,7 +1205,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Scrub.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }    
@@ -1218,7 +1218,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Bat.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("BC")){    // C stands for count.
@@ -1227,7 +1227,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Bat.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -1237,7 +1237,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Fauna.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with Fauna.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("H")){
@@ -1246,7 +1246,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Hazard.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with Hazard.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("E")){
@@ -1255,7 +1255,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Item.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with Item.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("k")){
@@ -1264,7 +1264,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kakapo.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("kC")){
@@ -1273,7 +1273,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kakapo.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -1283,7 +1283,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kiwi and Predator.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kiwi and Predator.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PKC") || textRepre.equals("KCP")){
@@ -1292,7 +1292,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kiwi and Predator.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kiwi and Predator.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -1302,7 +1302,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kiwi.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kiwi.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("KC")){
@@ -1311,7 +1311,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kiwi.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kiwi.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -1321,7 +1321,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Predator.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with Predator.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("T")){
@@ -1330,7 +1330,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Tool.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with Tool.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("t")){
@@ -1339,7 +1339,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Tuatara.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("tC")){
@@ -1348,7 +1348,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Tuatara.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -1358,7 +1358,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Weta.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("WC")){
@@ -1367,7 +1367,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Weta.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -1377,7 +1377,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Bat.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
@@ -1386,7 +1386,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Bat.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -1396,7 +1396,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Kakapo.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
@@ -1405,7 +1405,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Kakapo.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -1415,7 +1415,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Tuatara.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
@@ -1424,7 +1424,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Tuatara.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -1434,7 +1434,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Weta.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
@@ -1442,7 +1442,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Weta.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                     setBorder(countBorder);
@@ -1452,7 +1452,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Fauna.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Fauna.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PE") || textRepre.equals("EP")){
@@ -1461,7 +1461,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Item.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Item.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }else if(textRepre.equals("PT") || textRepre.equals("TP")){
@@ -1470,7 +1470,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Tool.jpg";
+                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Tool.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
                 }
