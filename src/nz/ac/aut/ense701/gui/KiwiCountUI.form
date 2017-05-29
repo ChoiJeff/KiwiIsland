@@ -427,6 +427,7 @@
                         <Property name="visibleRowCount" type="int" value="3"/>
                       </Properties>
                       <Events>
+                        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="listInventoryFocusGained"/>
                         <EventHandler event="valueChanged" listener="javax.swing.event.ListSelectionListener" parameters="javax.swing.event.ListSelectionEvent" handler="listInventoryValueChanged"/>
                       </Events>
                     </Component>
@@ -505,6 +506,7 @@
                         <Property name="visibleRowCount" type="int" value="3"/>
                       </Properties>
                       <Events>
+                        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="listObjectsFocusGained"/>
                         <EventHandler event="valueChanged" listener="javax.swing.event.ListSelectionListener" parameters="javax.swing.event.ListSelectionEvent" handler="listObjectsValueChanged"/>
                       </Events>
                     </Component>
