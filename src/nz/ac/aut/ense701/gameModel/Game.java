@@ -1,7 +1,9 @@
 package nz.ac.aut.ense701.gameModel;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -1182,7 +1184,11 @@ public class Game
         this.highScores = highScores;
     }
     
-    public void saveScore(File scores){
+    public HashMap<Integer,String> getScores(){
+        return this.highScores;
+    }
+    
+    public void saveScores(File scores){
         try {
             out = new PrintWriter(scores);
             for (Map.Entry<Integer, String> entry : highScores.entrySet()) {
@@ -1195,6 +1201,29 @@ public class Game
             if (out != null) {
                 out.close();
                 out = null;
+            }
+        }
+    }
+    
+    public void readScores(File file){
+        try {
+            in = new BufferedReader(new FileReader(file));
+            String line;
+            String[] splitLine;
+            while ((line = in.readLine()) != null) {
+                splitLine = line.split(" ");
+                highScores.put(Integer.valueOf(splitLine[0]), splitLine[1]);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (in != null) {
+                try {
+                    in.close();
+                    in = null;
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
             }
         }
     }
@@ -1225,4 +1254,5 @@ public class Game
     private int difficulty;
     private HashMap<Integer,String> highScores;
     private PrintWriter out;
+    private BufferedReader in;
 }
