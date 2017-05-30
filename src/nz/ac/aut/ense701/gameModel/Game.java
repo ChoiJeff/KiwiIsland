@@ -648,6 +648,8 @@ public class Game
                         if (numKiwi==0){
                             setPlayerMessage("There are about 68,000 kiwi left in all of New Zealand.");
                             numKiwi++;
+                            // add testAddFactsToList
+                            
                         }else if (numKiwi==1){
                             setPlayerMessage("We are losing 2% of our unmanaged kiwi every year –that's around 20 per week.");
                             numKiwi++;
