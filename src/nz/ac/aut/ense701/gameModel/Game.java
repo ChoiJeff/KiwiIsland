@@ -658,35 +658,35 @@ public class Game
                             setPlayerMessage("There are about 68,000 kiwi left in all of New Zealand.");
                             numKiwi++;
                             // add testAddFactsToList
-                            addFactToList("There are about 68,000 kiwi left in all of New Zealand.");
+                            //addFactToList("There are about 68,000 kiwi left in all of New Zealand.");
                         }else if (numKiwi==1){
                             setPlayerMessage("We are losing 2% of our unmanaged kiwi every year –that's around 20 per week.");
                             numKiwi++;
-                            addFactToList("We are losing 2% of our unmanaged kiwi every year –that's around 20 per week.");
+                            //addFactToList("We are losing 2% of our unmanaged kiwi every year –that's around 20 per week.");
                         } else if (numKiwi==2){
                             setPlayerMessage("Kiwi are mostly nocturnal.");
                             numKiwi++;
-                            addFactToList("Kiwi are mostly nocturnal.");
+                            //addFactToList("Kiwi are mostly nocturnal.");
                         } else if (numKiwi==3){
                             setPlayerMessage("Kiwi nest in burrows, hollow logs or under dense vegetation.");
                             numKiwi++;
-                            addFactToList("Kiwi nest in burrows, hollow logs or under dense vegetation.");
+                            //addFactToList("Kiwi nest in burrows, hollow logs or under dense vegetation.");
                         } else if (numKiwi==4){
                             setPlayerMessage("Kiwi are the only bird to have nostrils at the end of their very long bill. Their nostrils are used to probe in the ground, sniffing out invertebrates to eat, along with some fallen fruit.");
                             numKiwi++;
-                            addFactToList("Kiwi are the only bird to have nostrils at the end of their very long bill. Their nostrils are used to probe in the ground, sniffing out invertebrates to eat, along with some fallen fruit.");
+                            //addFactToList("Kiwi are the only bird to have nostrils at the end of their very long bill. Their nostrils are used to probe in the ground, sniffing out invertebrates to eat, along with some fallen fruit.");
                         } else if (numKiwi==5){
                             setPlayerMessage("The egg averages 15% of the female's body weight (compared to 2% for the ostrich).");
                             numKiwi++;
-                            addFactToList("The egg averages 15% of the female's body weight (compared to 2% for the ostrich).");
+                            //addFactToList("The egg averages 15% of the female's body weight (compared to 2% for the ostrich).");
                         } else if (numKiwi==6){
                             setPlayerMessage("Females are larger than males (up to 3.3 kg and 45 cm).");
                             numKiwi++;
-                            addFactToList("Females are larger than males (up to 3.3 kg and 45 cm).");
+                            //addFactToList("Females are larger than males (up to 3.3 kg and 45 cm).");
                         } else if (numKiwi==7){
                             setPlayerMessage("Kiwi are long-lived, and depending on the species live for between 25 and 50 years.");
                             numKiwi++;
-                            addFactToList("Kiwi are long-lived, and depending on the species live for between 25 and 50 years.");
+                            //addFactToList("Kiwi are long-lived, and depending on the species live for between 25 and 50 years.");
                         } 
                     } else if("Oystercatcher".equals(i.getName())){     // All oystercatcher facts were sourced from http://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/variable-oystercatcher-torea/
                         setPlayerMessage("Qystercatchers eat a wide range of coastal invertebrates, including molluscs and crustaceans.");
@@ -702,31 +702,40 @@ public class Game
                         setPlayerMessage("Tūī will live where there is a balance of ground cover, shrubs and trees.");
                     } else if("Rat".equals(i.getName())){               // All rat and kiore facts were sourced from http://www.doc.govt.nz/nature/pests-and-threats/animal-pests/rats/
                         setPlayerMessage("Rats eat native animals and their eggs.");
-                        addFactToList("Rats eat native animals and their eggs.");
+                        //addFactToList("Rats eat native animals and their eggs.");
+                        addFactToList("Rat");
                     } else if("Cat".equals(i.getName())){
                         setPlayerMessage("Cats can do alot of damage to our native species by hunting vurnerable birds such as kiwi.");
-                        addFactToList("Cats can do alot of damage to our native species by hunting vurnerable birds such as kiwi.");
+                        //addFactToList("Cats can do alot of damage to our native species by hunting vurnerable birds such as kiwi.");
+                        addFactToList("Cat");
                     } else if("Kiore".equals(i.getName())){
                         setPlayerMessage("Kiore eat a wide range of native fruit and plants, which puts them in competition with the native wildlife for food.");
-                        addFactToList("Kiore eat a wide range of native fruit and plants, which puts them in competition with the native wildlife for food.");
+                        //addFactToList("Kiore eat a wide range of native fruit and plants, which puts them in competition with the native wildlife for food.");
+                        addFactToList("Kiore");
                     } else if("Stoat".equals(i.getName())){             // All stoat facts were sourced from http://www.doc.govt.nz/nature/pests-and-threats/animal-pests/stoats/
                         setPlayerMessage("Stoats are known predators of many native birds and feed heavily on reptiles and invertebrates.");
-                        addFactToList("Stoats are known predators of many native birds and feed heavily on reptiles and invertebrates.");
+                        //addFactToList("Stoats are known predators of many native birds and feed heavily on reptiles and invertebrates.");
+                        addFactToList("Stoat");
                     } else if("Possum".equals(i.getName())){            // All possum facts were sourced from http://www.doc.govt.nz/nature/pests-and-threats/animal-pests/possums/
                         setPlayerMessage("Possums compete with native birds for habitat and for food such as insects and berries.");
-                        addFactToList("Possums compete with native birds for habitat and for food such as insects and berries.");
+                        //addFactToList("Possums compete with native birds for habitat and for food such as insects and berries.");
+                        addFactToList("Possum");
                     } else if("Bat".equals(i.getName())){               // All bat facts were sourced from http://www.doc.govt.nz/nature/native-animals/bats-pekapeka/long-tailed-bat/
                         setPlayerMessage("New Zealand's bats are rapidly heading towards extinction caused by rat plagues.");
-                        addFactToList("New Zealand's bats are rapidly heading towards extinction caused by rat plagues.");
+                        //addFactToList("New Zealand's bats are rapidly heading towards extinction caused by rat plagues.");
+                        addFactToList("Bat");
                     } else if("Weta".equals(i.getName())){              // All weta facts were sourced from http://www.doc.govt.nz/nature/native-animals/invertebrates/weta/
                         setPlayerMessage("Weta are nocturnal and live in a variety of habitats including grassland, shrub land, forests, and caves. ");
-                        addFactToList("Weta are nocturnal and live in a variety of habitats including grassland, shrub land, forests, and caves. ");
+                        //addFactToList("Weta are nocturnal and live in a variety of habitats including grassland, shrub land, forests, and caves. ");
+                        addFactToList("Weta");
                     } else if("Tuatara".equals(i.getName())){           // All tuatara facts were sourced from http://www.doc.govt.nz/nature/native-animals/reptiles-and-frogs/tuatara/
                         setPlayerMessage("Tuatara are New Zealand’s largest reptile, with adult males measuring up to about a half metre in length and weighing up to 1.5 kg when fully grown.");
-                        addFactToList("Tuatara are New Zealand’s largest reptile, with adult males measuring up to about a half metre in length and weighing up to 1.5 kg when fully grown.");
+                        //addFactToList("Tuatara are New Zealand’s largest reptile, with adult males measuring up to about a half metre in length and weighing up to 1.5 kg when fully grown.");
+                        addFactToList("Tuatara");
                     } else if("Kakapo".equals(i.getName())){           // All kakapo facts were sourced from http://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/kakapo/
                         setPlayerMessage("The kākāpō (night parrot) is one of New Zealand’s unique treasures with fewer than 160 known surviving birds.");
-                        addFactToList("The kākāpō (night parrot) is one of New Zealand’s unique treasures with fewer than 160 known surviving birds.");
+                        //addFactToList("The kākāpō (night parrot) is one of New Zealand’s unique treasures with fewer than 160 known surviving birds.");
+                        addFactToList("Kakapo");
                     }
                 }
             }
@@ -1174,6 +1183,15 @@ public class Game
     
     public int getDifficulty(){
         return this.difficulty;
+    }
+    
+    /**
+     * @Author : Jeff Choi
+     * @since 30/05/2017
+     * @return numKiwi
+     */
+    public int getNumKiwi(){
+        return numKiwi;
     }
 
     private Island island;

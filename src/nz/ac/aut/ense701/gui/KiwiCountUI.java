@@ -64,6 +64,9 @@ public class KiwiCountUI
 //            game.createNewGame();
                dispose();
                // call bonusQuiz Ui
+               //BonusQuizUI quiz = new BonusQuizUI(game.getFacts(), game.getPoints(), game.getNumKiwi);
+               //quiz.setVisible(true);
+               
                WelcomeScreen welcome = new WelcomeScreen();
 //               welcome.show();
                welcome.setVisible(true);
