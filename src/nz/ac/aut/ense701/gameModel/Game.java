@@ -1166,7 +1166,14 @@ public class Game
             if ( occupant != null ) island.addOccupant(occPos, occupant);
         }
     }    
-
+    
+    public void setDifficulty(int difficulty){
+        this.difficulty = difficulty;
+    }
+    
+    public int getDifficulty(){
+        return this.difficulty;
+    }
 
     private Island island;
     private Player player;
@@ -1191,6 +1198,7 @@ public class Game
     private int points = 0;
     
     private ArrayList<String> facts;
+    private int difficulty;
                         
 
     
