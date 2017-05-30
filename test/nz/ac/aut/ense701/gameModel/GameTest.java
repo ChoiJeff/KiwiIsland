@@ -1,5 +1,6 @@
 package nz.ac.aut.ense701.gameModel;
 
+import java.util.ArrayList;
 import org.junit.Test;
 
 /**
@@ -536,5 +537,48 @@ public class GameTest extends junit.framework.TestCase
             
         }
         return success;
+    }
+    /**
+     * Author : Jeff Choi
+     * Date : 30/05/2017
+     */
+    @Test
+    public void testAddFactToList(){
+        
+        game.addFactToList("This is a fact");
+        
+        assertEquals("This is a fact", game.getFacts().get(0));
+    }
+    
+    @Test
+    public void testReadFactsFromList(){
+        game.addFactToList("This is fact 1");
+        game.addFactToList("This is fact 2");
+        game.addFactToList("This is fact 3");
+        game.addFactToList("This is fact 4");
+        ArrayList<String> testFacts =  new ArrayList<String>();
+        testFacts = game.getFacts();
+        assertEquals(testFacts, game.getFacts());
+    }
+    
+    @Test
+    public void testSetDifficultyToEasy(){
+        game.setDifficulty(0);
+        
+        assertEquals(0,game.getDifficulty());
+    }
+    
+    @Test
+    public void testSetDifficultyToNormal(){
+        game.setDifficulty(1);
+        
+        assertEquals(1,game.getDifficulty());
+    }
+    
+    @Test
+    public void testSetDifficultyToHard(){
+        game.setDifficulty(2);
+        
+        assertEquals(2,game.getDifficulty());
     }
 }

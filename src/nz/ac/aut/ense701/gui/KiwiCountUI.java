@@ -63,6 +63,7 @@ public class KiwiCountUI
                     JOptionPane.INFORMATION_MESSAGE);
 //            game.createNewGame();
                dispose();
+               // call bonusQuiz Ui
                WelcomeScreen welcome = new WelcomeScreen();
 //               welcome.show();
                welcome.setVisible(true);
