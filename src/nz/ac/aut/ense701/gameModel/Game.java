@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
@@ -1199,8 +1200,5 @@ public class Game
     
     private ArrayList<String> facts;
     private int difficulty;
-                        
-
-    
-
+    private HashMap<Integer,String> highScores;
 }

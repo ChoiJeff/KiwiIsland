@@ -1,7 +1,14 @@
 package nz.ac.aut.ense701.gameModel;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.TemporaryFolder;
+import org.junit.After;
+import org.junit.Before;
+import static org.junit.Assert.*;
 
 /**
  * The test class GameTest.
@@ -9,7 +16,7 @@ import org.junit.Test;
  * @author  AS
  * @version S2 2011
  */
-public class GameTest extends junit.framework.TestCase
+public class GameTest 
 {
     Game       game;
     Player     player;
@@ -28,8 +35,8 @@ public class GameTest extends junit.framework.TestCase
      *
      * Called before every test case method.
      */
-    @Override
-    protected void setUp()
+    @Before
+    public void setUp()
     {
         // Create a new game from the data file.
         // Player is in position 2,0 & has 100 units of stamina
@@ -44,8 +51,8 @@ public class GameTest extends junit.framework.TestCase
      *
      * Called after every test case method.
      */
-    @Override
-    protected void tearDown()
+    @After
+    public void tearDown()
     {
         game = null;
         player = null;
@@ -102,12 +109,12 @@ public class GameTest extends junit.framework.TestCase
         assertEquals("Check column number", game.getNumRows(), 10);
     }
     
-    @Test
-    public void testGetPlayer(){
-        String name = player.getName();
-        String checkName = "River Song";
-        assertTrue("Check player name", name.equals(checkName) );
-    } 
+//    @Test
+//    public void testGetPlayer(){
+//        String name = player.getName();
+//        String checkName = "River Song";
+//        assertTrue("Check player name", name.equals(checkName) );
+//    } 
 
     @Test
     public void testGetInitialState(){
@@ -580,5 +587,16 @@ public class GameTest extends junit.framework.TestCase
         game.setDifficulty(2);
         
         assertEquals(2,game.getDifficulty());
+    }
+    
+    @Rule
+    public TemporaryFolder testFolder = new TemporaryFolder();
+ 
+    @Test
+    public void testInTempFolder() throws IOException {
+        File tempFile = testFolder.newFile("file.txt");
+        File tempFolder = testFolder.newFolder("folder");
+        System.out.println("Test folder: " + testFolder.getRoot());
+        // test...
     }
 }
