@@ -3,11 +3,13 @@ package nz.ac.aut.ense701.gameModel;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -1175,6 +1177,27 @@ public class Game
     public int getDifficulty(){
         return this.difficulty;
     }
+    
+    public void setScores(HashMap<Integer,String> highScores){
+        this.highScores = highScores;
+    }
+    
+    public void saveScore(File scores){
+        try {
+            out = new PrintWriter(scores);
+            for (Map.Entry<Integer, String> entry : highScores.entrySet()) {
+                out.println(entry.getKey() + " " + entry.getValue());
+            }
+            out.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (out != null) {
+                out.close();
+                out = null;
+            }
+        }
+    }
 
     private Island island;
     private Player player;
@@ -1201,4 +1224,5 @@ public class Game
     private ArrayList<String> facts;
     private int difficulty;
     private HashMap<Integer,String> highScores;
+    private PrintWriter out;
 }
