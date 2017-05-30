@@ -1,6 +1,8 @@
 package nz.ac.aut.ense701.gameModel;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -617,6 +619,78 @@ public class GameTest
         testMap.put(70, "Steph");
         testMap.put(47, "Sarah");
         game.setScores(testMap);
-        game.saveScore(tempFile);
+        game.saveScores(tempFile);
+        BufferedReader br = new BufferedReader(new FileReader(tempFile));
+        try {
+            StringBuilder sb = new StringBuilder();
+            String line = br.readLine();
+
+            while (line != null) {
+                sb.append(line);
+                sb.append("\n");
+                line = br.readLine();
+            }
+            System.out.println(sb.toString());
+        } finally {
+            br.close();
+        }
+    }
+    
+    @Test
+    public void testReadScoresFromTxtFile() throws IOException{
+        File tempFile = testFolder.newFile("file.txt");
+        File tempFolder = testFolder.newFolder("folder");
+        HashMap<Integer, String> testMap = new HashMap<Integer,String>();
+        testMap.put(160, "Gavin");
+        testMap.put(60, "Jeff");
+        testMap.put(170, "Dom");
+        testMap.put(80, "Ranga");
+        testMap.put(90, "Jamie");
+        testMap.put(100, "Steve");
+        testMap.put(120, "Dave");
+        testMap.put(50, "Bob");
+        testMap.put(70, "Steph");
+        testMap.put(47, "Sarah");
+        game.setScores(testMap);
+        game.saveScores(tempFile); // save scores to txt file
+        File tempFile2 = testFolder.newFile("textScores.txt"); // create empty txt file
+        HashMap<Integer, String> emptyMap = new HashMap<Integer,String>();
+        game.setScores(emptyMap); // set highScores to empty Map
+        game.readScores(tempFile); // populate the newly cleared Map from file
+        assertEquals(testMap, game.getScores());
+    }
+    
+    @Test
+    public void testIfScoreIsNotHighScore(){
+        HashMap<Integer, String> testMap = new HashMap<Integer,String>();
+        testMap.put(160, "Gavin");
+        testMap.put(60, "Jeff");
+        testMap.put(170, "Dom");
+        testMap.put(80, "Ranga");
+        testMap.put(90, "Jamie");
+        testMap.put(100, "Steve");
+        testMap.put(120, "Dave");
+        testMap.put(50, "Bob");
+        testMap.put(70, "Steph");
+        testMap.put(47, "Sarah");
+        game.setScores(testMap);
+        assertFalse(game.isScoreHigh(10));
+    }
+    
+    @Test
+    public void testIfScoreIsHighScore(){
+        HashMap<Integer, String> testMap = new HashMap<Integer,String>();
+        testMap.put(160, "Gavin");
+        testMap.put(60, "Jeff");
+        testMap.put(170, "Dom");
+        testMap.put(80, "Ranga");
+        testMap.put(90, "Jamie");
+        testMap.put(100, "Steve");
+        testMap.put(120, "Dave");
+        testMap.put(50, "Bob");
+        testMap.put(70, "Steph");
+        testMap.put(47, "Sarah");
+        game.setScores(testMap);
+        assertTrue(game.isScoreHigh(61));
     }
 }
