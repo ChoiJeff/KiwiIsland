@@ -560,4 +560,25 @@ public class GameTest extends junit.framework.TestCase
         testFacts = game.getFacts();
         assertEquals(testFacts, game.getFacts());
     }
+    
+    @Test
+    public void testSetDifficultyToEasy(){
+        game.setDifficulty(0);
+        
+        assertEquals(0,game.getDifficulty());
+    }
+    
+    @Test
+    public void testSetDifficultyToNormal(){
+        game.setDifficulty(1);
+        
+        assertEquals(1,game.getDifficulty());
+    }
+    
+    @Test
+    public void testSetDifficultyToHard(){
+        game.setDifficulty(2);
+        
+        assertEquals(2,game.getDifficulty());
+    }
 }
