@@ -2,11 +2,13 @@ package nz.ac.aut.ense701.gui;
 
 import java.awt.Component;
 import java.awt.GridLayout;
+import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import javax.swing.JOptionPane;
+import javax.swing.Timer;
 import nz.ac.aut.ense701.gameModel.Game;
 import nz.ac.aut.ense701.gameModel.GameEventListener;
 import nz.ac.aut.ense701.gameModel.GameState;
@@ -62,7 +64,8 @@ public class KiwiCountUI
 //            game.createNewGame();
                dispose();
                WelcomeScreen welcome = new WelcomeScreen();
-               welcome.show();
+//               welcome.show();
+               welcome.setVisible(true);
                
         }
         else if ( game.getState() == GameState.WON )
@@ -74,7 +77,8 @@ public class KiwiCountUI
 //            game.createNewGame();
                dispose();
                WelcomeScreen welcome = new WelcomeScreen();
-               welcome.show();
+//               welcome.show();
+               welcome.setVisible(true);
         }
         else if (game.messageForPlayer())
         {
@@ -441,6 +445,11 @@ public class KiwiCountUI
         });
         listInventory.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         listInventory.setVisibleRowCount(3);
+        listInventory.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                listInventoryFocusGained(evt);
+            }
+        });
         listInventory.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 listInventoryValueChanged(evt);
@@ -511,6 +520,11 @@ public class KiwiCountUI
         });
         listObjects.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         listObjects.setVisibleRowCount(3);
+        listObjects.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                listObjectsFocusGained(evt);
+            }
+        });
         listObjects.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 listObjectsValueChanged(evt);
@@ -599,14 +613,10 @@ public class KiwiCountUI
     private void btnCollectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCollectActionPerformed
         Object obj = listObjects.getSelectedValue();
         game.collectItem(obj);
-        listObjects.setFocusable(false);
     }//GEN-LAST:event_btnCollectActionPerformed
 
     private void btnDropActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDropActionPerformed
         game.dropItem(listInventory.getSelectedValue());
-        // focus is changed via the cycle of current layout, this will need to be changed if layout is changed
-        // currently focus goes to listObjects after this button is used
-        listObjects.setFocusable(false);
     }//GEN-LAST:event_btnDropActionPerformed
 
     private void listObjectsValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_listObjectsValueChanged
@@ -617,13 +627,11 @@ public class KiwiCountUI
             btnCount.setEnabled(game.canCount(occ));
             listObjects.setToolTipText(game.getOccupantDescription(occ));
         }
+        listObjects.setFocusable(false);
     }//GEN-LAST:event_listObjectsValueChanged
 
     private void btnUseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUseActionPerformed
         game.useItem( listInventory.getSelectedValue());
-        // focus is changed via the cycle of current layout, this will need to be changed if layout is changed
-        // currently focus goes to listObjects after this button is used
-        listObjects.setFocusable(false);
     }//GEN-LAST:event_btnUseActionPerformed
 
     private void listInventoryValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_listInventoryValueChanged
@@ -634,12 +642,22 @@ public class KiwiCountUI
             btnUse.setEnabled(game.canUse(item));
             listInventory.setToolTipText(game.getOccupantDescription(item));
         }
+        listInventory.setFocusable(false);
     }//GEN-LAST:event_listInventoryValueChanged
 
     private void btnCountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCountActionPerformed
 
         game.countKiwi();
     }//GEN-LAST:event_btnCountActionPerformed
+
+    private void listInventoryFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_listInventoryFocusGained
+
+        listInventory.setFocusable(false);
+    }//GEN-LAST:event_listInventoryFocusGained
+
+    private void listObjectsFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_listObjectsFocusGained
+       listObjects.setFocusable(false);
+    }//GEN-LAST:event_listObjectsFocusGained
     
     /**
      * Creates and initialises the island grid.
