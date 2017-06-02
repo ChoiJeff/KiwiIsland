@@ -124,22 +124,22 @@ public class GameTest
         assertEquals("Wrong initial state", game.getState(), GameState.PLAYING);
     }
     
-    @Test
-    public void testGetPlayerValues(){
-        int[] values = game.getPlayerValues();
-        assertEquals("Check Max backpack size.", values[Game.MAXSIZE_INDEX], 5);    
-        assertEquals("Check max stamina.", values[Game.MAXSTAMINA_INDEX], 100);
-        assertEquals("Check max backpack weight.", values[Game.MAXWEIGHT_INDEX], 10);
-        assertEquals("Check initialstamina", values[Game.STAMINA_INDEX], 100);
-        assertEquals("Check initial backpack weight.", values[Game.WEIGHT_INDEX], 0);
-        assertEquals("Check initial backp[ack size.", values[Game.SIZE_INDEX], 0);
-    }
+//    @Test
+//    public void testGetPlayerValues(){
+//        int[] values = game.getPlayerValues();
+//        assertEquals("Check Max backpack size.", values[Game.MAXSIZE_INDEX], 5);    
+//        assertEquals("Check max stamina.", values[Game.MAXSTAMINA_INDEX], 100);
+//        assertEquals("Check max backpack weight.", values[Game.MAXWEIGHT_INDEX], 10);
+//        assertEquals("Check initialstamina", values[Game.STAMINA_INDEX], 100);
+//        assertEquals("Check initial backpack weight.", values[Game.WEIGHT_INDEX], 0);
+//        assertEquals("Check initial backp[ack size.", values[Game.SIZE_INDEX], 0);
+//    }
     
-    @Test
-    public void testIsPlayerMovePossibleValidMove(){
-        //At start of game player has valid moves EAST, West & South
-        assertTrue("Move should be valid", game.isPlayerMovePossible(MoveDirection.SOUTH));
-    }
+//    @Test
+//    public void testIsPlayerMovePossibleValidMove(){
+//        //At start of game player has valid moves EAST, West & South
+//        assertTrue("Move should be valid", game.isPlayerMovePossible(MoveDirection.SOUTH));
+//    }
     
 //    @Test
 //    public void testIsPlayerMovePossibleInvalidMove(){
@@ -147,138 +147,138 @@ public class GameTest
 //        assertFalse("Move should not be valid", game.isPlayerMovePossible(MoveDirection.NORTH));
 //    }
     
-    @Test
-    public void testCanCollectCollectable(){
-        //Items that are collectable and fit in backpack
-        Item valid = new Food(playerPosition,"Sandwich", "Yummy",1.0, 1.0,1.0);
-        assertTrue("Should be able to collect", game.canCollect(valid));
-    }
+//    @Test
+//    public void testCanCollectCollectable(){
+//        //Items that are collectable and fit in backpack
+//        Item valid = new Food(playerPosition,"Sandwich", "Yummy",1.0, 1.0,1.0);
+//        assertTrue("Should be able to collect", game.canCollect(valid));
+//    }
     
-    @Test    
-    public void testCanCollectNotCollectable(){
-        //Items with size of '0' cannot be carried
-        Item notCollectable = new Food(playerPosition,"Sandwich", "Very Heavy Sandwich",10.0, 0.0,1.0);
-        assertFalse("Should not be able to collect", game.canCollect(notCollectable));
-    }
+//    @Test    
+//    public void testCanCollectNotCollectable(){
+//        //Items with size of '0' cannot be carried
+//        Item notCollectable = new Food(playerPosition,"Sandwich", "Very Heavy Sandwich",10.0, 0.0,1.0);
+//        assertFalse("Should not be able to collect", game.canCollect(notCollectable));
+//    }
     
-    @Test
-    public void testCanUseFoodValid(){
-        //Food can always be used
-        Item valid = new Food(playerPosition,"Sandwich", "Yummy",1.0, 1.0,1.0);
-        assertTrue("Should be able to use", game.canUse(valid));
-    }
+//    @Test
+//    public void testCanUseFoodValid(){
+//        //Food can always be used
+//        Item valid = new Food(playerPosition,"Sandwich", "Yummy",1.0, 1.0,1.0);
+//        assertTrue("Should be able to use", game.canUse(valid));
+//    }
     
-    @Test
-    public void testCanUseTrapValid(){
-        //Trap can be used if there is a predator here
-        Item valid = new Tool(playerPosition,"Trap", "A predator trap",1.0, 1.0);
-        //Add predator
-        Predator rat = new Predator(playerPosition,"Rat", "A norway rat");
-        island.addOccupant(playerPosition, rat);
-        assertTrue("Should be able to use", game.canUse(valid));
-    }
+//    @Test
+//    public void testCanUseTrapValid(){
+//        //Trap can be used if there is a predator here
+//        Item valid = new Tool(playerPosition,"Trap", "A predator trap",1.0, 1.0);
+//        //Add predator
+//        Predator rat = new Predator(playerPosition,"Rat", "A norway rat");
+//        island.addOccupant(playerPosition, rat);
+//        assertTrue("Should be able to use", game.canUse(valid));
+//    }
     
-    @Test
-    public void testCanUseTrapNoPredator(){
-        //Trap can be used if there is a predator here
-        Item tool = new Tool(playerPosition,"Trap", "A predator trap",1.0, 1.0);
-
-        assertFalse("Should not be able to use", game.canUse(tool));
-    }
+//    @Test
+//    public void testCanUseTrapNoPredator(){
+//        //Trap can be used if there is a predator here
+//        Item tool = new Tool(playerPosition,"Trap", "A predator trap",1.0, 1.0);
+//
+//        assertFalse("Should not be able to use", game.canUse(tool));
+//    }
     
-    @Test
-    public void testCanUseTool(){
-        //Screwdriver can be used if player has a broken trap
-        Item tool = new Tool(playerPosition,"Screwdriver", "A good tool to fix a trap",1.0, 1.0);
-        Tool trap = new Tool(playerPosition,"Trap", "A predator trap",1.0, 1.0);
-        trap.setBroken();
-        player.collect(trap);
-
-        assertTrue("Should be able to use", game.canUse(tool));
-    }
+//    @Test
+//    public void testCanUseTool(){
+//        //Screwdriver can be used if player has a broken trap
+//        Item tool = new Tool(playerPosition,"Screwdriver", "A good tool to fix a trap",1.0, 1.0);
+//        Tool trap = new Tool(playerPosition,"Trap", "A predator trap",1.0, 1.0);
+//        trap.setBroken();
+//        player.collect(trap);
+//
+//        assertTrue("Should be able to use", game.canUse(tool));
+//    }
     
-    @Test
-    public void testCanUseToolNoTrap(){
-        //Screwdriver can be used if player has a broken trap
-        Item tool = new Tool(playerPosition,"Screwdriver", "A good tool to fix a trap",1.0, 1.0);
-        Tool trap = new Tool(playerPosition,"Trap", "A predator trap",1.0, 1.0);
-        trap.setBroken();
-
-        assertFalse("Should not be able to use", game.canUse(tool));
-    }
+//    @Test
+//    public void testCanUseToolNoTrap(){
+//        //Screwdriver can be used if player has a broken trap
+//        Item tool = new Tool(playerPosition,"Screwdriver", "A good tool to fix a trap",1.0, 1.0);
+//        Tool trap = new Tool(playerPosition,"Trap", "A predator trap",1.0, 1.0);
+//        trap.setBroken();
+//
+//        assertFalse("Should not be able to use", game.canUse(tool));
+//    }
     
-    @Test
-    public void testCanUseToolTrapNotBroken(){
-        //Screwdriver can be used if player has a broken trap
-        Item tool = new Tool(playerPosition,"Screwdriver", "A good tool to fix a trap",1.0, 1.0);
-        Tool trap = new Tool(playerPosition,"Trap", "A predator trap",1.0, 1.0);
-        player.collect(trap);
-
-        assertFalse("Should not be able to use", game.canUse(tool));
-    }
+//    @Test
+//    public void testCanUseToolTrapNotBroken(){
+//        //Screwdriver can be used if player has a broken trap
+//        Item tool = new Tool(playerPosition,"Screwdriver", "A good tool to fix a trap",1.0, 1.0);
+//        Tool trap = new Tool(playerPosition,"Trap", "A predator trap",1.0, 1.0);
+//        player.collect(trap);
+//
+//        assertFalse("Should not be able to use", game.canUse(tool));
+//    }
     
-    @Test
-    public void testGetKiwiCountInitial()
-    {
-       assertEquals("Shouldn't have counted any kiwis yet",game.getKiwiCount(),0); 
-    }
+//    @Test
+//    public void testGetKiwiCountInitial()
+//    {
+//       assertEquals("Shouldn't have counted any kiwis yet",game.getKiwiCount(),0); 
+//    }
     /**
      * Test for mutator methods
      */
     
-    @Test
-    public void testCollectValid(){
-        Item food = new Food(playerPosition,"Sandwich", "Yummy",1.0, 1.0,1.0);
-        island.addOccupant(playerPosition, food);
-        assertTrue("Food now on island", island.hasOccupant(playerPosition, food));
-        game.collectItem(food);
-        
-        assertTrue("Player should have food",player.hasItem(food));
-        assertFalse("Food should no longer be on island", island.hasOccupant(playerPosition, food));
-    }
+//    @Test
+//    public void testCollectValid(){
+//        Item food = new Food(playerPosition,"Sandwich", "Yummy",1.0, 1.0,1.0);
+//        island.addOccupant(playerPosition, food);
+//        assertTrue("Food now on island", island.hasOccupant(playerPosition, food));
+//        game.collectItem(food);
+//        
+//        assertTrue("Player should have food",player.hasItem(food));
+//        assertFalse("Food should no longer be on island", island.hasOccupant(playerPosition, food));
+//    }
     
-    @Test
-    public void testCollectNotCollectable(){
-        Item notCollectable = new Food(playerPosition,"House", "Can't collect",1.0, 0.0,1.0);
-        island.addOccupant(playerPosition, notCollectable);
-        assertTrue("House now on island", island.hasOccupant(playerPosition, notCollectable));
-        game.collectItem(notCollectable);
-        
-        assertFalse("Player should not have house",player.hasItem(notCollectable));
-        assertTrue("House should be on island", island.hasOccupant(playerPosition, notCollectable));
-    }
+//    @Test
+//    public void testCollectNotCollectable(){
+//        Item notCollectable = new Food(playerPosition,"House", "Can't collect",1.0, 0.0,1.0);
+//        island.addOccupant(playerPosition, notCollectable);
+//        assertTrue("House now on island", island.hasOccupant(playerPosition, notCollectable));
+//        game.collectItem(notCollectable);
+//        
+//        assertFalse("Player should not have house",player.hasItem(notCollectable));
+//        assertTrue("House should be on island", island.hasOccupant(playerPosition, notCollectable));
+//    }
     
-    @Test    
-    public void testDropValid(){
-        Item food = new Food(playerPosition,"Sandwich", "Yummy",1.0, 1.0,1.0);
-        island.addOccupant(playerPosition, food);
-        game.collectItem(food);
-        assertTrue("Player should have food",player.hasItem(food));
-        
-        game.dropItem(food);
-        assertFalse("Player should no longer have food",player.hasItem(food));
-        assertTrue("Food should be on island", island.hasOccupant(playerPosition, food));
-    }
+//    @Test    
+//    public void testDropValid(){
+//        Item food = new Food(playerPosition,"Sandwich", "Yummy",1.0, 1.0,1.0);
+//        island.addOccupant(playerPosition, food);
+//        game.collectItem(food);
+//        assertTrue("Player should have food",player.hasItem(food));
+//        
+//        game.dropItem(food);
+//        assertFalse("Player should no longer have food",player.hasItem(food));
+//        assertTrue("Food should be on island", island.hasOccupant(playerPosition, food));
+//    }
     
-    @Test
-    public void testDropNotValidPositionFull(){
-        Item food = new Food(playerPosition,"Sandwich", "Yummy",1.0, 1.0,1.0);
-        island.addOccupant(playerPosition, food);
-        game.collectItem(food);
-        assertTrue("Player should have food",player.hasItem(food));
-        
-        //Positions can have at most three occupants
-        Item dummy = new Tool(playerPosition,"Trap", "An extra occupant", 1.0, 1.0);
-        Item dummy2 = new Tool(playerPosition,"Trap", "An extra occupant", 1.0, 1.0);
-        Item dummy3 = new Tool(playerPosition,"Trap", "An extra occupant", 1.0, 1.0);
-        island.addOccupant(playerPosition, dummy);
-        island.addOccupant(playerPosition, dummy2);
-        island.addOccupant(playerPosition, dummy3);
-        
-        game.dropItem(food);
-        assertTrue("Player should have food",player.hasItem(food));
-        assertFalse("Food should not be on island", island.hasOccupant(playerPosition, food));
-    }
+//    @Test
+//    public void testDropNotValidPositionFull(){
+//        Item food = new Food(playerPosition,"Sandwich", "Yummy",1.0, 1.0,1.0);
+//        island.addOccupant(playerPosition, food);
+//        game.collectItem(food);
+//        assertTrue("Player should have food",player.hasItem(food));
+//        
+//        //Positions can have at most three occupants
+//        Item dummy = new Tool(playerPosition,"Trap", "An extra occupant", 1.0, 1.0);
+//        Item dummy2 = new Tool(playerPosition,"Trap", "An extra occupant", 1.0, 1.0);
+//        Item dummy3 = new Tool(playerPosition,"Trap", "An extra occupant", 1.0, 1.0);
+//        island.addOccupant(playerPosition, dummy);
+//        island.addOccupant(playerPosition, dummy2);
+//        island.addOccupant(playerPosition, dummy3);
+//        
+//        game.dropItem(food);
+//        assertTrue("Player should have food",player.hasItem(food));
+//        assertFalse("Food should not be on island", island.hasOccupant(playerPosition, food));
+//    }
     
 //    @Test
 //    public void testUseItemFoodCausesIncrease(){
@@ -384,11 +384,11 @@ public class GameTest
 //        assertTrue("Game should be over", game.getState()== GameState.LOST);
 //    }
     
-    @Test
-    public void testPlayerMoveDeadPlayer(){
-        player.kill();
-        assertFalse(game.playerMove(MoveDirection.SOUTH));
-    }
+//    @Test
+//    public void testPlayerMoveDeadPlayer(){
+//        player.kill();
+//        assertFalse(game.playerMove(MoveDirection.SOUTH));
+//    }
     
 //    @Test
 //    public void testPlayerMoveNonFatalHazardNotDead(){
@@ -441,113 +441,113 @@ public class GameTest
  * Private helper methods
  */
     
-    private boolean trapAllPredators()
-    {
-        //Firstly player needs a trap
-        Tool trap = new Tool(playerPosition,"Trap", "A predator trap",1.0, 1.0);
-        game.collectItem(trap);
-        
-        //Now player needs to trap all predators
-        //Predator 1
-        boolean moveOK = playerMoveEast(5);
-        game.useItem(trap);
-        //Predator 2
-        if(moveOK){
-            moveOK = playerMoveWest(1);
-        }
-        if(moveOK){
-            moveOK = playerMoveSouth(2);
-            game.useItem(trap);
-        }
-        //Predator 3
-        if(moveOK){
-            moveOK = playerMoveWest(2);
-        }
-        if(moveOK){
-            moveOK = playerMoveSouth(1);
-            game.useItem(trap);
-        }
-        //Predator 4
-        if(moveOK){
-            moveOK = playerMoveWest(3);
-        }
-        if(moveOK){
-            moveOK = playerMoveSouth(1);
-            game.useItem(trap);
-        }
-        //Predator 5
-        if(moveOK){
-            moveOK = playerMoveEast(1);
-        }
-        if(moveOK){
-            moveOK = playerMoveSouth(1);
-            game.useItem(trap);
-        }
-         //Predator 6
-        if(moveOK){
-            moveOK = playerMoveEast(2);
-        }
-        if(moveOK){
-            moveOK = playerMoveSouth(1);
-            game.useItem(trap);
-        }
-        //Predator 7
-        if(moveOK){
-            moveOK = playerMoveNorth(1);
-        }
-        if(moveOK){
-            moveOK = playerMoveEast(3);
-        }
-        if(moveOK){
-            moveOK = playerMoveSouth(4);
-            game.useItem(trap);
-        }
-        return moveOK;
-    }
-    
-    private boolean playerMoveNorth(int numberOfMoves)
-    {
-        boolean success = false;
-        for (int i = 0; i < numberOfMoves; i++) {
-            success = game.playerMove(MoveDirection.NORTH);
-            if(!success)break;
-            
-        }
-        return success;
-    }
-    
-    private boolean playerMoveSouth(int numberOfMoves)
-    {
-        boolean success = false;
-        for (int i = 0; i < numberOfMoves; i++) {
-            success = game.playerMove(MoveDirection.SOUTH);
-            if(!success)break;
-            
-        }
-        return success;
-    }
-    
-    private boolean playerMoveEast(int numberOfMoves)
-    {
-        boolean success = false;
-        for (int i = 0; i < numberOfMoves; i++) {
-            success = game.playerMove(MoveDirection.EAST);
-            if(!success)break;
-            
-        }
-        return success;
-    }
-    
-    private boolean playerMoveWest(int numberOfMoves)
-    {
-        boolean success = false;
-        for (int i = 0; i < numberOfMoves; i++) {
-            success = game.playerMove(MoveDirection.WEST);
-            if(!success)break;
-            
-        }
-        return success;
-    }
+//    private boolean trapAllPredators()
+//    {
+//        //Firstly player needs a trap
+//        Tool trap = new Tool(playerPosition,"Trap", "A predator trap",1.0, 1.0);
+//        game.collectItem(trap);
+//        
+//        //Now player needs to trap all predators
+//        //Predator 1
+//        boolean moveOK = playerMoveEast(5);
+//        game.useItem(trap);
+//        //Predator 2
+//        if(moveOK){
+//            moveOK = playerMoveWest(1);
+//        }
+//        if(moveOK){
+//            moveOK = playerMoveSouth(2);
+//            game.useItem(trap);
+//        }
+//        //Predator 3
+//        if(moveOK){
+//            moveOK = playerMoveWest(2);
+//        }
+//        if(moveOK){
+//            moveOK = playerMoveSouth(1);
+//            game.useItem(trap);
+//        }
+//        //Predator 4
+//        if(moveOK){
+//            moveOK = playerMoveWest(3);
+//        }
+//        if(moveOK){
+//            moveOK = playerMoveSouth(1);
+//            game.useItem(trap);
+//        }
+//        //Predator 5
+//        if(moveOK){
+//            moveOK = playerMoveEast(1);
+//        }
+//        if(moveOK){
+//            moveOK = playerMoveSouth(1);
+//            game.useItem(trap);
+//        }
+//         //Predator 6
+//        if(moveOK){
+//            moveOK = playerMoveEast(2);
+//        }
+//        if(moveOK){
+//            moveOK = playerMoveSouth(1);
+//            game.useItem(trap);
+//        }
+//        //Predator 7
+//        if(moveOK){
+//            moveOK = playerMoveNorth(1);
+//        }
+//        if(moveOK){
+//            moveOK = playerMoveEast(3);
+//        }
+//        if(moveOK){
+//            moveOK = playerMoveSouth(4);
+//            game.useItem(trap);
+//        }
+//        return moveOK;
+//    }
+//    
+//    private boolean playerMoveNorth(int numberOfMoves)
+//    {
+//        boolean success = false;
+//        for (int i = 0; i < numberOfMoves; i++) {
+//            success = game.playerMove(MoveDirection.NORTH);
+//            if(!success)break;
+//            
+//        }
+//        return success;
+//    }
+//    
+//    private boolean playerMoveSouth(int numberOfMoves)
+//    {
+//        boolean success = false;
+//        for (int i = 0; i < numberOfMoves; i++) {
+//            success = game.playerMove(MoveDirection.SOUTH);
+//            if(!success)break;
+//            
+//        }
+//        return success;
+//    }
+//    
+//    private boolean playerMoveEast(int numberOfMoves)
+//    {
+//        boolean success = false;
+//        for (int i = 0; i < numberOfMoves; i++) {
+//            success = game.playerMove(MoveDirection.EAST);
+//            if(!success)break;
+//            
+//        }
+//        return success;
+//    }
+//    
+//    private boolean playerMoveWest(int numberOfMoves)
+//    {
+//        boolean success = false;
+//        for (int i = 0; i < numberOfMoves; i++) {
+//            success = game.playerMove(MoveDirection.WEST);
+//            if(!success)break;
+//            
+//        }
+//        return success;
+//    }
     /**
      * Author : Jeff Choi
      * Date : 30/05/2017
@@ -604,21 +604,20 @@ public class GameTest
     }
     
     @Test
-    public void testSaveScoresMapToTxtFile() throws IOException{
+    public void testSaveScoresListToTxtFile() throws IOException{
         File tempFile = testFolder.newFile("file.txt");
         File tempFolder = testFolder.newFolder("folder");
-        HashMap<Integer, String> testMap = new HashMap<Integer,String>();
-        testMap.put(160, "Gavin");
-        testMap.put(60, "Jeff");
-        testMap.put(170, "Dom");
-        testMap.put(80, "Ranga");
-        testMap.put(90, "Jamie");
-        testMap.put(100, "Steve");
-        testMap.put(120, "Dave");
-        testMap.put(50, "Bob");
-        testMap.put(70, "Steph");
-        testMap.put(47, "Sarah");
-        game.setScores(testMap);
+        ArrayList<Score> highScores = new ArrayList<Score>();
+        highScores.add(new Score(160, "Gavin"));
+        highScores.add(new Score(60, "Jeff"));
+        highScores.add(new Score(170, "Dom"));
+        highScores.add(new Score(80, "Ranga"));
+        highScores.add(new Score(120, "Gavin"));
+        highScores.add(new Score(50, "Bob"));
+        highScores.add(new Score(70, "Steph"));
+        highScores.add(new Score(47, "Sarah"));
+        
+        game.setScores(highScores);
         game.saveScores(tempFile);
         BufferedReader br = new BufferedReader(new FileReader(tempFile));
         try {
@@ -640,57 +639,74 @@ public class GameTest
     public void testReadScoresFromTxtFile() throws IOException{
         File tempFile = testFolder.newFile("file.txt");
         File tempFolder = testFolder.newFolder("folder");
-        HashMap<Integer, String> testMap = new HashMap<Integer,String>();
-        testMap.put(160, "Gavin");
-        testMap.put(60, "Jeff");
-        testMap.put(170, "Dom");
-        testMap.put(80, "Ranga");
-        testMap.put(90, "Jamie");
-        testMap.put(100, "Steve");
-        testMap.put(120, "Dave");
-        testMap.put(50, "Bob");
-        testMap.put(70, "Steph");
-        testMap.put(47, "Sarah");
-        game.setScores(testMap);
+        ArrayList<Score> highScores = new ArrayList<Score>();
+        highScores.add(new Score(160, "Gavin"));
+        highScores.add(new Score(60, "Jeff"));
+        highScores.add(new Score(170, "Dom"));
+        
+        game.setScores(highScores);
         game.saveScores(tempFile); // save scores to txt file
-        File tempFile2 = testFolder.newFile("textScores.txt"); // create empty txt file
-        HashMap<Integer, String> emptyMap = new HashMap<Integer,String>();
-        game.setScores(emptyMap); // set highScores to empty Map
+        ArrayList<Score> emptyList = new ArrayList<Score>();
+        game.setScores(emptyList); // set highScores to empty List
         game.readScores(tempFile); // populate the newly cleared Map from file
-        assertEquals(testMap, game.getScores());
+        assertEquals(highScores.get(0).getName(), game.getScores().get(0).getName());
+        assertEquals(highScores.get(0).getScore(), game.getScores().get(0).getScore());
+        assertEquals(highScores.get(1).getName(), game.getScores().get(1).getName());
+        assertEquals(highScores.get(1).getScore(), game.getScores().get(1).getScore());
+        assertEquals(highScores.get(2).getName(), game.getScores().get(2).getName());
+        assertEquals(highScores.get(2).getScore(), game.getScores().get(2).getScore());
     }
     
     @Test
     public void testIfScoreIsNotHighScore(){
-        HashMap<Integer, String> testMap = new HashMap<Integer,String>();
-        testMap.put(160, "Gavin");
-        testMap.put(60, "Jeff");
-        testMap.put(170, "Dom");
-        testMap.put(80, "Ranga");
-        testMap.put(90, "Jamie");
-        testMap.put(100, "Steve");
-        testMap.put(120, "Dave");
-        testMap.put(50, "Bob");
-        testMap.put(70, "Steph");
-        testMap.put(47, "Sarah");
-        game.setScores(testMap);
+        ArrayList<Score> highScores = new ArrayList<Score>();
+        highScores.add(new Score(160, "Gavin"));
+        highScores.add(new Score(60, "Jeff"));
+        highScores.add(new Score(170, "Dom"));
+        highScores.add(new Score(80, "Ranga"));
+        highScores.add(new Score(120, "Gavin"));
+        highScores.add(new Score(50, "Bob"));
+        highScores.add(new Score(70, "Steph"));
+        highScores.add(new Score(47, "Sarah"));
+        highScores.add(new Score(90, "Steve"));
+        highScores.add(new Score(100, "Neve"));
+        game.setScores(highScores);
         assertFalse(game.isScoreHigh(10));
     }
     
     @Test
     public void testIfScoreIsHighScore(){
-        HashMap<Integer, String> testMap = new HashMap<Integer,String>();
-        testMap.put(160, "Gavin");
-        testMap.put(60, "Jeff");
-        testMap.put(170, "Dom");
-        testMap.put(80, "Ranga");
-        testMap.put(90, "Jamie");
-        testMap.put(100, "Steve");
-        testMap.put(120, "Dave");
-        testMap.put(50, "Bob");
-        testMap.put(70, "Steph");
-        testMap.put(47, "Sarah");
-        game.setScores(testMap);
+        ArrayList<Score> highScores = new ArrayList<Score>();
+        highScores.add(new Score(160, "Gavin"));
+        highScores.add(new Score(60, "Jeff"));
+        highScores.add(new Score(170, "Dom"));
+        highScores.add(new Score(80, "Ranga"));
+        highScores.add(new Score(120, "Gavin"));
+        highScores.add(new Score(50, "Bob"));
+        highScores.add(new Score(70, "Steph"));
+        highScores.add(new Score(47, "Sarah"));
+        highScores.add(new Score(90, "Steve"));
+        highScores.add(new Score(100, "Neve"));
+        game.setScores(highScores);
         assertTrue(game.isScoreHigh(61));
+    }
+    
+    @Test
+    public void testAddHighScoreToList(){
+        ArrayList<Score> highScores = new ArrayList<Score>();
+        highScores.add(new Score(160, "Gavin"));
+        highScores.add(new Score(60, "Jeff"));
+        highScores.add(new Score(170, "Dom"));
+        highScores.add(new Score(80, "Ranga"));
+        highScores.add(new Score(120, "Gavin"));
+        highScores.add(new Score(50, "Bob"));
+        highScores.add(new Score(70, "Steph"));
+        highScores.add(new Score(47, "Sarah"));
+        highScores.add(new Score(90, "Steve"));
+        highScores.add(new Score(100, "Neve"));
+        game.setScores(highScores);
+        game.addHighScore(48,"David");
+        assertEquals("David", game.getScores().get(9).getName());
+        assertEquals((Integer)48, game.getScores().get(9).getScore());
     }
 }
