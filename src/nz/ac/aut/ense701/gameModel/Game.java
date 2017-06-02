@@ -2,11 +2,14 @@ package nz.ac.aut.ense701.gameModel;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -58,6 +61,9 @@ public class Game
      */
     public void createNewGame()
     {
+        highScores = new ArrayList<Score>();
+        File file = new File("scores.txt");
+        readScores(file);
         facts = new ArrayList<String>();
         totalPredators = 0;
         predators = new ArrayList<Predator>();  // to keep the list of predators
@@ -1057,7 +1063,7 @@ public class Game
      * @param input data from the level file
      */
     private void setUpTerrain(Scanner input) 
-    {
+    {        
         for ( int row = 0 ; row < island.getNumRows() ; row++ ) 
         {
             String terrainRow = input.next();
@@ -1180,20 +1186,20 @@ public class Game
         return this.difficulty;
     }
     
-    public void setScores(HashMap<Integer,String> highScores){
+    public void setScores(ArrayList<Score> highScores){
         this.highScores = highScores;
     }
     
-    public HashMap<Integer,String> getScores(){
+    public ArrayList<Score> getScores(){
         return this.highScores;
     }
     
     public void saveScores(File scores){
         try {
             out = new PrintWriter(scores);
-            for (Map.Entry<Integer, String> entry : highScores.entrySet()) {
-                out.println(entry.getKey() + " " + entry.getValue());
-            }
+            for (Score score : highScores) {
+                out.println(score.getScore() + " " + score.getName());
+            } 
             out.flush();
         } catch (IOException e) {
             e.printStackTrace();
@@ -1212,7 +1218,7 @@ public class Game
             String[] splitLine;
             while ((line = in.readLine()) != null) {
                 splitLine = line.split(" ");
-                highScores.put(Integer.valueOf(splitLine[0]), splitLine[1]);
+                highScores.add(new Score(Integer.valueOf(splitLine[0]), splitLine[1]));
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -1227,7 +1233,27 @@ public class Game
             }
         }
     }
-
+    
+    public boolean isScoreHigh(Integer score){
+        Collections.sort(highScores);
+        Collections.reverse(highScores);
+        if(score>=highScores.get(9).getScore()){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    
+    public void addHighScore(Integer score, String name){
+        highScores.add(new Score(score, name));
+        Collections.sort(highScores);
+        Collections.reverse(highScores);
+        if(highScores.size()>10){
+            highScores.remove(10); 
+        }
+    }
+    
     private Island island;
     private Player player;
     private GameState state;
@@ -1252,7 +1278,9 @@ public class Game
     
     private ArrayList<String> facts;
     private int difficulty;
-    private HashMap<Integer,String> highScores;
+    private ArrayList<Score> highScores; // impart and change to MultiMap to allow for multiple scores for same name
     private PrintWriter out;
     private BufferedReader in;
+    
+    
 }

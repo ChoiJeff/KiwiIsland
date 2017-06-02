@@ -6,9 +6,11 @@
 package nz.ac.aut.ense701.main;
 
 import java.awt.Color;
+import java.util.Collections;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import nz.ac.aut.ense701.gameModel.Game;
+import nz.ac.aut.ense701.gameModel.Score;
 import nz.ac.aut.ense701.gui.KiwiCountUI;
 
 /**
@@ -33,11 +35,20 @@ public class WelcomeScreen extends javax.swing.JFrame {
                 + "<br>- Count all the Kiwi and trap 80% of the predators"
                 + "<br><br>Pick up traps and use them on predators"
                 + "<br>Pick up and use food so you don't run out of stamina"
-                + "<br>Avoid hazrads, they will hurt you!"
-                + "<br>Select your diifficulty below to start..."); ////////////////////////// welcome text
+                + "<br>Avoid hazards, they will hurt you!"
+                + "<br>Select your difficulty below to start..."); ////////////////////////// welcome text
         txtWelcome.setForeground(Color.blue);
         game = new Game();
-        
+        Collections.sort(game.getScores());
+        Collections.reverse(game.getScores());
+        //highScoresLbl.setText(game.getScores().toString());
+        String scores = "<html>High Scores:<br>";
+        for(Score s: game.getScores()){
+            scores += "<br>"+s.getName()+" "+s.getScore();
+        }
+        highScoresLbl.setVerticalAlignment(JLabel.TOP);
+        highScoresLbl.setForeground(Color.red);
+        highScoresLbl.setText(scores);
     }
 
     /**
