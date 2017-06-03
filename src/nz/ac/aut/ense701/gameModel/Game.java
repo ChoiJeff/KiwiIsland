@@ -61,6 +61,7 @@ public class Game
      */
     public void createNewGame()
     {
+        //test
         highScores = new ArrayList<Score>();
         File file = new File("scores.txt");
         readScores(file);
