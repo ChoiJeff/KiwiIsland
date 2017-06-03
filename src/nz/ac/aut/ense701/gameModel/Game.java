@@ -60,29 +60,57 @@ public class Game
         totalKiwis = 0;
         predatorsTrapped = 0;
         kiwiCount = 0;
-        int randomMap = (int)(Math.random() * 5);   // 0 to 5
-        switch(randomMap){
-            case 0:
-                initialiseIslandFromFile("IslandData4.txt");
-            break; 
-            
-            case 1:
-                initialiseIslandFromFile("IslandData5.txt");
-            break;
-            
-            case 2:
-                initialiseIslandFromFile("IslandData6.txt");
-            break;
-            
-            case 3:
-                initialiseIslandFromFile("IslandData7.txt");
-            break;
-            
-            case 4:
-                initialiseIslandFromFile("IslandData8.txt");
-            break;
+        //changed by Dongming 16:
+        int randomMapEasy = (int)(Math.random() * 3);
+        int randomMapMedium = (int)(Math.random() * 3);
+        int randomMapHard = (int)(Math.random() * 3);
+        
+        if(difficulty == 0){
+            switch(randomMapEasy){
+                case 0:
+                    initialiseIslandFromFile("EasyMap1.txt");
+                break;
+                
+                case 1:
+                    initialiseIslandFromFile("EasyMap2.txt");
+                break;
+                
+                case 2:
+                    initialiseIslandFromFile("EasyMap3.txt");
+                break;
+            }
+        }else if(difficulty == 1){
+            switch(randomMapMedium){
+                case 0:
+                    initialiseIslandFromFile("MediumMap1.txt");
+                break;
+                
+                case 1:
+                    initialiseIslandFromFile("MediumMap2.txt");
+                break;
+                
+                case 2:
+                    initialiseIslandFromFile("MediumMap3.txt");
+                break;
+            }
+
+        }else if(difficulty == 2){
+            switch(randomMapHard){
+                case 0:
+                    initialiseIslandFromFile("HardMap1.txt");
+                break;
+                
+                case 1:
+                    initialiseIslandFromFile("HardMap2.txt");
+                break;
+                
+                case 2:
+                    initialiseIslandFromFile("HardMap3.txt");
+                break;
+            }
         }
-        //initialiseIslandFromFile("IslandData.txt");
+        
+        
         drawIsland();
         state = GameState.PLAYING;
         winMessage = "";
