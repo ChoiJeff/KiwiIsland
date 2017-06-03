@@ -9,6 +9,7 @@ import java.awt.Container;
 import java.util.ArrayList;
 import java.util.Collections;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 import javax.swing.WindowConstants;
 
 /**
@@ -17,6 +18,12 @@ import javax.swing.WindowConstants;
  * @since 30/05/2017
  */
 public class BonusQuizUI extends JFrame{
+    private static JFrame quiz1;
+    private static JFrame quiz2;
+    private static JFrame quiz3;
+    private static JFrame quiz4;
+    private static JFrame quiz5;
+    private ArrayList<JFrame> quizList;
     private ArrayList<String> facts;
     private int points;
     //public static final Container startPage;
@@ -24,6 +31,7 @@ public class BonusQuizUI extends JFrame{
     public BonusQuizUI(ArrayList<String> facts, int points){
         this.facts = facts;
         this.points = points;
+        quizList = new ArrayList<JFrame>();
         
         // to create 5 question randomly.
         createFiveQuiz();
@@ -42,10 +50,12 @@ public class BonusQuizUI extends JFrame{
     }
     
     public void createFiveQuiz(){
-        Collections.shuffle(this.facts);
+        Collections.shuffle(this.facts);    // suffle the list of String.
         for(int i = 0; i < 5; i++){
             if(i == 0){
                 if(facts.get(i).equals("There are about 68,000 kiwi left in all of New Zealand.")){
+                    //quizList.add();
+                    //quizOne = ;
                     
                 }else if(facts.get(i).equals("We are losing 2% of our unmanaged kiwi every year –that's around 20 per week.")){
                     
@@ -89,7 +99,9 @@ public class BonusQuizUI extends JFrame{
             }else{
                 
             }
+            
         }
+        
     }
     
     
