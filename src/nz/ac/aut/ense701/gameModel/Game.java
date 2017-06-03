@@ -730,31 +730,40 @@ public class Game
                         setPlayerMessage("Tūī will live where there is a balance of ground cover, shrubs and trees.");
                     } else if("Rat".equals(i.getName())){               // All rat and kiore facts were sourced from http://www.doc.govt.nz/nature/pests-and-threats/animal-pests/rats/
                         setPlayerMessage("Rats eat native animals and their eggs.");
-                        addFactToList("Rats eat native animals and their eggs.");
+                        //addFactToList("Rats eat native animals and their eggs.");
+                        addFactToList("Rat");
                     } else if("Cat".equals(i.getName())){
                         setPlayerMessage("Cats can do alot of damage to our native species by hunting vurnerable birds such as kiwi.");
-                        addFactToList("Cats can do alot of damage to our native species by hunting vurnerable birds such as kiwi.");
+                        //addFactToList("Cats can do alot of damage to our native species by hunting vurnerable birds such as kiwi.");
+                        addFactToList("Cat");
                     } else if("Kiore".equals(i.getName())){
                         setPlayerMessage("Kiore eat a wide range of native fruit and plants, which puts them in competition with the native wildlife for food.");
-                        addFactToList("Kiore eat a wide range of native fruit and plants, which puts them in competition with the native wildlife for food.");
+                        //addFactToList("Kiore eat a wide range of native fruit and plants, which puts them in competition with the native wildlife for food.");
+                        addFactToList("Kiore");
                     } else if("Stoat".equals(i.getName())){             // All stoat facts were sourced from http://www.doc.govt.nz/nature/pests-and-threats/animal-pests/stoats/
                         setPlayerMessage("Stoats are known predators of many native birds and feed heavily on reptiles and invertebrates.");
-                        addFactToList("Stoats are known predators of many native birds and feed heavily on reptiles and invertebrates.");
+                        //addFactToList("Stoats are known predators of many native birds and feed heavily on reptiles and invertebrates.");
+                        addFactToList("Stoat");
                     } else if("Possum".equals(i.getName())){            // All possum facts were sourced from http://www.doc.govt.nz/nature/pests-and-threats/animal-pests/possums/
                         setPlayerMessage("Possums compete with native birds for habitat and for food such as insects and berries.");
-                        addFactToList("Possums compete with native birds for habitat and for food such as insects and berries.");
+                        //addFactToList("Possums compete with native birds for habitat and for food such as insects and berries.");
+                        addFactToList("Possum");
                     } else if("Bat".equals(i.getName())){               // All bat facts were sourced from http://www.doc.govt.nz/nature/native-animals/bats-pekapeka/long-tailed-bat/
                         setPlayerMessage("New Zealand's bats are rapidly heading towards extinction caused by rat plagues.");
-                        addFactToList("New Zealand's bats are rapidly heading towards extinction caused by rat plagues.");
+                        //addFactToList("New Zealand's bats are rapidly heading towards extinction caused by rat plagues.");
+                        addFactToList("Bat");
                     } else if("Weta".equals(i.getName())){              // All weta facts were sourced from http://www.doc.govt.nz/nature/native-animals/invertebrates/weta/
                         setPlayerMessage("Weta are nocturnal and live in a variety of habitats including grassland, shrub land, forests, and caves. ");
-                        addFactToList("Weta are nocturnal and live in a variety of habitats including grassland, shrub land, forests, and caves. ");
+                        //addFactToList("Weta are nocturnal and live in a variety of habitats including grassland, shrub land, forests, and caves. ");
+                        addFactToList("Weta");
                     } else if("Tuatara".equals(i.getName())){           // All tuatara facts were sourced from http://www.doc.govt.nz/nature/native-animals/reptiles-and-frogs/tuatara/
                         setPlayerMessage("Tuatara are New Zealand’s largest reptile, with adult males measuring up to about a half metre in length and weighing up to 1.5 kg when fully grown.");
-                        addFactToList("Tuatara are New Zealand’s largest reptile, with adult males measuring up to about a half metre in length and weighing up to 1.5 kg when fully grown.");
+                        //addFactToList("Tuatara are New Zealand’s largest reptile, with adult males measuring up to about a half metre in length and weighing up to 1.5 kg when fully grown.");
+                        addFactToList("Tuatara");
                     } else if("Kakapo".equals(i.getName())){           // All kakapo facts were sourced from http://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/kakapo/
                         setPlayerMessage("The kākāpō (night parrot) is one of New Zealand’s unique treasures with fewer than 160 known surviving birds.");
-                        addFactToList("The kākāpō (night parrot) is one of New Zealand’s unique treasures with fewer than 160 known surviving birds.");
+                        //addFactToList("The kākāpō (night parrot) is one of New Zealand’s unique treasures with fewer than 160 known surviving birds.");
+                        addFactToList("Kakapo");
                     }
                 }
             }
@@ -1202,6 +1211,15 @@ public class Game
     
     public int getDifficulty(){
         return this.difficulty;
+    }
+    
+    /**
+     * @Author : Jeff Choi
+     * @since 30/05/2017
+     * @return numKiwi
+     */
+    public int getNumKiwi(){
+        return numKiwi;
     }
 
     private Island island;
