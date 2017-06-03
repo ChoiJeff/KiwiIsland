@@ -7,6 +7,7 @@ package nz.ac.aut.ense701.gui;
 
 import java.awt.CardLayout;
 import java.util.Collections;
+import javax.swing.JOptionPane;
 import nz.ac.aut.ense701.gameModel.Game;
 
 /**
@@ -15,6 +16,7 @@ import nz.ac.aut.ense701.gameModel.Game;
  */
 public class BonusQuizUI2 extends javax.swing.JFrame {
     private Game game;
+    private CardLayout card;
     
     /**
      * Creates new form BonusQuizUI2
@@ -24,7 +26,9 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
         this.game = game;
         initComponents();
         
-        createQuiz();
+        card = (CardLayout) quizPanel.getLayout();
+        card.show(quizPanel, "cardStart");
+        buttonNext.setText("Start");
         
     }
 
@@ -129,7 +133,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
             .addGap(0, 189, Short.MAX_VALUE)
         );
 
-        quizPanel.add(startPage, "card0");
+        quizPanel.add(startPage, "cardStart");
 
         quizOneLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         quizOneLabel.setText("Q. Approximately how many kiwis are left in New Zealand?");
@@ -504,16 +508,19 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
         Collections.shuffle(game.getFacts());
         
         
-        CardLayout card = (CardLayout) quizPanel.getLayout();
+        //CardLayout card = (CardLayout) quizPanel.getLayout();
         //card.next(quizPanel);
         if (iterator < 5) {
             // show card
             if (game.getFacts().get(iterator).equals("There are about 68,000 kiwi left in all of New Zealand.")) {
-                card.show(quizPanel, "card1");
-                // if answer1A.isSelected{
+                //card.show(quizPanel, "card1");
+                if (answer1C.isSelected()){
+                    //JOptionPane.showMessageDialog(this, endPage, title, HEIGHT, icon);
+                }
                 // game.addPointS(3)
                 // show dialog "Correct"
                  buttonNext.setEnabled(true);
+                 card.show(quizPanel, "card1");
             } else if (game.getFacts().get(iterator).equals("We are losing 2% of our unmanaged kiwi every year –that's around 20 per week.")) {
                 card.show(quizPanel, "card2");
             } else if (game.getFacts().get(iterator).equals("Kiwi are mostly nocturnal.")) {
