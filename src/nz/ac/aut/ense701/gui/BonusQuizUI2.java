@@ -50,6 +50,8 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
         groupForQuiz7 = new javax.swing.ButtonGroup();
         groupForQuiz8 = new javax.swing.ButtonGroup();
         groupForQuiz9 = new javax.swing.ButtonGroup();
+        groupForQuiz10 = new javax.swing.ButtonGroup();
+        groupForQuiz11 = new javax.swing.ButtonGroup();
         topPanel = new javax.swing.JPanel();
         welcomeLabel = new javax.swing.JLabel();
         quizPanel = new javax.swing.JPanel();
@@ -90,6 +92,36 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
         answer6B = new javax.swing.JRadioButton();
         answer6C = new javax.swing.JRadioButton();
         answer6D = new javax.swing.JRadioButton();
+        quiz7 = new javax.swing.JPanel();
+        quizSevenLabel = new javax.swing.JLabel();
+        answer7A = new javax.swing.JRadioButton();
+        answer7B = new javax.swing.JRadioButton();
+        answer7C = new javax.swing.JRadioButton();
+        answer7D = new javax.swing.JRadioButton();
+        quiz8 = new javax.swing.JPanel();
+        quizEightLabel = new javax.swing.JLabel();
+        answer8A = new javax.swing.JRadioButton();
+        answer8B = new javax.swing.JRadioButton();
+        answer8C = new javax.swing.JRadioButton();
+        answer8D = new javax.swing.JRadioButton();
+        quiz9 = new javax.swing.JPanel();
+        quizNineLabel = new javax.swing.JLabel();
+        answer9A = new javax.swing.JRadioButton();
+        answer9B = new javax.swing.JRadioButton();
+        answer9C = new javax.swing.JRadioButton();
+        answer9D = new javax.swing.JRadioButton();
+        quiz10 = new javax.swing.JPanel();
+        quizTenLabel = new javax.swing.JLabel();
+        answer10A = new javax.swing.JRadioButton();
+        answer10B = new javax.swing.JRadioButton();
+        answer10C = new javax.swing.JRadioButton();
+        answer10D = new javax.swing.JRadioButton();
+        quiz11 = new javax.swing.JPanel();
+        quizElevenLabel = new javax.swing.JLabel();
+        answer11A = new javax.swing.JRadioButton();
+        answer11B = new javax.swing.JRadioButton();
+        answer11C = new javax.swing.JRadioButton();
+        answer11D = new javax.swing.JRadioButton();
         endPage = new javax.swing.JPanel();
         endLabel = new javax.swing.JLabel();
         scoreLabel = new javax.swing.JLabel();
@@ -389,7 +421,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
-        quizPanel.add(quiz5, "card4");
+        quizPanel.add(quiz5, "card5");
 
         quizSixLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         quizSixLabel.setText("Q. The kiwi egg averages what percentage of the female's body weight?");
@@ -439,7 +471,279 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
-        quizPanel.add(quiz6, "card4");
+        quizPanel.add(quiz6, "card6");
+
+        quizSevenLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        quizSevenLabel.setText("Q. Which kiwi gender is larger, the male kiwi or the female kiwi?");
+
+        groupForQuiz7.add(answer7A);
+        answer7A.setText("Male");
+        answer7A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                answer7AActionPerformed(evt);
+            }
+        });
+
+        groupForQuiz7.add(answer7B);
+        answer7B.setText("Female");
+
+        groupForQuiz7.add(answer7C);
+        answer7C.setText("Both same size");
+
+        groupForQuiz7.add(answer7D);
+        answer7D.setText("Can be either");
+
+        javax.swing.GroupLayout quiz7Layout = new javax.swing.GroupLayout(quiz7);
+        quiz7.setLayout(quiz7Layout);
+        quiz7Layout.setHorizontalGroup(
+            quiz7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz7Layout.createSequentialGroup()
+                .addGap(254, 254, 254)
+                .addGroup(quiz7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(answer7D)
+                    .addComponent(answer7C)
+                    .addComponent(answer7B)
+                    .addComponent(answer7A))
+                .addContainerGap(215, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, quiz7Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(quizSevenLabel)
+                .addGap(67, 67, 67))
+        );
+        quiz7Layout.setVerticalGroup(
+            quiz7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(quizSevenLabel)
+                .addGap(18, 18, 18)
+                .addComponent(answer7A)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer7B)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer7C)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer7D)
+                .addContainerGap(21, Short.MAX_VALUE))
+        );
+
+        quizPanel.add(quiz7, "card7");
+
+        quizEightLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        quizEightLabel.setText("Q. Kiwis can live between");
+
+        groupForQuiz8.add(answer8A);
+        answer8A.setText("25 - 50 years");
+        answer8A.setToolTipText("");
+        answer8A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                answer8AActionPerformed(evt);
+            }
+        });
+
+        groupForQuiz8.add(answer8B);
+        answer8B.setText("25 - 35 years");
+
+        groupForQuiz8.add(answer8C);
+        answer8C.setText("30 - 40 years");
+
+        groupForQuiz8.add(answer8D);
+        answer8D.setText("40 - 50 years");
+
+        javax.swing.GroupLayout quiz8Layout = new javax.swing.GroupLayout(quiz8);
+        quiz8.setLayout(quiz8Layout);
+        quiz8Layout.setHorizontalGroup(
+            quiz8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz8Layout.createSequentialGroup()
+                .addGap(216, 216, 216)
+                .addGroup(quiz8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(quizEightLabel)
+                    .addGroup(quiz8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(answer8D)
+                        .addComponent(answer8C)
+                        .addComponent(answer8B)
+                        .addComponent(answer8A)))
+                .addContainerGap(215, Short.MAX_VALUE))
+        );
+        quiz8Layout.setVerticalGroup(
+            quiz8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(quizEightLabel)
+                .addGap(18, 18, 18)
+                .addComponent(answer8A)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer8B)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer8C)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer8D)
+                .addContainerGap(21, Short.MAX_VALUE))
+        );
+
+        quizPanel.add(quiz8, "card8");
+
+        quizNineLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        quizNineLabel.setText("Q. Rats kill endangered species by");
+
+        groupForQuiz9.add(answer9A);
+        answer9A.setText("Eating their eggs");
+        answer9A.setToolTipText("");
+        answer9A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                answer9AActionPerformed(evt);
+            }
+        });
+
+        groupForQuiz9.add(answer9B);
+        answer9B.setText("Seeking out and hunting birds\n");
+
+        groupForQuiz9.add(answer9C);
+        answer9C.setText("Spreading diseases");
+
+        groupForQuiz9.add(answer9D);
+        answer9D.setText("Stealing their food supply");
+
+        javax.swing.GroupLayout quiz9Layout = new javax.swing.GroupLayout(quiz9);
+        quiz9.setLayout(quiz9Layout);
+        quiz9Layout.setHorizontalGroup(
+            quiz9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz9Layout.createSequentialGroup()
+                .addGap(216, 216, 216)
+                .addGroup(quiz9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(quizNineLabel)
+                    .addGroup(quiz9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(answer9D)
+                        .addComponent(answer9C)
+                        .addComponent(answer9B)
+                        .addComponent(answer9A)))
+                .addContainerGap(153, Short.MAX_VALUE))
+        );
+        quiz9Layout.setVerticalGroup(
+            quiz9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz9Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(quizNineLabel)
+                .addGap(18, 18, 18)
+                .addComponent(answer9A)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer9B)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer9C)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer9D)
+                .addContainerGap(21, Short.MAX_VALUE))
+        );
+
+        quizPanel.add(quiz9, "card9");
+
+        quizTenLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        quizTenLabel.setText("Q. How can a cat owner ensure \ntheir cat isn't harming any endangered species?");
+
+        groupForQuiz10.add(answer10A);
+        answer10A.setText("Let the cat go free anytime");
+        answer10A.setToolTipText("");
+        answer10A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                answer10AActionPerformed(evt);
+            }
+        });
+
+        groupForQuiz10.add(answer10B);
+        answer10B.setText("Not feed the cat enough\n");
+
+        groupForQuiz10.add(answer10C);
+        answer10C.setText("Put a bell on the cat and keep indoors at night");
+
+        groupForQuiz10.add(answer10D);
+        answer10D.setText("Allow cat to reproduce freely");
+
+        javax.swing.GroupLayout quiz10Layout = new javax.swing.GroupLayout(quiz10);
+        quiz10.setLayout(quiz10Layout);
+        quiz10Layout.setHorizontalGroup(
+            quiz10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz10Layout.createSequentialGroup()
+                .addGap(523, 523, 523)
+                .addGroup(quiz10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(answer10D)
+                    .addComponent(answer10C)
+                    .addComponent(answer10B)
+                    .addComponent(answer10A))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, quiz10Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(quizTenLabel)
+                .addGap(111, 111, 111))
+        );
+        quiz10Layout.setVerticalGroup(
+            quiz10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz10Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(quizTenLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer10A)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer10B)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer10C)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer10D)
+                .addContainerGap(21, Short.MAX_VALUE))
+        );
+
+        quizPanel.add(quiz10, "card10");
+
+        quizElevenLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        quizElevenLabel.setText("Q. Why are kiore a danger to the native wildlife?");
+
+        groupForQuiz11.add(answer11A);
+        answer11A.setText("Compete for the same food source");
+        answer11A.setToolTipText("");
+        answer11A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                answer11AActionPerformed(evt);
+            }
+        });
+
+        groupForQuiz11.add(answer11B);
+        answer11B.setText("Hunt and kill native wildlife\n");
+
+        groupForQuiz11.add(answer11C);
+        answer11C.setText("Spread diseases");
+
+        groupForQuiz11.add(answer11D);
+        answer11D.setText("Eat the eggs of native bird species");
+
+        javax.swing.GroupLayout quiz11Layout = new javax.swing.GroupLayout(quiz11);
+        quiz11.setLayout(quiz11Layout);
+        quiz11Layout.setHorizontalGroup(
+            quiz11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz11Layout.createSequentialGroup()
+                .addGap(216, 216, 216)
+                .addGroup(quiz11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(answer11D)
+                    .addComponent(answer11C)
+                    .addComponent(answer11B)
+                    .addComponent(answer11A)
+                    .addComponent(quizElevenLabel))
+                .addContainerGap(153, Short.MAX_VALUE))
+        );
+        quiz11Layout.setVerticalGroup(
+            quiz11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz11Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(quizElevenLabel)
+                .addGap(22, 22, 22)
+                .addComponent(answer11A)
+                .addGap(4, 4, 4)
+                .addComponent(answer11B)
+                .addGap(4, 4, 4)
+                .addComponent(answer11C)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer11D)
+                .addContainerGap(17, Short.MAX_VALUE))
+        );
+
+        quizPanel.add(quiz11, "card11");
 
         endLabel.setFont(new java.awt.Font("Gulim", 3, 24)); // NOI18N
         endLabel.setText("Thanks for playing this game");
@@ -580,6 +884,26 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_answer2AActionPerformed
 
+    private void answer7AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_answer7AActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_answer7AActionPerformed
+
+    private void answer8AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_answer8AActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_answer8AActionPerformed
+
+    private void answer9AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_answer9AActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_answer9AActionPerformed
+
+    private void answer10AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_answer10AActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_answer10AActionPerformed
+
+    private void answer11AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_answer11AActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_answer11AActionPerformed
+
     public void createQuiz(){
         //Collections.shuffle(game.getFacts());
         /*
@@ -671,6 +995,14 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
 //    }
     private int iterator = 0;
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JRadioButton answer10A;
+    private javax.swing.JRadioButton answer10B;
+    private javax.swing.JRadioButton answer10C;
+    private javax.swing.JRadioButton answer10D;
+    private javax.swing.JRadioButton answer11A;
+    private javax.swing.JRadioButton answer11B;
+    private javax.swing.JRadioButton answer11C;
+    private javax.swing.JRadioButton answer11D;
     private javax.swing.JRadioButton answer1A;
     private javax.swing.JRadioButton answer1B;
     private javax.swing.JRadioButton answer1C;
@@ -695,11 +1027,25 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
     private javax.swing.JRadioButton answer6B;
     private javax.swing.JRadioButton answer6C;
     private javax.swing.JRadioButton answer6D;
+    private javax.swing.JRadioButton answer7A;
+    private javax.swing.JRadioButton answer7B;
+    private javax.swing.JRadioButton answer7C;
+    private javax.swing.JRadioButton answer7D;
+    private javax.swing.JRadioButton answer8A;
+    private javax.swing.JRadioButton answer8B;
+    private javax.swing.JRadioButton answer8C;
+    private javax.swing.JRadioButton answer8D;
+    private javax.swing.JRadioButton answer9A;
+    private javax.swing.JRadioButton answer9B;
+    private javax.swing.JRadioButton answer9C;
+    private javax.swing.JRadioButton answer9D;
     private javax.swing.JButton buttonNext;
     private javax.swing.JPanel buttonPanel;
     private javax.swing.JLabel endLabel;
     private javax.swing.JPanel endPage;
     private javax.swing.ButtonGroup groupForQuiz1;
+    private javax.swing.ButtonGroup groupForQuiz10;
+    private javax.swing.ButtonGroup groupForQuiz11;
     private javax.swing.ButtonGroup groupForQuiz2;
     private javax.swing.ButtonGroup groupForQuiz3;
     private javax.swing.ButtonGroup groupForQuiz4;
@@ -709,16 +1055,26 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
     private javax.swing.ButtonGroup groupForQuiz8;
     private javax.swing.ButtonGroup groupForQuiz9;
     private javax.swing.JPanel quiz1;
+    private javax.swing.JPanel quiz10;
+    private javax.swing.JPanel quiz11;
     private javax.swing.JPanel quiz2;
     private javax.swing.JPanel quiz3;
     private javax.swing.JPanel quiz4;
     private javax.swing.JPanel quiz5;
     private javax.swing.JPanel quiz6;
+    private javax.swing.JPanel quiz7;
+    private javax.swing.JPanel quiz8;
+    private javax.swing.JPanel quiz9;
+    private javax.swing.JLabel quizEightLabel;
+    private javax.swing.JLabel quizElevenLabel;
     private javax.swing.JLabel quizFiveLabel;
     private javax.swing.JLabel quizFourLabel;
+    private javax.swing.JLabel quizNineLabel;
     private javax.swing.JLabel quizOneLabel;
     private javax.swing.JPanel quizPanel;
+    private javax.swing.JLabel quizSevenLabel;
     private javax.swing.JLabel quizSixLabel;
+    private javax.swing.JLabel quizTenLabel;
     private javax.swing.JLabel quizThreeLabel;
     private javax.swing.JLabel quizTwoLabel;
     private javax.swing.JLabel scoreLabel;
