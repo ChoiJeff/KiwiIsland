@@ -45,7 +45,7 @@ public class BonusQuizUI extends JFrame{
     
     public void createFiveQuiz(){
         Collections.shuffle(this.facts);
-        for(int i = 0; i < 3; i++){
+        for(int i = 0; i < 5; i++){
             if(facts.get(i).equals("Rat")){
                 
             }else if(facts.get(i).equals("Cat")){
