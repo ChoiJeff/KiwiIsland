@@ -60,7 +60,7 @@ public class Game
         totalKiwis = 0;
         predatorsTrapped = 0;
         kiwiCount = 0;
-        //changed by Dongming 16:
+        //changed by Dongming 16:32
         int randomMapEasy = (int)(Math.random() * 3);
         int randomMapMedium = (int)(Math.random() * 3);
         int randomMapHard = (int)(Math.random() * 3);
