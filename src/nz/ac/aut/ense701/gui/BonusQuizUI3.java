@@ -5,17 +5,35 @@
  */
 package nz.ac.aut.ense701.gui;
 
+import java.awt.CardLayout;
+import java.util.Collections;
+import javax.swing.JOptionPane;
+import nz.ac.aut.ense701.gameModel.Game;
+
 /**
  *
  * @author JeffChoi
  */
 public class BonusQuizUI3 extends javax.swing.JFrame {
-
+    private Game game;
+    private CardLayout card;
+    private int iterator = 0;
+    
     /**
      * Creates new form BonusQuizUI3
      */
     public BonusQuizUI3() {
         initComponents();
+    }
+    
+    public BonusQuizUI3(Game game){
+        this.game = game;
+        
+        this.setVisible(true);
+        initComponents();
+        
+        card = (CardLayout) quizPanel.getLayout();
+        card.show(quizPanel, "cardStart");
     }
 
     /**
@@ -1283,6 +1301,11 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         getContentPane().add(quizPanel, java.awt.BorderLayout.CENTER);
 
         buttonNext.setText("Start");
+        buttonNext.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonNextActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout buttonPanelLayout = new javax.swing.GroupLayout(buttonPanel);
         buttonPanel.setLayout(buttonPanelLayout);
@@ -1341,6 +1364,282 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
     private void answer17AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_answer17AActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_answer17AActionPerformed
+
+    /**
+     * Author : Jeff Choi
+     * To show cards depending on iterator value.
+     */
+    private void showCards() {
+        // show card
+        if (game.getFacts().get(iterator).equals("There are about 68,000 kiwi left in all of New Zealand.")) {
+            card.show(quizPanel, "card1");
+        } else if (game.getFacts().get(iterator).equals("We are losing 2% of our unmanaged kiwi every year –that's around 20 per week.")) {
+            card.show(quizPanel, "card2");
+        } else if (game.getFacts().get(iterator).equals("Kiwi are mostly nocturnal.")) {
+            card.show(quizPanel, "card3");
+        } else if (game.getFacts().get(iterator).equals("Kiwi nest in burrows, hollow logs or under dense vegetation.")) {
+            card.show(quizPanel, "card4");
+        } else if (game.getFacts().get(iterator).equals("Kiwi are the only bird to have nostrils at the end of their very long bill. Their nostrils are used to probe in the ground, sniffing out invertebrates to eat, along with some fallen fruit.")) {
+            card.show(quizPanel, "card5");
+        } else if (game.getFacts().get(iterator).equals("The egg averages 15% of the female's body weight (compared to 2% for the ostrich).")) {
+            card.show(quizPanel, "card6");
+        } else if (game.getFacts().get(iterator).equals("Females are larger than males (up to 3.3 kg and 45 cm).")) {
+            card.show(quizPanel, "card7");
+        } else if (game.getFacts().get(iterator).equals("Kiwi are long-lived, and depending on the species live for between 25 and 50 years.")) {
+            card.show(quizPanel, "card8");
+        } else if (game.getFacts().get(iterator).equals("Rat")) {
+            card.show(quizPanel, "card9");
+        } else if (game.getFacts().get(iterator).equals("Cat")) {
+            card.show(quizPanel, "card10");
+        } else if (game.getFacts().get(iterator).equals("Kiore")) {
+            card.show(quizPanel, "card11");
+        } else if (game.getFacts().get(iterator).equals("Stoat")) {
+            card.show(quizPanel, "card12");
+        } else if (game.getFacts().get(iterator).equals("Possum")) {
+            card.show(quizPanel, "card13");
+        } else if (game.getFacts().get(iterator).equals("Bat")) {
+            card.show(quizPanel, "card14");
+        } else if (game.getFacts().get(iterator).equals("Weta")) {
+            card.show(quizPanel, "card15");
+        } else if (game.getFacts().get(iterator).equals("Tuatara")) {
+            card.show(quizPanel, "card16");
+        } else if (game.getFacts().get(iterator).equals("Kakapu")) {
+            card.show(quizPanel, "card17");
+        }
+    }
+    
+    private void buttonNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonNextActionPerformed
+
+        Collections.shuffle(game.getFacts());
+        
+        //CardLayout card = (CardLayout) quizPanel.getLayout();
+        //card.next(quizPanel);
+        if (iterator == 0) {
+            showCards();
+            buttonNext.setText("Next");
+            //card.show(quizPanel, "card"+iterator);
+            //iterator++;
+        }else if(iterator < 5){
+            if (game.getFacts().get(iterator-1).equals("There are about 68,000 kiwi left in all of New Zealand.")) {
+                while(!(answer1A.isSelected() || answer1B.isSelected() || answer1C.isSelected() || answer1D.isSelected())){
+                    buttonNext.setEnabled(false);
+                }
+                if((answer1A.isSelected() || answer1B.isSelected() || answer1D.isSelected())){
+                    JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
+                    game.addPoints();
+                }
+                buttonNext.setEnabled(true);
+                showCards();
+            } else if (game.getFacts().get(iterator-1).equals("We are losing 2% of our unmanaged kiwi every year –that's around 20 per week.")) {
+                while(!(answer2A.isSelected() || answer2B.isSelected() || answer2C.isSelected() || answer2D.isSelected())){
+                    buttonNext.setEnabled(false);
+                }
+                if(!(answer2B.isSelected() || answer2C.isSelected() || answer2D.isSelected())){
+                    JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
+                    game.addPoints();
+                }
+                buttonNext.setEnabled(true);
+                showCards();
+            } else if (game.getFacts().get(iterator-1).equals("Kiwi are mostly nocturnal.")) {
+                while(!(answer3A.isSelected() || answer3B.isSelected() || answer3C.isSelected() || answer3D.isSelected())){
+                    buttonNext.setEnabled(false);
+                }
+                if((answer3A.isSelected() || answer3C.isSelected() || answer3D.isSelected())){
+                    JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
+                    game.addPoints();
+                }
+                buttonNext.setEnabled(true);
+                showCards();
+            } else if (game.getFacts().get(iterator-1).equals("Kiwi nest in burrows, hollow logs or under dense vegetation.")) {
+                while(!(answer4A.isSelected() || answer4B.isSelected() || answer4C.isSelected() || answer4D.isSelected())){
+                    buttonNext.setEnabled(false);
+                }
+                if((answer4A.isSelected() || answer4C.isSelected() || answer4D.isSelected())){
+                    JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
+                    game.addPoints();
+                }
+                buttonNext.setEnabled(true);
+                showCards();
+            } else if (game.getFacts().get(iterator).equals("Kiwi are the only bird to have nostrils at the end of their very long bill. Their nostrils are used to probe in the ground, sniffing out invertebrates to eat, along with some fallen fruit.")) {
+                while(!(answer5A.isSelected() || answer5B.isSelected() || answer5C.isSelected() || answer5D.isSelected())){
+                    buttonNext.setEnabled(false);
+                }
+                if((answer5A.isSelected() || answer5B.isSelected() || answer5C.isSelected())){
+                    JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
+                    game.addPoints();
+                }
+                buttonNext.setEnabled(true);
+                showCards();
+            } else if (game.getFacts().get(iterator).equals("The egg averages 15% of the female's body weight (compared to 2% for the ostrich).")) {
+                while(!(answer6A.isSelected() || answer6B.isSelected() || answer6C.isSelected() || answer6D.isSelected())){
+                    buttonNext.setEnabled(false);
+                }
+                if((answer6B.isSelected() || answer6C.isSelected() || answer6D.isSelected())){
+                    JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
+                    game.addPoints();
+                }
+                buttonNext.setEnabled(true);
+                showCards();
+            } else if (game.getFacts().get(iterator).equals("Females are larger than males (up to 3.3 kg and 45 cm).")) {
+                while(!(answer7A.isSelected() || answer7B.isSelected() || answer7C.isSelected() || answer7D.isSelected())){
+                    buttonNext.setEnabled(false);
+                }
+                if((answer7A.isSelected() || answer7C.isSelected() || answer7D.isSelected())){
+                    JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
+                    game.addPoints();
+                }
+                buttonNext.setEnabled(true);
+                showCards();
+            } else if (game.getFacts().get(iterator).equals("Kiwi are long-lived, and depending on the species live for between 25 and 50 years.")) {
+                while(!(answer8A.isSelected() || answer8B.isSelected() || answer8C.isSelected() || answer8D.isSelected())){
+                    buttonNext.setEnabled(false);
+                }
+                if((answer8B.isSelected() || answer8C.isSelected() || answer8D.isSelected())){
+                    JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
+                    game.addPoints();
+                }
+                buttonNext.setEnabled(true);
+                showCards();
+            } else if (game.getFacts().get(iterator).equals("Rat")) {
+                while(!(answer9A.isSelected() || answer9B.isSelected() || answer9C.isSelected() || answer9D.isSelected())){
+                    buttonNext.setEnabled(false);
+                }
+                if((answer9B.isSelected() || answer9C.isSelected() || answer9D.isSelected())){
+                    JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
+                    game.addPoints();
+                }
+                buttonNext.setEnabled(true);
+                showCards();
+            } else if (game.getFacts().get(iterator).equals("Cat")) {
+                while(!(answer10A.isSelected() || answer10B.isSelected() || answer10C.isSelected() || answer10D.isSelected())){
+                    buttonNext.setEnabled(false);
+                }
+                if((answer10A.isSelected() || answer10B.isSelected() || answer10D.isSelected())){
+                    JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
+                    game.addPoints();
+                }
+                buttonNext.setEnabled(true);
+                showCards();
+            } else if (game.getFacts().get(iterator).equals("Kiore")) {
+                while(!(answer11A.isSelected() || answer11B.isSelected() || answer11C.isSelected() || answer11D.isSelected())){
+                    buttonNext.setEnabled(false);
+                }
+                if((answer11B.isSelected() || answer11C.isSelected() || answer11D.isSelected())){
+                    JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
+                    game.addPoints();
+                }
+                buttonNext.setEnabled(true);
+                showCards();
+            } else if (game.getFacts().get(iterator).equals("Stoat")) {
+                while(!(answer12A.isSelected() || answer12B.isSelected() || answer12C.isSelected() || answer12D.isSelected())){
+                    buttonNext.setEnabled(false);
+                }
+                if((answer12B.isSelected() || answer12C.isSelected() || answer12D.isSelected())){
+                    JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
+                    game.addPoints();
+                }
+                buttonNext.setEnabled(true);
+                showCards();
+            } else if (game.getFacts().get(iterator).equals("Possum")) {
+                while(!(answer13A.isSelected() || answer13B.isSelected() || answer13C.isSelected() || answer13D.isSelected())){
+                    buttonNext.setEnabled(false);
+                }
+                if((answer13A.isSelected() || answer13C.isSelected() || answer13D.isSelected())){
+                    JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
+                    game.addPoints();
+                }
+                buttonNext.setEnabled(true);
+                showCards();
+            } else if (game.getFacts().get(iterator).equals("Bat")) {
+                while(!(answer14A.isSelected() || answer14B.isSelected() || answer14C.isSelected() || answer14D.isSelected())){
+                    buttonNext.setEnabled(false);
+                }
+                if((answer14B.isSelected() || answer14C.isSelected() || answer14D.isSelected())){
+                    JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
+                    game.addPoints();
+                }
+                buttonNext.setEnabled(true);
+                showCards();
+            } else if (game.getFacts().get(iterator).equals("Weta")) {
+                while(!(answer15A.isSelected() || answer15B.isSelected() || answer15C.isSelected() || answer15D.isSelected())){
+                    buttonNext.setEnabled(false);
+                }
+                if((answer15A.isSelected() || answer15C.isSelected() || answer15D.isSelected())){
+                    JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
+                    game.addPoints();
+                }
+                buttonNext.setEnabled(true);
+                showCards();
+            } else if (game.getFacts().get(iterator).equals("Tuatara")) {
+                while(!(answer16A.isSelected() || answer16B.isSelected() || answer16C.isSelected() || answer16D.isSelected())){
+                    buttonNext.setEnabled(false);
+                }
+                if((answer16A.isSelected() || answer16B.isSelected() || answer16D.isSelected())){
+                    JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
+                    game.addPoints();
+                }
+                buttonNext.setEnabled(true);
+                showCards();
+            } else if (game.getFacts().get(iterator).equals("Kakapu")) {
+                while(!(answer17A.isSelected() || answer17B.isSelected() || answer17C.isSelected() || answer17D.isSelected())){
+                    buttonNext.setEnabled(false);
+                }
+                if((answer17A.isSelected() || answer17C.isSelected() || answer17D.isSelected())){
+                    JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
+                    game.addPoints();
+                }
+                buttonNext.setEnabled(true);
+                showCards();
+            }
+        }
+        else{
+            // show endCard
+            card.show(quizPanel, "cardEnd");
+            scoreLabel.setText("Your score is "+game.getPoints());
+            // set text to show score
+            // game.ifhighScore(game.getScore);
+            // popup to Save score?
+            // game.addHighScore(game.getScore, jTextField.getText().toString);
+            
+            // to set iterator to 0
+            iterator = -1;
+        }
+        iterator++;
+    }//GEN-LAST:event_buttonNextActionPerformed
 
     /**
      * @param args the command line arguments

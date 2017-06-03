@@ -1254,6 +1254,14 @@ public class Game
         }
     }
     
+    /**
+     * Author : Jeff Choi
+     * to add points for Bonus Quiz
+     */
+    public void addPoints(){
+        points = points + 3;
+    }
+    
     private Island island;
     private Player player;
     private GameState state;
