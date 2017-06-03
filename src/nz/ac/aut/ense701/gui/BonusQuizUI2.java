@@ -431,7 +431,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        quizPanel.add(quiz5, "card4");
+        quizPanel.add(quiz5, "card5");
 
         quizSixLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         quizSixLabel.setText("Q. The kiwi egg averages what percentage of the female's body weight?");
@@ -481,7 +481,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        quizPanel.add(quiz6, "card4");
+        quizPanel.add(quiz6, "card6");
 
         endLabel.setFont(new java.awt.Font("Gulim", 3, 24)); // NOI18N
         endLabel.setText("Thanks for playing this game");
@@ -562,7 +562,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        quizPanel.add(quiz17, "card22");
+        quizPanel.add(quiz17, "card17");
 
         quizSixteenLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         quizSixteenLabel.setText("Q. Adult male tuataras measure up to");
@@ -613,7 +613,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        quizPanel.add(quiz16, "card4");
+        quizPanel.add(quiz16, "card16");
 
         quizFifteenLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         quizFifteenLabel.setText("Q. What time of day are weta most active");
@@ -674,7 +674,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        quizPanel.add(quiz15, "card4");
+        quizPanel.add(quiz15, "card15");
 
         quizForteenLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         quizForteenLabel.setText("Q. Why are New Zealand bats rapidly heading towards extinction");
@@ -731,7 +731,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        quizPanel.add(quiz14, "card4");
+        quizPanel.add(quiz14, "card14");
 
         quizThirteenLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         quizThirteenLabel1.setText("Q. Why are possums a danger to the native wildlife");
@@ -788,7 +788,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        quizPanel.add(quiz13, "card4");
+        quizPanel.add(quiz13, "card13");
 
         quizTwelveLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         quizTwelveLabel2.setText("Q. Stoats are a danger to the native wildlife because");
@@ -845,7 +845,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        quizPanel.add(quiz12, "card4");
+        quizPanel.add(quiz12, "card12");
 
         getContentPane().add(quizPanel, java.awt.BorderLayout.CENTER);
 

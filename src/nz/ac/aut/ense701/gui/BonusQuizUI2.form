@@ -475,7 +475,7 @@
         <Container class="javax.swing.JPanel" name="quiz5">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
-              <CardConstraints cardName="card4"/>
+              <CardConstraints cardName="card5"/>
             </Constraint>
           </Constraints>
 
@@ -561,7 +561,7 @@
         <Container class="javax.swing.JPanel" name="quiz6">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
-              <CardConstraints cardName="card4"/>
+              <CardConstraints cardName="card6"/>
             </Constraint>
           </Constraints>
 
@@ -700,7 +700,7 @@
         <Container class="javax.swing.JPanel" name="quiz17">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
-              <CardConstraints cardName="card22"/>
+              <CardConstraints cardName="card17"/>
             </Constraint>
           </Constraints>
 
@@ -786,7 +786,7 @@
         <Container class="javax.swing.JPanel" name="quiz16">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
-              <CardConstraints cardName="card4"/>
+              <CardConstraints cardName="card16"/>
             </Constraint>
           </Constraints>
 
@@ -875,7 +875,7 @@
         <Container class="javax.swing.JPanel" name="quiz15">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
-              <CardConstraints cardName="card4"/>
+              <CardConstraints cardName="card15"/>
             </Constraint>
           </Constraints>
 
@@ -970,7 +970,7 @@
         <Container class="javax.swing.JPanel" name="quiz14">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
-              <CardConstraints cardName="card4"/>
+              <CardConstraints cardName="card14"/>
             </Constraint>
           </Constraints>
 
@@ -1058,7 +1058,7 @@
         <Container class="javax.swing.JPanel" name="quiz13">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
-              <CardConstraints cardName="card4"/>
+              <CardConstraints cardName="card13"/>
             </Constraint>
           </Constraints>
 
@@ -1146,7 +1146,7 @@
         <Container class="javax.swing.JPanel" name="quiz12">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
-              <CardConstraints cardName="card4"/>
+              <CardConstraints cardName="card12"/>
             </Constraint>
           </Constraints>
 
