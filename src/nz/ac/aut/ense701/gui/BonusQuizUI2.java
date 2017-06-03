@@ -50,6 +50,12 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
         groupForQuiz7 = new javax.swing.ButtonGroup();
         groupForQuiz8 = new javax.swing.ButtonGroup();
         groupForQuiz9 = new javax.swing.ButtonGroup();
+        groupForQuiz17 = new javax.swing.ButtonGroup();
+        groupForQuiz16 = new javax.swing.ButtonGroup();
+        groupForQuiz15 = new javax.swing.ButtonGroup();
+        groupForQuiz14 = new javax.swing.ButtonGroup();
+        groupForQuiz13 = new javax.swing.ButtonGroup();
+        groupForQuiz12 = new javax.swing.ButtonGroup();
         topPanel = new javax.swing.JPanel();
         welcomeLabel = new javax.swing.JLabel();
         quizPanel = new javax.swing.JPanel();
@@ -93,6 +99,42 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
         endPage = new javax.swing.JPanel();
         endLabel = new javax.swing.JLabel();
         scoreLabel = new javax.swing.JLabel();
+        quiz17 = new javax.swing.JPanel();
+        quizSevenTeenLabel = new javax.swing.JLabel();
+        answer17A = new javax.swing.JRadioButton();
+        answer17B = new javax.swing.JRadioButton();
+        answer17C = new javax.swing.JRadioButton();
+        answer17D = new javax.swing.JRadioButton();
+        quiz16 = new javax.swing.JPanel();
+        quizSixteenLabel = new javax.swing.JLabel();
+        answer16A = new javax.swing.JRadioButton();
+        answer16B = new javax.swing.JRadioButton();
+        answer16C = new javax.swing.JRadioButton();
+        answer16D = new javax.swing.JRadioButton();
+        quiz15 = new javax.swing.JPanel();
+        quizFifteenLabel = new javax.swing.JLabel();
+        answer15A = new javax.swing.JRadioButton();
+        answer15B = new javax.swing.JRadioButton();
+        answer15C = new javax.swing.JRadioButton();
+        answer15D = new javax.swing.JRadioButton();
+        quiz14 = new javax.swing.JPanel();
+        quizForteenLabel = new javax.swing.JLabel();
+        answer14A = new javax.swing.JRadioButton();
+        answer14B = new javax.swing.JRadioButton();
+        answer14C = new javax.swing.JRadioButton();
+        answer14D = new javax.swing.JRadioButton();
+        quiz13 = new javax.swing.JPanel();
+        quizThirteenLabel1 = new javax.swing.JLabel();
+        answer13A = new javax.swing.JRadioButton();
+        answer13B = new javax.swing.JRadioButton();
+        answer13C = new javax.swing.JRadioButton();
+        answer13D = new javax.swing.JRadioButton();
+        quiz12 = new javax.swing.JPanel();
+        quizTwelveLabel2 = new javax.swing.JLabel();
+        answer12A = new javax.swing.JRadioButton();
+        answer12B = new javax.swing.JRadioButton();
+        answer12C = new javax.swing.JRadioButton();
+        answer12D = new javax.swing.JRadioButton();
         buttonPanel = new javax.swing.JPanel();
         buttonNext = new javax.swing.JButton();
 
@@ -108,7 +150,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
             .addGroup(topPanelLayout.createSequentialGroup()
                 .addGap(143, 143, 143)
                 .addComponent(welcomeLabel)
-                .addContainerGap(152, Short.MAX_VALUE))
+                .addContainerGap(157, Short.MAX_VALUE))
         );
         topPanelLayout.setVerticalGroup(
             topPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -130,7 +172,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
         );
         startPageLayout.setVerticalGroup(
             startPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 189, Short.MAX_VALUE)
+            .addGap(0, 192, Short.MAX_VALUE)
         );
 
         quizPanel.add(startPage, "cardStart");
@@ -155,7 +197,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
         quiz1Layout.setHorizontalGroup(
             quiz1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, quiz1Layout.createSequentialGroup()
-                .addContainerGap(109, Short.MAX_VALUE)
+                .addContainerGap(125, Short.MAX_VALUE)
                 .addComponent(quizOneLabel)
                 .addGap(107, 107, 107))
             .addGroup(quiz1Layout.createSequentialGroup()
@@ -180,7 +222,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                 .addComponent(answer1C)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(answer1D)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         quizPanel.add(quiz1, "card1");
@@ -221,7 +263,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                     .addGroup(quiz2Layout.createSequentialGroup()
                         .addGap(80, 80, 80)
                         .addComponent(quizTwoLabel)))
-                .addContainerGap(88, Short.MAX_VALUE))
+                .addContainerGap(116, Short.MAX_VALUE))
         );
         quiz2Layout.setVerticalGroup(
             quiz2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -236,7 +278,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                 .addComponent(answer2C)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(answer2D)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         quizPanel.add(quiz2, "card2");
@@ -267,7 +309,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                     .addComponent(answer3C)
                     .addComponent(answer3B)
                     .addComponent(answer3A))
-                .addContainerGap(273, Short.MAX_VALUE))
+                .addContainerGap(268, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, quiz3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(quizThreeLabel)
@@ -286,7 +328,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                 .addComponent(answer3C)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(answer3D)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         quizPanel.add(quiz3, "card3");
@@ -317,7 +359,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                     .addComponent(answer4C)
                     .addComponent(answer4B)
                     .addComponent(answer4A))
-                .addContainerGap(161, Short.MAX_VALUE))
+                .addContainerGap(166, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, quiz4Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(quizFourLabel)
@@ -336,7 +378,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                 .addComponent(answer4C)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(answer4D)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         quizPanel.add(quiz4, "card4");
@@ -367,7 +409,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                     .addComponent(answer5C)
                     .addComponent(answer5B)
                     .addComponent(answer5A))
-                .addContainerGap(187, Short.MAX_VALUE))
+                .addContainerGap(185, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, quiz5Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(quizFiveLabel)
@@ -386,7 +428,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                 .addComponent(answer5C)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(answer5D)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         quizPanel.add(quiz5, "card4");
@@ -417,7 +459,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                     .addComponent(answer6C)
                     .addComponent(answer6B)
                     .addComponent(answer6A))
-                .addContainerGap(291, Short.MAX_VALUE))
+                .addContainerGap(289, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, quiz6Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(quizSixLabel)
@@ -436,7 +478,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                 .addComponent(answer6C)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(answer6D)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         quizPanel.add(quiz6, "card4");
@@ -458,7 +500,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                     .addGroup(endPageLayout.createSequentialGroup()
                         .addGap(163, 163, 163)
                         .addComponent(scoreLabel)))
-                .addContainerGap(121, Short.MAX_VALUE))
+                .addContainerGap(113, Short.MAX_VALUE))
         );
         endPageLayout.setVerticalGroup(
             endPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -467,10 +509,343 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
                 .addComponent(endLabel)
                 .addGap(43, 43, 43)
                 .addComponent(scoreLabel)
-                .addContainerGap(87, Short.MAX_VALUE))
+                .addContainerGap(97, Short.MAX_VALUE))
         );
 
         quizPanel.add(endPage, "cardEnd");
+
+        quizSevenTeenLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        quizSevenTeenLabel.setText("Q. How many known surviving kakapo are left in New Zealand?");
+
+        groupForQuiz17.add(answer17A);
+        answer17A.setText("Over 9000");
+
+        groupForQuiz17.add(answer17B);
+        answer17B.setText("Fewer than 160");
+
+        groupForQuiz17.add(answer17C);
+        answer17C.setText("More than 500\n");
+
+        groupForQuiz17.add(answer17D);
+        answer17D.setText("Less than 10");
+
+        javax.swing.GroupLayout quiz17Layout = new javax.swing.GroupLayout(quiz17);
+        quiz17.setLayout(quiz17Layout);
+        quiz17Layout.setHorizontalGroup(
+            quiz17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz17Layout.createSequentialGroup()
+                .addGap(254, 254, 254)
+                .addGroup(quiz17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(answer17D)
+                    .addComponent(answer17C)
+                    .addComponent(answer17B)
+                    .addComponent(answer17A))
+                .addContainerGap(218, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, quiz17Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(quizSevenTeenLabel)
+                .addGap(67, 67, 67))
+        );
+        quiz17Layout.setVerticalGroup(
+            quiz17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz17Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(quizSevenTeenLabel)
+                .addGap(18, 18, 18)
+                .addComponent(answer17A)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer17B)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer17C)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer17D)
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+
+        quizPanel.add(quiz17, "card22");
+
+        quizSixteenLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        quizSixteenLabel.setText("Q. Adult male tuataras measure up to");
+
+        groupForQuiz16.add(answer16A);
+        answer16A.setText("2 meters");
+
+        groupForQuiz6.add(answer16B);
+        answer16B.setText("1 meter");
+
+        groupForQuiz16.add(answer16C);
+        answer16C.setText("50 Centimetres");
+
+        groupForQuiz16.add(answer16D);
+        answer16D.setText("10 Centimetres");
+
+        javax.swing.GroupLayout quiz16Layout = new javax.swing.GroupLayout(quiz16);
+        quiz16.setLayout(quiz16Layout);
+        quiz16Layout.setHorizontalGroup(
+            quiz16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz16Layout.createSequentialGroup()
+                .addGroup(quiz16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(quiz16Layout.createSequentialGroup()
+                        .addGap(254, 254, 254)
+                        .addGroup(quiz16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(answer16D)
+                            .addComponent(answer16C)
+                            .addComponent(answer16B)
+                            .addComponent(answer16A)))
+                    .addGroup(quiz16Layout.createSequentialGroup()
+                        .addGap(177, 177, 177)
+                        .addComponent(quizSixteenLabel)))
+                .addContainerGap(188, Short.MAX_VALUE))
+        );
+        quiz16Layout.setVerticalGroup(
+            quiz16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz16Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(quizSixteenLabel)
+                .addGap(18, 18, 18)
+                .addComponent(answer16A)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer16B)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer16C)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer16D)
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+
+        quizPanel.add(quiz16, "card4");
+
+        quizFifteenLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        quizFifteenLabel.setText("Q. What time of day are weta most active");
+
+        groupForQuiz15.add(answer15A);
+        answer15A.setText("Day");
+        answer15A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                answer15AActionPerformed(evt);
+            }
+        });
+
+        groupForQuiz15.add(answer15B);
+        answer15B.setText("Night");
+        answer15B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                answer15BActionPerformed(evt);
+            }
+        });
+
+        groupForQuiz15.add(answer15C);
+        answer15C.setText("Dusk");
+
+        groupForQuiz15.add(answer15D);
+        answer15D.setText("Dawn");
+
+        javax.swing.GroupLayout quiz15Layout = new javax.swing.GroupLayout(quiz15);
+        quiz15.setLayout(quiz15Layout);
+        quiz15Layout.setHorizontalGroup(
+            quiz15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz15Layout.createSequentialGroup()
+                .addGroup(quiz15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(quiz15Layout.createSequentialGroup()
+                        .addGap(254, 254, 254)
+                        .addGroup(quiz15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(answer15D)
+                            .addComponent(answer15C)
+                            .addComponent(answer15B)
+                            .addComponent(answer15A)))
+                    .addGroup(quiz15Layout.createSequentialGroup()
+                        .addGap(177, 177, 177)
+                        .addComponent(quizFifteenLabel)))
+                .addContainerGap(166, Short.MAX_VALUE))
+        );
+        quiz15Layout.setVerticalGroup(
+            quiz15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz15Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(quizFifteenLabel)
+                .addGap(18, 18, 18)
+                .addComponent(answer15A)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer15B)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer15C)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer15D)
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+
+        quizPanel.add(quiz15, "card4");
+
+        quizForteenLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        quizForteenLabel.setText("Q. Why are New Zealand bats rapidly heading towards extinction");
+
+        groupForQuiz14.add(answer14A);
+        answer14A.setText("Rat plagues");
+        answer14A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                answer14AActionPerformed(evt);
+            }
+        });
+
+        groupForQuiz14.add(answer14B);
+        answer14B.setText("Predation");
+        answer14B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                answer14BActionPerformed(evt);
+            }
+        });
+
+        groupForQuiz14.add(answer14C);
+        answer14C.setText("Habitat loss");
+
+        groupForQuiz14.add(answer14D);
+        answer14D.setText("Global warming\n");
+
+        javax.swing.GroupLayout quiz14Layout = new javax.swing.GroupLayout(quiz14);
+        quiz14.setLayout(quiz14Layout);
+        quiz14Layout.setHorizontalGroup(
+            quiz14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz14Layout.createSequentialGroup()
+                .addGap(177, 177, 177)
+                .addGroup(quiz14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(answer14D)
+                    .addComponent(answer14A)
+                    .addComponent(quizForteenLabel)
+                    .addComponent(answer14B)
+                    .addComponent(answer14C))
+                .addContainerGap(18, Short.MAX_VALUE))
+        );
+        quiz14Layout.setVerticalGroup(
+            quiz14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz14Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(quizForteenLabel)
+                .addGap(24, 24, 24)
+                .addComponent(answer14A)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(answer14B)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer14C)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer14D)
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+
+        quizPanel.add(quiz14, "card4");
+
+        quizThirteenLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        quizThirteenLabel1.setText("Q. Why are possums a danger to the native wildlife");
+
+        groupForQuiz13.add(answer13A);
+        answer13A.setText("Hunt native wildlife");
+        answer13A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                answer13AActionPerformed(evt);
+            }
+        });
+
+        groupForQuiz13.add(answer13B);
+        answer13B.setText("Compete for food and habitats");
+        answer13B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                answer13BActionPerformed(evt);
+            }
+        });
+
+        groupForQuiz13.add(answer13C);
+        answer13C.setText("Steal native bird eggs");
+
+        groupForQuiz13.add(answer13D);
+        answer13D.setText("Attract other predators and pests");
+
+        javax.swing.GroupLayout quiz13Layout = new javax.swing.GroupLayout(quiz13);
+        quiz13.setLayout(quiz13Layout);
+        quiz13Layout.setHorizontalGroup(
+            quiz13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz13Layout.createSequentialGroup()
+                .addGap(177, 177, 177)
+                .addGroup(quiz13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(answer13D)
+                    .addComponent(answer13A)
+                    .addComponent(quizThirteenLabel1)
+                    .addComponent(answer13B)
+                    .addComponent(answer13C))
+                .addContainerGap(104, Short.MAX_VALUE))
+        );
+        quiz13Layout.setVerticalGroup(
+            quiz13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz13Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(quizThirteenLabel1)
+                .addGap(18, 18, 18)
+                .addComponent(answer13A)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer13B)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer13C)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer13D)
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+
+        quizPanel.add(quiz13, "card4");
+
+        quizTwelveLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        quizTwelveLabel2.setText("Q. Stoats are a danger to the native wildlife because");
+
+        groupForQuiz12.add(answer12A);
+        answer12A.setText("They are predators of native birds");
+        answer12A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                answer12AActionPerformed(evt);
+            }
+        });
+
+        groupForQuiz12.add(answer12B);
+        answer12B.setText("They steal and eat the limited supply of food");
+        answer12B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                answer12BActionPerformed(evt);
+            }
+        });
+
+        groupForQuiz12.add(answer12C);
+        answer12C.setText("They destory natural habitats\n");
+
+        groupForQuiz12.add(answer12D);
+        answer12D.setText("They spread diseases to native wildlife");
+
+        javax.swing.GroupLayout quiz12Layout = new javax.swing.GroupLayout(quiz12);
+        quiz12.setLayout(quiz12Layout);
+        quiz12Layout.setHorizontalGroup(
+            quiz12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz12Layout.createSequentialGroup()
+                .addGap(130, 130, 130)
+                .addGroup(quiz12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(answer12D)
+                    .addComponent(answer12A)
+                    .addComponent(quizTwelveLabel2)
+                    .addComponent(answer12B)
+                    .addComponent(answer12C))
+                .addContainerGap(144, Short.MAX_VALUE))
+        );
+        quiz12Layout.setVerticalGroup(
+            quiz12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(quiz12Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(quizTwelveLabel2)
+                .addGap(18, 18, 18)
+                .addComponent(answer12A)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer12B)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer12C)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(answer12D)
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+
+        quizPanel.add(quiz12, "card4");
 
         getContentPane().add(quizPanel, java.awt.BorderLayout.CENTER);
 
@@ -486,7 +861,7 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
         buttonPanelLayout.setHorizontalGroup(
             buttonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonPanelLayout.createSequentialGroup()
-                .addContainerGap(523, Short.MAX_VALUE)
+                .addContainerGap(519, Short.MAX_VALUE)
                 .addComponent(buttonNext)
                 .addContainerGap())
         );
@@ -580,6 +955,38 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_answer2AActionPerformed
 
+    private void answer15AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_answer15AActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_answer15AActionPerformed
+
+    private void answer15BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_answer15BActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_answer15BActionPerformed
+
+    private void answer14AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_answer14AActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_answer14AActionPerformed
+
+    private void answer14BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_answer14BActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_answer14BActionPerformed
+
+    private void answer13AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_answer13AActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_answer13AActionPerformed
+
+    private void answer13BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_answer13BActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_answer13BActionPerformed
+
+    private void answer12AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_answer12AActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_answer12AActionPerformed
+
+    private void answer12BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_answer12BActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_answer12BActionPerformed
+
     public void createQuiz(){
         //Collections.shuffle(game.getFacts());
         /*
@@ -671,6 +1078,30 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
 //    }
     private int iterator = 0;
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JRadioButton answer12A;
+    private javax.swing.JRadioButton answer12B;
+    private javax.swing.JRadioButton answer12C;
+    private javax.swing.JRadioButton answer12D;
+    private javax.swing.JRadioButton answer13A;
+    private javax.swing.JRadioButton answer13B;
+    private javax.swing.JRadioButton answer13C;
+    private javax.swing.JRadioButton answer13D;
+    private javax.swing.JRadioButton answer14A;
+    private javax.swing.JRadioButton answer14B;
+    private javax.swing.JRadioButton answer14C;
+    private javax.swing.JRadioButton answer14D;
+    private javax.swing.JRadioButton answer15A;
+    private javax.swing.JRadioButton answer15B;
+    private javax.swing.JRadioButton answer15C;
+    private javax.swing.JRadioButton answer15D;
+    private javax.swing.JRadioButton answer16A;
+    private javax.swing.JRadioButton answer16B;
+    private javax.swing.JRadioButton answer16C;
+    private javax.swing.JRadioButton answer16D;
+    private javax.swing.JRadioButton answer17A;
+    private javax.swing.JRadioButton answer17B;
+    private javax.swing.JRadioButton answer17C;
+    private javax.swing.JRadioButton answer17D;
     private javax.swing.JRadioButton answer1A;
     private javax.swing.JRadioButton answer1B;
     private javax.swing.JRadioButton answer1C;
@@ -700,6 +1131,12 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
     private javax.swing.JLabel endLabel;
     private javax.swing.JPanel endPage;
     private javax.swing.ButtonGroup groupForQuiz1;
+    private javax.swing.ButtonGroup groupForQuiz12;
+    private javax.swing.ButtonGroup groupForQuiz13;
+    private javax.swing.ButtonGroup groupForQuiz14;
+    private javax.swing.ButtonGroup groupForQuiz15;
+    private javax.swing.ButtonGroup groupForQuiz16;
+    private javax.swing.ButtonGroup groupForQuiz17;
     private javax.swing.ButtonGroup groupForQuiz2;
     private javax.swing.ButtonGroup groupForQuiz3;
     private javax.swing.ButtonGroup groupForQuiz4;
@@ -709,17 +1146,29 @@ public class BonusQuizUI2 extends javax.swing.JFrame {
     private javax.swing.ButtonGroup groupForQuiz8;
     private javax.swing.ButtonGroup groupForQuiz9;
     private javax.swing.JPanel quiz1;
+    private javax.swing.JPanel quiz12;
+    private javax.swing.JPanel quiz13;
+    private javax.swing.JPanel quiz14;
+    private javax.swing.JPanel quiz15;
+    private javax.swing.JPanel quiz16;
+    private javax.swing.JPanel quiz17;
     private javax.swing.JPanel quiz2;
     private javax.swing.JPanel quiz3;
     private javax.swing.JPanel quiz4;
     private javax.swing.JPanel quiz5;
     private javax.swing.JPanel quiz6;
+    private javax.swing.JLabel quizFifteenLabel;
     private javax.swing.JLabel quizFiveLabel;
+    private javax.swing.JLabel quizForteenLabel;
     private javax.swing.JLabel quizFourLabel;
     private javax.swing.JLabel quizOneLabel;
     private javax.swing.JPanel quizPanel;
+    private javax.swing.JLabel quizSevenTeenLabel;
     private javax.swing.JLabel quizSixLabel;
+    private javax.swing.JLabel quizSixteenLabel;
+    private javax.swing.JLabel quizThirteenLabel1;
     private javax.swing.JLabel quizThreeLabel;
+    private javax.swing.JLabel quizTwelveLabel2;
     private javax.swing.JLabel quizTwoLabel;
     private javax.swing.JLabel scoreLabel;
     private javax.swing.JPanel startPage;
