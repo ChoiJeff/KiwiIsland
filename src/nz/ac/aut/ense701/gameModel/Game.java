@@ -658,35 +658,35 @@ public class Game
                             setPlayerMessage("There are about 68,000 kiwi left in all of New Zealand.");
                             numKiwi++;
                             // add testAddFactsToList
-                            //addFactToList("There are about 68,000 kiwi left in all of New Zealand.");
+                            addFactToList("There are about 68,000 kiwi left in all of New Zealand.");
                         }else if (numKiwi==1){
                             setPlayerMessage("We are losing 2% of our unmanaged kiwi every year –that's around 20 per week.");
                             numKiwi++;
-                            //addFactToList("We are losing 2% of our unmanaged kiwi every year –that's around 20 per week.");
+                            addFactToList("We are losing 2% of our unmanaged kiwi every year –that's around 20 per week.");
                         } else if (numKiwi==2){
                             setPlayerMessage("Kiwi are mostly nocturnal.");
                             numKiwi++;
-                            //addFactToList("Kiwi are mostly nocturnal.");
+                            addFactToList("Kiwi are mostly nocturnal.");
                         } else if (numKiwi==3){
                             setPlayerMessage("Kiwi nest in burrows, hollow logs or under dense vegetation.");
                             numKiwi++;
-                            //addFactToList("Kiwi nest in burrows, hollow logs or under dense vegetation.");
+                            addFactToList("Kiwi nest in burrows, hollow logs or under dense vegetation.");
                         } else if (numKiwi==4){
                             setPlayerMessage("Kiwi are the only bird to have nostrils at the end of their very long bill. Their nostrils are used to probe in the ground, sniffing out invertebrates to eat, along with some fallen fruit.");
                             numKiwi++;
-                            //addFactToList("Kiwi are the only bird to have nostrils at the end of their very long bill. Their nostrils are used to probe in the ground, sniffing out invertebrates to eat, along with some fallen fruit.");
+                            addFactToList("Kiwi are the only bird to have nostrils at the end of their very long bill. Their nostrils are used to probe in the ground, sniffing out invertebrates to eat, along with some fallen fruit.");
                         } else if (numKiwi==5){
                             setPlayerMessage("The egg averages 15% of the female's body weight (compared to 2% for the ostrich).");
                             numKiwi++;
-                            //addFactToList("The egg averages 15% of the female's body weight (compared to 2% for the ostrich).");
+                            addFactToList("The egg averages 15% of the female's body weight (compared to 2% for the ostrich).");
                         } else if (numKiwi==6){
                             setPlayerMessage("Females are larger than males (up to 3.3 kg and 45 cm).");
                             numKiwi++;
-                            //addFactToList("Females are larger than males (up to 3.3 kg and 45 cm).");
+                            addFactToList("Females are larger than males (up to 3.3 kg and 45 cm).");
                         } else if (numKiwi==7){
                             setPlayerMessage("Kiwi are long-lived, and depending on the species live for between 25 and 50 years.");
                             numKiwi++;
-                            //addFactToList("Kiwi are long-lived, and depending on the species live for between 25 and 50 years.");
+                            addFactToList("Kiwi are long-lived, and depending on the species live for between 25 and 50 years.");
                         } 
                     } else if("Oystercatcher".equals(i.getName())){     // All oystercatcher facts were sourced from http://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/variable-oystercatcher-torea/
                         setPlayerMessage("Qystercatchers eat a wide range of coastal invertebrates, including molluscs and crustaceans.");
