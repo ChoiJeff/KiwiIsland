@@ -63,10 +63,16 @@ public class KiwiCountUI
                     JOptionPane.INFORMATION_MESSAGE);
 //            game.createNewGame();
                dispose();
-               BonusQuizUI3 bonusQuiz = new BonusQuizUI3(game);
-               // call bonusQuiz Ui
+               ///////////////////Delete this!//////////////////////////////////
+               if(game.getFacts().size()>4){
+                   BonusQuizUI3 bonusQuiz = new BonusQuizUI3(game);
+               }
+               else{
+                   WelcomeScreen welcome = new WelcomeScreen();
+                   welcome.setVisible(true);
+               }
+               /////////////////////////////////////////////////////////////////
                //WelcomeScreen welcome = new WelcomeScreen();
-//               welcome.show();
                //welcome.setVisible(true);
                
         }
@@ -78,10 +84,13 @@ public class KiwiCountUI
                     JOptionPane.INFORMATION_MESSAGE);
 //            game.createNewGame();
                dispose();
-               BonusQuizUI3 bonusQuiz = new BonusQuizUI3(game);
-               //WelcomeScreen welcome = new WelcomeScreen();
-//               welcome.show();
-               //welcome.setVisible(true);
+               if(game.getFacts().size()>4){
+                   BonusQuizUI3 bonusQuiz = new BonusQuizUI3(game);
+               }
+               else{
+                   WelcomeScreen welcome = new WelcomeScreen();
+                   welcome.setVisible(true);
+               }
         }
         else if (game.messageForPlayer())
         {
