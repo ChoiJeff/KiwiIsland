@@ -372,20 +372,23 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="358" max="32767" attributes="0"/>
-                      <Component id="quiz3Label" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="204" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="341" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="answer3D" min="-2" max="-2" attributes="0"/>
-                          <Component id="answer3B" min="-2" max="-2" attributes="0"/>
-                          <Component id="answer3A" min="-2" max="-2" attributes="0"/>
-                          <Component id="answer3C" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="274" max="-2" attributes="0"/>
+                              <Component id="quiz3Label" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="402" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="answer3B" min="-2" max="-2" attributes="0"/>
+                                  <Component id="answer3A" min="-2" max="-2" attributes="0"/>
+                                  <Component id="answer3C" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="answer3D" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="274" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -413,7 +416,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Gulim" size="15" style="3"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Q. What tie of day are kiwi&apos;s most active?"/>
+                <Property name="text" type="java.lang.String" value="Q. What time of day are kiwi&apos;s most active?"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="answer3A">
