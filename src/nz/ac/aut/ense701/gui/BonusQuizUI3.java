@@ -1952,12 +1952,6 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
                 nameTextField.setVisible(true);
                 enterNameLabel.setVisible(true);
              }
-            // popup to Save score? 
-            // new customDialog
-            // game.addHighScore(game.getScore, jTextField.getText().toString);
-            
-            // to set iterator to 0
-//            iterator = -1;
         }
         else if(iterator == 6){
             if(game.isScoreHigh(game.getPoints())){
