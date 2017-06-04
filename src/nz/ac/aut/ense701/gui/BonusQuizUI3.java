@@ -1410,7 +1410,7 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
     
     private void buttonNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonNextActionPerformed
 
-        Collections.shuffle(game.getFacts());
+        Collections.shuffle(game.getFacts()); 
         
         //CardLayout card = (CardLayout) quizPanel.getLayout();
         //card.next(quizPanel);
