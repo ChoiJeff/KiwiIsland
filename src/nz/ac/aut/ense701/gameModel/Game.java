@@ -898,7 +898,6 @@ public class Game
             message = "Sorry, you have lost the game. Too many kiwis have been lost due to your poor conservation efforts! You scored: "+points+" Points.";
             this.setLoseMessage(message);
         }
-        ////////////////////////////////////////////////////// Additional Win conditions?
         // notify listeners about changes
             notifyGameEventListeners();
     }

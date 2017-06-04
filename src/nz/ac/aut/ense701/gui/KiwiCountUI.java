@@ -63,18 +63,8 @@ public class KiwiCountUI
                     JOptionPane.INFORMATION_MESSAGE);
 //            game.createNewGame();
                dispose();
-               ///////////////////Delete this!//////////////////////////////////
-               if(game.getFacts().size()>4){
-                   BonusQuizUI3 bonusQuiz = new BonusQuizUI3(game);
-               }
-               else{
                    WelcomeScreen welcome = new WelcomeScreen();
                    welcome.setVisible(true);
-               }
-               /////////////////////////////////////////////////////////////////
-               //WelcomeScreen welcome = new WelcomeScreen();
-               //welcome.setVisible(true);
-               
         }
         else if ( game.getState() == GameState.WON )
         {
@@ -96,7 +86,7 @@ public class KiwiCountUI
         {
             JOptionPane.showMessageDialog(
                     this, 
-                    game.getPlayerMessage(), "Important Information", //////// use this to do pop up facts maybe?
+                    game.getPlayerMessage(), "Important Information", 
                     JOptionPane.INFORMATION_MESSAGE);   
         }
     }
