@@ -61,6 +61,7 @@ public class Game
      */
     public void createNewGame()
     {
+        //test
         highScores = new ArrayList<Score>();
         File file = new File("scores.txt");
         readScores(file);
@@ -70,29 +71,54 @@ public class Game
         totalKiwis = 0;
         predatorsTrapped = 0;
         kiwiCount = 0;
-        int randomMap = (int)(Math.random() * 5);   // 0 to 5
-        switch(randomMap){
+        int randomEasyMap = (int)(Math.random() * 3);   //easy maps 1-3
+        int randomMediumMap = (int)(Math.random() * 3);   // medium maps 1-3
+        int randomHardMap = (int)(Math.random() * 3);   // hard maps 1-3
+        if(this.difficulty == 0){
+            switch(randomEasyMap){
             case 0:
-                initialiseIslandFromFile("IslandData4.txt");
+                initialiseIslandFromFile("EasyMap1.txt");
             break; 
             
             case 1:
-                initialiseIslandFromFile("IslandData5.txt");
+                initialiseIslandFromFile("EasyMap2.txt");
             break;
             
             case 2:
-                initialiseIslandFromFile("IslandData6.txt");
-            break;
-            
-            case 3:
-                initialiseIslandFromFile("IslandData7.txt");
-            break;
-            
-            case 4:
-                initialiseIslandFromFile("IslandData8.txt");
+                initialiseIslandFromFile("EasyMap3.txt");
             break;
         }
-        //initialiseIslandFromFile("IslandData.txt");
+        if(this.difficulty == 1){
+            switch(randomMediumMap){
+            case 0:
+                initialiseIslandFromFile("MediumMap1.txt");
+            break; 
+            
+            case 1:
+                initialiseIslandFromFile("MediumMap2.txt");
+            break;
+            
+            case 2:
+                initialiseIslandFromFile("MediumMap3.txt");
+            break;    
+            }
+        }
+        if(this.difficulty == 2){
+            switch(randomHardMap){
+            case 0:
+                initialiseIslandFromFile("HardMap1.txt");
+            break; 
+            
+            case 1:
+                initialiseIslandFromFile("HardMap2.txt");
+            break;
+            
+            case 2:
+                initialiseIslandFromFile("HardMap3.txt");
+            break;    
+            }
+        }
+    }
         drawIsland();
         state = GameState.PLAYING;
         winMessage = "";
@@ -1252,6 +1278,14 @@ public class Game
         if(highScores.size()>10){
             highScores.remove(10); 
         }
+    }
+    
+    /**
+     * Author : Jeff Choi
+     * to add points for Bonus Quiz
+     */
+    public void addPoints(){
+        points = points + 3;
     }
     
     private Island island;
