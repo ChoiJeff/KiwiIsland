@@ -6,9 +6,11 @@
 package nz.ac.aut.ense701.gui;
 
 import java.awt.CardLayout;
+import java.io.File;
 import java.util.Collections;
 import javax.swing.JOptionPane;
 import nz.ac.aut.ense701.gameModel.Game;
+import nz.ac.aut.ense701.main.WelcomeScreen;
 
 /**
  *
@@ -33,7 +35,9 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         initComponents();
         Collections.shuffle(game.getFacts()); 
         card = (CardLayout) quizPanel.getLayout();
-        card.show(quizPanel, "cardStart");        
+        card.show(quizPanel, "cardStart");   
+        nameTextField.setVisible(false);
+        enterNameLabel.setVisible(false);
     }
 
     /**
@@ -173,6 +177,8 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         endPanel = new javax.swing.JPanel();
         thankLabel = new javax.swing.JLabel();
         scoreLabel = new javax.swing.JLabel();
+        nameTextField = new javax.swing.JTextField();
+        enterNameLabel = new javax.swing.JLabel();
         buttonPanel = new javax.swing.JPanel();
         buttonNext = new javax.swing.JButton();
 
@@ -1619,17 +1625,23 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         scoreLabel.setFont(new java.awt.Font("Gulim", 2, 18)); // NOI18N
         scoreLabel.setText("Your score is ");
 
+        enterNameLabel.setText("Please enter your name:");
+
         javax.swing.GroupLayout endPanelLayout = new javax.swing.GroupLayout(endPanel);
         endPanel.setLayout(endPanelLayout);
         endPanelLayout.setHorizontalGroup(
             endPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, endPanelLayout.createSequentialGroup()
-                .addContainerGap(316, Short.MAX_VALUE)
+                .addContainerGap(336, Short.MAX_VALUE)
                 .addComponent(thankLabel)
                 .addGap(309, 309, 309))
             .addGroup(endPanelLayout.createSequentialGroup()
-                .addGap(385, 385, 385)
-                .addComponent(scoreLabel)
+                .addGap(211, 211, 211)
+                .addComponent(enterNameLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(endPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(nameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(scoreLabel))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         endPanelLayout.setVerticalGroup(
@@ -1637,9 +1649,13 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
             .addGroup(endPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(thankLabel)
-                .addGap(83, 83, 83)
+                .addGap(85, 85, 85)
                 .addComponent(scoreLabel)
-                .addContainerGap(152, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(endPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(nameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(enterNameLabel))
+                .addContainerGap(83, Short.MAX_VALUE))
         );
 
         quizPanel.add(endPanel, "cardEnd");
@@ -1924,18 +1940,45 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
                 buttonNext.setText("Finish");
             }
         }
-        else{
+        else if (iterator==5){
             // show endCard
             card.show(quizPanel, "cardEnd");
-            scoreLabel.setText("Your score is "+game.getPoints());
-            // set text to show score
-            // game.ifhighScore(game.getPoints);
+            if(!game.isScoreHigh(game.getPoints())){
+                scoreLabel.setText("Your score is "+game.getPoints());   
+            }                    
+            else if(game.isScoreHigh(game.getPoints())){
+                scoreLabel.setText(" Congratulations you scored "+game.getPoints()+" points!"
+                +"This is a High Score!"); 
+                nameTextField.setVisible(true);
+                enterNameLabel.setVisible(true);
+             }
             // popup to Save score? 
             // new customDialog
             // game.addHighScore(game.getScore, jTextField.getText().toString);
             
             // to set iterator to 0
-            iterator = -1;
+//            iterator = -1;
+        }
+        else if(iterator == 6){
+            if(game.isScoreHigh(game.getPoints())){
+                if(nameTextField!=null && !nameTextField.getText().isEmpty()){
+                    game.addHighScore(game.getPoints(), nameTextField.getText().trim());
+                    File file = new File("scores.txt");
+                    game.saveScores(file);
+                    WelcomeScreen welcome = new WelcomeScreen();
+                    welcome.setVisible(true);
+                    dispose();
+                }
+                else{
+                    JOptionPane.showMessageDialog(this, "Please enter your name!!!", "Invalid Input!", JOptionPane.ERROR_MESSAGE);
+                    iterator--;
+                }
+            }
+            else{
+                WelcomeScreen welcome = new WelcomeScreen();
+                welcome.setVisible(true);
+                dispose();
+            }
         }
         iterator++;
     }//GEN-LAST:event_buttonNextActionPerformed
@@ -2325,6 +2368,7 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
     private javax.swing.JButton buttonNext;
     private javax.swing.JPanel buttonPanel;
     private javax.swing.JPanel endPanel;
+    private javax.swing.JLabel enterNameLabel;
     private javax.swing.ButtonGroup groupForQuiz1;
     private javax.swing.ButtonGroup groupForQuiz10;
     private javax.swing.ButtonGroup groupForQuiz11;
@@ -2344,6 +2388,7 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
     private javax.swing.ButtonGroup groupForQuiz9;
     private javax.swing.JTextArea introductionTextField;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField nameTextField;
     private javax.swing.JPanel quiz1;
     private javax.swing.JPanel quiz10;
     private javax.swing.JLabel quiz10Label;

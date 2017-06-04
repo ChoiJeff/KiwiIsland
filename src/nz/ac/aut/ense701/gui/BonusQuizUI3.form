@@ -2163,13 +2163,18 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="316" max="32767" attributes="0"/>
+                      <EmptySpace pref="336" max="32767" attributes="0"/>
                       <Component id="thankLabel" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="309" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="385" max="-2" attributes="0"/>
-                      <Component id="scoreLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="211" max="-2" attributes="0"/>
+                      <Component id="enterNameLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="nameTextField" min="-2" pref="111" max="-2" attributes="0"/>
+                          <Component id="scoreLabel" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -2179,9 +2184,14 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="thankLabel" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
                       <Component id="scoreLabel" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="152" max="32767" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="nameTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="enterNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="83" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -2201,6 +2211,13 @@
                   <Font name="Gulim" size="18" style="2"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Your score is "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="nameTextField">
+            </Component>
+            <Component class="javax.swing.JLabel" name="enterNameLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Please enter your name:"/>
               </Properties>
             </Component>
           </SubComponents>
