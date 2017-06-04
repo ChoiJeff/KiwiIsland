@@ -893,7 +893,7 @@ public class Game
                 this.setWinMessage(message);
             }
         }
-        else if(totalKiwis == 6){ // too many kiwis have been killed need to change this if number different numbers of kiwis on maps
+        else if((difficulty == 2 && totalKiwis == 6) || (difficulty == 1 && totalKiwis == 4) ||(difficulty == 0 && totalKiwis == 1)){ // too many kiwis have been killed need to change this if number different numbers of kiwis on maps
             state = GameState.LOST;
             message = "Sorry, you have lost the game. Too many kiwis have been lost due to your poor conservation efforts! You scored: "+points+" Points.";
             this.setLoseMessage(message);
