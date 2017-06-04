@@ -113,1534 +113,1567 @@ public class GridSquarePanel extends javax.swing.JPanel
             // Sand
             if(color.equals(Color.YELLOW)){
                 if(textRepre.equals("B")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                 }else if(textRepre.equals("BC")){    // C stands for count.
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                     setBorder(countBorder);
+                    
                 }else if(textRepre.equals("F")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Fauna.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Fauna.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with Fauna.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                 }else if(textRepre.equals("H")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Hazard.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Hazard.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with Hazard.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                 }else if(textRepre.equals("E")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Item.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Item.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with Item.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                 }else if(textRepre.equals("k")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                 }else if(textRepre.equals("kC")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                     setBorder(countBorder);
                 } else if(textRepre.equals("PK") || textRepre.equals("KP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                 }else if(textRepre.equals("PKC") || textRepre.equals("KCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                     setBorder(countBorder);
                 } else if(textRepre.equals("K")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with Kiwi.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                 }else if(textRepre.equals("KC")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with Kiwi.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                     setBorder(countBorder);
                 } else if(textRepre.equals("P")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Predator.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Predator.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with Predator.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                 }else if(textRepre.equals("T")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tool.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tool.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with Tool.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                 }else if(textRepre.equals("t")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                 }else if(textRepre.equals("tC")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                     setBorder(countBorder);
+                    
                 }else if(textRepre.equals("W")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                 }else if(textRepre.equals("WC")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                     setBorder(countBorder);
                 }else if(textRepre.equals("PB") || textRepre.equals("BP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg");
+                   
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                 }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Bat.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                     setBorder(countBorder);
                 }else if(textRepre.equals("Pk") || textRepre.equals("kP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                 }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                     setBorder(countBorder);
                 }else if(textRepre.equals("Pt") || textRepre.equals("tP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                 }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                     setBorder(countBorder);
                 }else if(textRepre.equals("PW") || textRepre.equals("WP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Weta.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
                     /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    */
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Weta.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
+                }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.JPG");
+                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+                    /*
+                    imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Weta.JPG";
+                    loadImage(imgURL);
+                    imgIcon = new ImageIcon(img1);
+                    */
                     setBorder(countBorder);
                 }else if(textRepre.equals("PF") || textRepre.equals("FP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Fauna.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Fauna.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Fauna.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                 }else if(textRepre.equals("PE") || textRepre.equals("EP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Item.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Item.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Item.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                 }else if(textRepre.equals("PT") || textRepre.equals("TP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tool.jpg");
+                    
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tool.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand with predator and Tool.JPG";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                 }
                 else{
-                    /*
+                    
                     iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand.jpg");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
-                    */
+                    /*
                     imgURL = "/nz/ac/aut/ense701/icons/Sand.jpg";
                     loadImage(imgURL);
                     imgIcon = new ImageIcon(img1);
+                    */
                 }    
             }
-            // Forrest
-            if(color.equals(Color.GREEN)){
-                if(textRepre.equals("B")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Bat.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("BC")){    // C stands for count.
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Bat.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("F")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Fauna.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Fauna.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("H")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Hazard.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Hazard.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("E")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Item.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Item.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("k")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kakapo.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("kC")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kakapo.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                } else if(textRepre.equals("PK") || textRepre.equals("KP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kiwi and Predator.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PKC") || textRepre.equals("KCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kiwi and Predator.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                } else if(textRepre.equals("K")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kiwi.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("KC")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kiwi.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                } else if(textRepre.equals("P")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Predator.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Predator.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("T")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tool.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Tool.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("t")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Tuatara.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("tC")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Tuatara.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("W")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Weta.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("WC")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Weta.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("PB") || textRepre.equals("BP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Bat.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Bat.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("Pk") || textRepre.equals("kP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Kakapo.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Kakapo.jpg";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("Pt") || textRepre.equals("tP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Tuatara.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Tuatara.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("PW") || textRepre.equals("WP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Weta.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Weta.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("PF") || textRepre.equals("FP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Fauna.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Fauna.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PE") || textRepre.equals("EP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Item.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Item.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PT") || textRepre.equals("TP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tool.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Tool.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }
-                else{
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Forrest.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }    
-            }
-            // Wet Land
-            if(color.equals(Color.BLUE)){
-                if(textRepre.equals("B")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Bat.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("BC")){    // C stands for count.
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Bat.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("F")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Fauna.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Fauna.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("H")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Hazard.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Hazard.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("E")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Item.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Item.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("k")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kakapo.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("kC")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kakapo.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                } else if(textRepre.equals("PK") || textRepre.equals("KP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kiwi and Predator.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PKC") || textRepre.equals("KCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kiwi and Predator.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                } else if(textRepre.equals("K")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kiwi.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("KC")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kiwi.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                } else if(textRepre.equals("P")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Predator.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Predator.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("T")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tool.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Tool.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("t")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Tuatara.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("tC")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Tuatara.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("W")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Weta.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("WC")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Weta.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("PB") || textRepre.equals("BP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Bat.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Bat.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("Pk") || textRepre.equals("kP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Kakapo.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Kakapo.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("Pt") || textRepre.equals("tP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Tuatara.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Tuatara.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("PW") || textRepre.equals("WP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Weta.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Weta.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("PF") || textRepre.equals("FP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Fauna.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Fauna.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PE") || textRepre.equals("EP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Item.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Item.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PT") || textRepre.equals("TP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tool.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Tool.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }
-                else{
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land.jpg";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }    
-            }
-            // Scrub
-            if(color.equals(Color.DARK_GRAY)){
-                if(textRepre.equals("B")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Bat.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("BC")){    // C stands for count.
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Bat.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("F")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Fauna.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Fauna.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("H")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Hazard.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Hazard.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("E")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Item.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Item.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("k")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kakapo.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("kC")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kakapo.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                } else if(textRepre.equals("PK") || textRepre.equals("KP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kiwi and Predator.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PKC") || textRepre.equals("KCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kiwi and Predator.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                } else if(textRepre.equals("K")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kiwi.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("KC")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kiwi.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                } else if(textRepre.equals("P")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Predator.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Predator.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("T")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tool.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Tool.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("t")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Tuatara.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("tC")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Tuatara.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("W")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Weta.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("WC")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Weta.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("PB") || textRepre.equals("BP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Bat.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Bat.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("Pk") || textRepre.equals("kP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Kakapo.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Kakapo.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("Pt") || textRepre.equals("tP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Tuatara.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Tuatara.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("PW") || textRepre.equals("WP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Weta.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Weta.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("PF") || textRepre.equals("FP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Fauna.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Fauna.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PE") || textRepre.equals("EP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Item.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Item.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PT") || textRepre.equals("TP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tool.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Tool.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }
-                else{
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Scrub.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }    
-            }
-            // Water
-            if(color.equals(Color.CYAN)){
-                if(textRepre.equals("B")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Bat.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("BC")){    // C stands for count.
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Bat.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("F")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Fauna.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Fauna.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("H")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Hazard.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Hazard.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("E")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Item.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Item.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("k")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kakapo.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("kC")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kakapo.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                } else if(textRepre.equals("PK") || textRepre.equals("KP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kiwi and Predator.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PKC") || textRepre.equals("KCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kiwi and Predator.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                } else if(textRepre.equals("K")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kiwi.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("KC")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kiwi.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                } else if(textRepre.equals("P")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Predator.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Predator.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("T")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tool.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Tool.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("t")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Tuatara.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("tC")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Tuatara.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("W")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Weta.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("WC")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with Weta.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("PB") || textRepre.equals("BP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Bat.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Bat.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("Pk") || textRepre.equals("kP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Kakapo.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Kakapo.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("Pt") || textRepre.equals("tP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Tuatara.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Tuatara.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("PW") || textRepre.equals("WP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Weta.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Weta.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                    setBorder(countBorder);
-                }else if(textRepre.equals("PF") || textRepre.equals("FP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Fauna.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Fauna.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PE") || textRepre.equals("EP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Item.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Item.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }else if(textRepre.equals("PT") || textRepre.equals("TP")){
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tool.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Tool.JPG";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }
-                else{
-                    /*
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand.jpg");
-                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
-                    imgIcon = new ImageIcon(img);
-                    */
-                    imgURL = "/nz/ac/aut/ense701/icons/Water.jpg";
-                    loadImage(imgURL);
-                    imgIcon = new ImageIcon(img1);
-                }    
-            }
-            /*
+            
+//            // Forrest
+//            if(color.equals(Color.GREEN)){
+//                if(textRepre.equals("B")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Bat.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("BC")){    // C stands for count.
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Bat.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("F")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Fauna.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Fauna.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("H")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Hazard.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Hazard.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("E")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Item.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Item.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("k")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kakapo.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("kC")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kakapo.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                } else if(textRepre.equals("PK") || textRepre.equals("KP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kiwi and Predator.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PKC") || textRepre.equals("KCP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kiwi and Predator.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                } else if(textRepre.equals("K")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kiwi.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("KC")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Kiwi.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                } else if(textRepre.equals("P")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Predator.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Predator.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("T")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tool.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Tool.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("t")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Tuatara.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("tC")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Tuatara.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("W")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Weta.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("WC")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with Weta.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("PB") || textRepre.equals("BP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Bat.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Bat.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("Pk") || textRepre.equals("kP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Kakapo.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Kakapo.jpg";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("Pt") || textRepre.equals("tP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Tuatara.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Tuatara.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("PW") || textRepre.equals("WP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Weta.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Weta.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("PF") || textRepre.equals("FP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Fauna.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Fauna.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PE") || textRepre.equals("EP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Item.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Item.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PT") || textRepre.equals("TP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tool.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest with predator and Tool.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }
+//                else{
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Forrest.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }    
+//            }
+//            // Wet Land
+//            if(color.equals(Color.BLUE)){
+//                if(textRepre.equals("B")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Bat.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("BC")){    // C stands for count.
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Bat.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("F")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Fauna.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Fauna.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("H")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Hazard.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Hazard.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("E")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Item.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Item.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("k")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kakapo.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("kC")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kakapo.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                } else if(textRepre.equals("PK") || textRepre.equals("KP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kiwi and Predator.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PKC") || textRepre.equals("KCP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kiwi and Predator.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                } else if(textRepre.equals("K")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kiwi.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("KC")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Kiwi.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                } else if(textRepre.equals("P")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Predator.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Predator.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("T")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tool.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Tool.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("t")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Tuatara.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("tC")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Tuatara.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("W")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Weta.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("WC")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with Weta.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("PB") || textRepre.equals("BP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Bat.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Bat.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("Pk") || textRepre.equals("kP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Kakapo.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Kakapo.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("Pt") || textRepre.equals("tP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Tuatara.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Tuatara.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("PW") || textRepre.equals("WP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Weta.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Weta.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("PF") || textRepre.equals("FP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Fauna.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Fauna.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PE") || textRepre.equals("EP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Item.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Item.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PT") || textRepre.equals("TP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tool.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land with predator and Tool.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }
+//                else{
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Wet Land.jpg";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }    
+//            }
+//            // Scrub
+//            if(color.equals(Color.DARK_GRAY)){
+//                if(textRepre.equals("B")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Bat.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("BC")){    // C stands for count.
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Bat.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("F")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Fauna.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Fauna.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("H")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Hazard.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Hazard.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("E")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Item.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Item.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("k")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kakapo.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("kC")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kakapo.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                } else if(textRepre.equals("PK") || textRepre.equals("KP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kiwi and Predator.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PKC") || textRepre.equals("KCP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kiwi and Predator.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                } else if(textRepre.equals("K")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kiwi.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("KC")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Kiwi.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                } else if(textRepre.equals("P")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Predator.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Predator.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("T")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tool.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Tool.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("t")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Tuatara.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("tC")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Tuatara.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("W")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Weta.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("WC")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with Weta.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("PB") || textRepre.equals("BP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Bat.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Bat.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("Pk") || textRepre.equals("kP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Kakapo.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Kakapo.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("Pt") || textRepre.equals("tP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Tuatara.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Tuatara.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("PW") || textRepre.equals("WP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Weta.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Weta.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("PF") || textRepre.equals("FP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Fauna.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Fauna.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PE") || textRepre.equals("EP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Item.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Item.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PT") || textRepre.equals("TP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tool.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub with predator and Tool.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }
+//                else{
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Scrub.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }    
+//            }
+//            // Water
+//            if(color.equals(Color.CYAN)){
+//                if(textRepre.equals("B")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with Bat.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("BC")){    // C stands for count.
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with Bat.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("F")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Fauna.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with Fauna.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("H")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Hazard.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with Hazard.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("E")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Item.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with Item.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("k")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kakapo.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("kC")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kakapo.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                } else if(textRepre.equals("PK") || textRepre.equals("KP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kiwi and Predator.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PKC") || textRepre.equals("KCP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kiwi and Predator.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                } else if(textRepre.equals("K")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kiwi.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("KC")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with Kiwi.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                } else if(textRepre.equals("P")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Predator.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with Predator.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("T")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tool.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with Tool.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("t")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with Tuatara.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("tC")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with Tuatara.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("W")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with Weta.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("WC")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with Weta.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("PB") || textRepre.equals("BP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Bat.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Bat.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("Pk") || textRepre.equals("kP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Kakapo.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Kakapo.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("Pt") || textRepre.equals("tP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Tuatara.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Tuatara.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("PW") || textRepre.equals("WP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Weta.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Weta.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                    setBorder(countBorder);
+//                }else if(textRepre.equals("PF") || textRepre.equals("FP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Fauna.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Fauna.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PE") || textRepre.equals("EP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Item.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Item.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }else if(textRepre.equals("PT") || textRepre.equals("TP")){
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tool.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water with predator and Tool.JPG";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }
+//                else{
+//                    /*
+//                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Sand.jpg");
+//                    img = Toolkit.getDefaultToolkit().getImage(iconUrl);
+//                    imgIcon = new ImageIcon(img);
+//                    */
+//                    imgURL = "/nz/ac/aut/ense701/icons/Water.jpg";
+//                    loadImage(imgURL);
+//                    imgIcon = new ImageIcon(img1);
+//                }    
+//            }
+            
+            
             // Forrest
             if(color.equals(Color.GREEN)){
                 if(textRepre.equals("B")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Bat.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Bat.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("BC")){    // C stands for count.
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Bat.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Bat.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("F")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Fauna.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Fauna.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Fauna.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("H")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Hazard.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Hazard.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Hazard.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("E")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Item.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Item.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Item.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("k")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Kakapo.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Kakapo.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("kC")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Kakapo.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Kakapo.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 } else if(textRepre.equals("PK") || textRepre.equals("KP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Kiwi and Predator.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Kiwi and Predator.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PKC") || textRepre.equals("KCP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Kiwi and Predator.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Kiwi and Predator.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 } else if(textRepre.equals("K")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Kiwi.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Kiwi.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("KC")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Kiwi.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Kiwi.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 } else if(textRepre.equals("P")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Predator.jpg"));  
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Predator.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Predator.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("T")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tool.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Tool.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Tool.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("t")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Tuatara.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Tuatara.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("tC")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Tuatara.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Tuatara.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("W")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Weta.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Weta.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("WC")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Weta.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with Weta.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("PB") || textRepre.equals("BP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Bat.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Bat.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Bat.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Bat.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("Pk") || textRepre.equals("kP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Kakapo.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Kakapo.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Kakapo.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Kakapo.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("Pt") || textRepre.equals("tP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Tuatara.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Tuatara.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Tuatara.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Tuatara.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("PW") || textRepre.equals("WP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Weta.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Weta.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Weta.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Weta.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     setBorder(countBorder);
                 }else if(textRepre.equals("PF") || textRepre.equals("FP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Fauna.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Fauna.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Fauna.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PE") || textRepre.equals("EP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Item.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Item.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Item.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PT") || textRepre.equals("TP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tool.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Tool.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest with predator and Tool.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }
                 else{
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Forrest.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }    
@@ -1650,151 +1683,151 @@ public class GridSquarePanel extends javax.swing.JPanel
             if(color.equals(Color.BLUE)){
                 if(textRepre.equals("B")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Bat.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Bat.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("BC")){    // C stands for count.
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Bat.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Bat.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("F")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Fauna.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Fauna.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Fauna.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("H")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Hazard.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Hazard.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Hazard.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("E")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Item.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Item.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Item.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("k")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Kakapo.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Kakapo.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("kC")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Kakapo.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Kakapo.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 } else if(textRepre.equals("PK") || textRepre.equals("KP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Kiwi and Predator.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Kiwi and Predator.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PKC") || textRepre.equals("KCP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Kiwi and Predator.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Kiwi and Predator.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 } else if(textRepre.equals("K")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Kiwi.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Kiwi.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("KC")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Kiwi.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Kiwi.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 } else if(textRepre.equals("P")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Predator.jpg"));  
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Predator.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Predator.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("T")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tool.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Tool.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Tool.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("t")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Tuatara.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Tuatara.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("tC")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Tuatara.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Tuatara.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("W")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Weta.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Weta.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("WC")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Weta.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with Weta.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("PB") || textRepre.equals("BP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Bat.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Bat.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Bat.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Bat.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("Pk") || textRepre.equals("kP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Kakapo.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Kakapo.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Kakapo.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Kakapo.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("Pt") || textRepre.equals("tP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Tuatara.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Tuatara.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Tuatara.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Tuatara.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("PW") || textRepre.equals("WP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Weta.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Weta.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Weta.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Weta.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     setBorder(countBorder);
                 }else if(textRepre.equals("PF") || textRepre.equals("FP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Fauna.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Fauna.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Fauna.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PE") || textRepre.equals("EP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Item.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Item.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Item.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PT") || textRepre.equals("TP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tool.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Tool.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Wet Land with predator and Tool.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }
@@ -1810,157 +1843,157 @@ public class GridSquarePanel extends javax.swing.JPanel
             if(color.equals(Color.DARK_GRAY)){
                 if(textRepre.equals("B")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Bat.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Bat.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("BC")){    // C stands for count.
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Bat.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Bat.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("F")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Fauna.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Fauna.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Fauna.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("H")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Hazard.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Hazard.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Hazard.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("E")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Item.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Item.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Item.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("k")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Kakapo.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Kakapo.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("kC")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Kakapo.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Kakapo.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 } else if(textRepre.equals("PK") || textRepre.equals("KP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Kiwi and Predator.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Kiwi and Predator.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PKC") || textRepre.equals("KCP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Kiwi and Predator.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Kiwi and Predator.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 } else if(textRepre.equals("K")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Kiwi.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Kiwi.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("KC")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Kiwi.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Kiwi.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 } else if(textRepre.equals("P")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Predator.jpg"));  
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Predator.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Predator.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("T")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tool.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Tool.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Tool.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("t")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Tuatara.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Tuatara.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("tC")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Tuatara.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Tuatara.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("W")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Weta.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Weta.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("WC")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Weta.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with Weta.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("PB") || textRepre.equals("BP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Bat.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Bat.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Bat.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Bat.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("Pk") || textRepre.equals("kP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Kakapo.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Kakapo.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Kakapo.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Kakapo.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("Pt") || textRepre.equals("tP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Tuatara.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Tuatara.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Tuatara.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Tuatara.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("PW") || textRepre.equals("WP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Weta.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Weta.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Weta.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Weta.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     setBorder(countBorder);
                 }else if(textRepre.equals("PF") || textRepre.equals("FP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Fauna.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Fauna.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Fauna.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PE") || textRepre.equals("EP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Item.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Item.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Item.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PT") || textRepre.equals("TP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tool.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Tool.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub with predator and Tool.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }
                 else{
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Scrub.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }    
@@ -1970,151 +2003,151 @@ public class GridSquarePanel extends javax.swing.JPanel
             if(color.equals(Color.CYAN)){
                 if(textRepre.equals("B")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Bat.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Bat.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("BC")){    // C stands for count.
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Bat.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Bat.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Bat.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("F")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Fauna.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Fauna.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Fauna.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("H")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Hazard.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Hazard.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Hazard.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("E")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Item.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Item.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Item.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("k")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Kakapo.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Kakapo.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("kC")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kakapo.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Kakapo.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Kakapo.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 } else if(textRepre.equals("PK") || textRepre.equals("KP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Kiwi and Predator.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Kiwi and Predator.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PKC") || textRepre.equals("KCP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi and Predator.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Kiwi and Predator.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Kiwi and Predator.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 } else if(textRepre.equals("K")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Kiwi.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Kiwi.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("KC")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Kiwi.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Kiwi.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Kiwi.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 } else if(textRepre.equals("P")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Predator.jpg"));  
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Predator.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Predator.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("T")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tool.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Tool.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Tool.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("t")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Tuatara.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Tuatara.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("tC")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Tuatara.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Tuatara.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Tuatara.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("W")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Weta.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Weta.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("WC")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with Weta.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Weta.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with Weta.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("PB") || textRepre.equals("BP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Bat.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Bat.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PBC") || textRepre.equals("BCP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Bat.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Bat.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Bat.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("Pk") || textRepre.equals("kP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Kakapo.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Kakapo.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PkC") || textRepre.equals("kCP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Kakapo.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Kakapo.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Kakapo.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("Pt") || textRepre.equals("tP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Tuatara.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Tuatara.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PtC") || textRepre.equals("tCP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tuatara.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Tuatara.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Tuatara.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                     setBorder(countBorder);
                 }else if(textRepre.equals("PW") || textRepre.equals("WP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Weta.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Weta.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PWC") || textRepre.equals("WCP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Weta.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Weta.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Weta.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     setBorder(countBorder);
                 }else if(textRepre.equals("PF") || textRepre.equals("FP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Fauna.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Fauna.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Fauna.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PE") || textRepre.equals("EP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Item.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Item.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Item.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }else if(textRepre.equals("PT") || textRepre.equals("TP")){
                     //img = new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/icons/Sand with predator and Tool.jpg"));
-                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Tool.jpg");
+                    iconUrl = getClass().getResource("/nz/ac/aut/ense701/icons/Water with predator and Tool.JPG");
                     img = Toolkit.getDefaultToolkit().getImage(iconUrl);
                     imgIcon = new ImageIcon(img);
                 }
@@ -2125,7 +2158,7 @@ public class GridSquarePanel extends javax.swing.JPanel
                     imgIcon = new ImageIcon(img);
                 }    
             }
-            */
+            
             /*
             // change the color of "KC" in order to recognize easily.
             if(lblText.getText().contains("KC")){
