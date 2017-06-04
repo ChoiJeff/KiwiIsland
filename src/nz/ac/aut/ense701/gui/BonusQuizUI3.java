@@ -6,9 +6,11 @@
 package nz.ac.aut.ense701.gui;
 
 import java.awt.CardLayout;
+import java.io.File;
 import java.util.Collections;
 import javax.swing.JOptionPane;
 import nz.ac.aut.ense701.gameModel.Game;
+import nz.ac.aut.ense701.main.WelcomeScreen;
 
 /**
  *
@@ -31,9 +33,11 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         
         this.setVisible(true);
         initComponents();
-        
+        Collections.shuffle(game.getFacts()); 
         card = (CardLayout) quizPanel.getLayout();
-        card.show(quizPanel, "cardStart");
+        card.show(quizPanel, "cardStart");   
+        nameTextField.setVisible(false);
+        enterNameLabel.setVisible(false);
     }
 
     /**
@@ -173,6 +177,8 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         endPanel = new javax.swing.JPanel();
         thankLabel = new javax.swing.JLabel();
         scoreLabel = new javax.swing.JLabel();
+        nameTextField = new javax.swing.JTextField();
+        enterNameLabel = new javax.swing.JLabel();
         buttonPanel = new javax.swing.JPanel();
         buttonNext = new javax.swing.JButton();
 
@@ -230,21 +236,41 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer1A.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer1A.setText("54,000");
         answer1A.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer1A.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer1AStateChanged(evt);
+            }
+        });
 
         groupForQuiz1.add(answer1B);
         answer1B.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer1B.setText("99,000");
         answer1B.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer1B.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer1BStateChanged(evt);
+            }
+        });
 
         groupForQuiz1.add(answer1C);
         answer1C.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer1C.setText("68,000");
         answer1C.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer1C.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer1CStateChanged(evt);
+            }
+        });
 
         groupForQuiz1.add(answer1D);
         answer1D.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer1D.setText("120,000");
         answer1D.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer1D.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer1DStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout quiz1Layout = new javax.swing.GroupLayout(quiz1);
         quiz1.setLayout(quiz1Layout);
@@ -289,21 +315,41 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer2A.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer2A.setText("20");
         answer2A.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer2A.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer2AStateChanged(evt);
+            }
+        });
 
         groupForQuiz2.add(answer2B);
         answer2B.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer2B.setText("40");
         answer2B.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer2B.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer2BStateChanged(evt);
+            }
+        });
 
         groupForQuiz2.add(answer2C);
         answer2C.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer2C.setText("5");
         answer2C.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer2C.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer2CStateChanged(evt);
+            }
+        });
 
         groupForQuiz2.add(answer2D);
         answer2D.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer2D.setText("10");
         answer2D.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer2D.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer2DStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout quiz2Layout = new javax.swing.GroupLayout(quiz2);
         quiz2.setLayout(quiz2Layout);
@@ -348,21 +394,41 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer3A.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer3A.setText("Day");
         answer3A.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer3A.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer3AStateChanged(evt);
+            }
+        });
 
         groupForQuiz3.add(answer3B);
         answer3B.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer3B.setText("Night");
         answer3B.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer3B.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer3BStateChanged(evt);
+            }
+        });
 
         groupForQuiz3.add(answer3C);
         answer3C.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer3C.setText("Both");
         answer3C.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer3C.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer3CStateChanged(evt);
+            }
+        });
 
         groupForQuiz3.add(answer3D);
         answer3D.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer3D.setText("Neither");
         answer3D.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer3D.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer3DStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout quiz3Layout = new javax.swing.GroupLayout(quiz3);
         quiz3.setLayout(quiz3Layout);
@@ -407,20 +473,40 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer4A.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer4A.setText("Burrows");
         answer4A.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer4A.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer4AStateChanged(evt);
+            }
+        });
 
         groupForQuiz4.add(answer4B);
         answer4B.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer4B.setText("Riverbed");
+        answer4B.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer4BStateChanged(evt);
+            }
+        });
 
         groupForQuiz4.add(answer4C);
         answer4C.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer4C.setText("Hollow logs");
         answer4C.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer4C.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer4CStateChanged(evt);
+            }
+        });
 
         groupForQuiz4.add(answer4D);
         answer4D.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer4D.setText("Unser dense vegetation");
         answer4D.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer4D.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer4DStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout quiz4Layout = new javax.swing.GroupLayout(quiz4);
         quiz4.setLayout(quiz4Layout);
@@ -465,21 +551,41 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer5A.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer5A.setText("On their feet");
         answer5A.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer5A.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer5AStateChanged(evt);
+            }
+        });
 
         groupForQuiz5.add(answer5B);
         answer5B.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer5B.setText("Under their eyes");
         answer5B.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer5B.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer5BStateChanged(evt);
+            }
+        });
 
         groupForQuiz5.add(answer5C);
         answer5C.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer5C.setText("Behind the head");
         answer5C.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer5C.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer5CStateChanged(evt);
+            }
+        });
 
         groupForQuiz5.add(answer5D);
         answer5D.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer5D.setText("End of their long bill");
         answer5D.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer5D.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer5DStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout quiz5Layout = new javax.swing.GroupLayout(quiz5);
         quiz5.setLayout(quiz5Layout);
@@ -524,21 +630,46 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer6A.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer6A.setText("15%");
         answer6A.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer6A.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer6AStateChanged(evt);
+            }
+        });
+        answer6A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                answer6AActionPerformed(evt);
+            }
+        });
 
         groupForQuiz6.add(answer6B);
         answer6B.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer6B.setText("25%");
         answer6B.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer6B.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer6BStateChanged(evt);
+            }
+        });
 
         groupForQuiz6.add(answer6C);
         answer6C.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer6C.setText("5%");
         answer6C.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer6C.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer6CStateChanged(evt);
+            }
+        });
 
         groupForQuiz6.add(answer6D);
         answer6D.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer6D.setText("10%");
         answer6D.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer6D.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer6DStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout quiz6Layout = new javax.swing.GroupLayout(quiz6);
         quiz6.setLayout(quiz6Layout);
@@ -583,21 +714,41 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer7A.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer7A.setText("Male");
         answer7A.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer7A.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer7AStateChanged(evt);
+            }
+        });
 
         groupForQuiz7.add(answer7B);
         answer7B.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer7B.setText("Female");
         answer7B.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer7B.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer7BStateChanged(evt);
+            }
+        });
 
         groupForQuiz7.add(answer7C);
         answer7C.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer7C.setText("Both same size");
         answer7C.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer7C.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer7CStateChanged(evt);
+            }
+        });
 
         groupForQuiz7.add(answer7D);
         answer7D.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer7D.setText("Can be either");
         answer7D.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer7D.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer7DStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout quiz7Layout = new javax.swing.GroupLayout(quiz7);
         quiz7.setLayout(quiz7Layout);
@@ -642,21 +793,41 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer8A.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer8A.setText("25 - 50 years");
         answer8A.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer8A.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer8AStateChanged(evt);
+            }
+        });
 
         groupForQuiz8.add(answer8B);
         answer8B.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer8B.setText("25 - 35 years");
         answer8B.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer8B.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer8BStateChanged(evt);
+            }
+        });
 
         groupForQuiz8.add(answer8C);
         answer8C.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer8C.setText("30 - 40 years");
         answer8C.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer8C.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer8CStateChanged(evt);
+            }
+        });
 
         groupForQuiz8.add(answer8D);
         answer8D.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer8D.setText("40 - 50 years");
         answer8D.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer8D.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer8DStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout quiz8Layout = new javax.swing.GroupLayout(quiz8);
         quiz8.setLayout(quiz8Layout);
@@ -701,6 +872,11 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer9A.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer9A.setText("Eating their eggs");
         answer9A.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer9A.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer9AStateChanged(evt);
+            }
+        });
         answer9A.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 answer9AActionPerformed(evt);
@@ -711,16 +887,31 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer9B.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer9B.setText("Seeking out and hunting birds");
         answer9B.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer9B.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer9BStateChanged(evt);
+            }
+        });
 
         groupForQuiz9.add(answer9C);
         answer9C.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer9C.setText("Spreading diseases");
         answer9C.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer9C.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer9CStateChanged(evt);
+            }
+        });
 
         groupForQuiz9.add(answer9D);
         answer9D.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer9D.setText("Stealing their food supply");
         answer9D.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer9D.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer9DStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout quiz9Layout = new javax.swing.GroupLayout(quiz9);
         quiz9.setLayout(quiz9Layout);
@@ -763,6 +954,11 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer10A.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer10A.setText("Let the cat go free anytime");
         answer10A.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer10A.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer10AStateChanged(evt);
+            }
+        });
         answer10A.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 answer10AActionPerformed(evt);
@@ -773,16 +969,31 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer10B.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer10B.setText("Not feed the cat enough");
         answer10B.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer10B.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer10BStateChanged(evt);
+            }
+        });
 
         groupForQuiz10.add(answer10C);
         answer10C.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer10C.setText("Put a bell on the cat and keep indoors at night");
         answer10C.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer10C.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer10CStateChanged(evt);
+            }
+        });
 
         groupForQuiz10.add(answer10D);
         answer10D.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer10D.setText("Allow cat to reproduce freely");
         answer10D.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer10D.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer10DStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout quiz10Layout = new javax.swing.GroupLayout(quiz10);
         quiz10.setLayout(quiz10Layout);
@@ -828,6 +1039,11 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer11A.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer11A.setText("Compete for the same food source");
         answer11A.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer11A.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer11AStateChanged(evt);
+            }
+        });
         answer11A.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 answer11AActionPerformed(evt);
@@ -838,16 +1054,31 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer11B.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer11B.setText("Hunt and kill native wildlife");
         answer11B.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer11B.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer11BStateChanged(evt);
+            }
+        });
 
         groupForQuiz11.add(answer11C);
         answer11C.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer11C.setText("Spread diseases");
         answer11C.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer11C.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer11CStateChanged(evt);
+            }
+        });
 
         groupForQuiz11.add(answer11D);
         answer11D.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer11D.setText("Eat the eggs of native bird species");
         answer11D.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer11D.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer11DStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout quiz11Layout = new javax.swing.GroupLayout(quiz11);
         quiz11.setLayout(quiz11Layout);
@@ -892,6 +1123,11 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer12A.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer12A.setText("They are predators of native birds");
         answer12A.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer12A.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer12AStateChanged(evt);
+            }
+        });
         answer12A.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 answer12AActionPerformed(evt);
@@ -902,16 +1138,31 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer12B.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer12B.setText("They steal and eat the limited supply of food");
         answer12B.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer12B.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer12BStateChanged(evt);
+            }
+        });
 
         groupForQuiz12.add(answer12C);
         answer12C.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer12C.setText("They destroy natural habitats");
         answer12C.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer12C.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer12CStateChanged(evt);
+            }
+        });
 
         groupForQuiz12.add(answer12D);
         answer12D.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer12D.setText("They spread diseases to native wildlife");
         answer12D.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer12D.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer12DStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout quiz12Layout = new javax.swing.GroupLayout(quiz12);
         quiz12.setLayout(quiz12Layout);
@@ -956,6 +1207,11 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer13A.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer13A.setText("Hunt native wildlife");
         answer13A.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer13A.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer13AStateChanged(evt);
+            }
+        });
         answer13A.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 answer13AActionPerformed(evt);
@@ -966,16 +1222,31 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer13B.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer13B.setText("Compete for food and habitats");
         answer13B.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer13B.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer13BStateChanged(evt);
+            }
+        });
 
         groupForQuiz13.add(answer13C);
         answer13C.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer13C.setText("Steal native bird eggs");
         answer13C.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer13C.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer13CStateChanged(evt);
+            }
+        });
 
         groupForQuiz13.add(answer13D);
         answer13D.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer13D.setText("Attract other predators and pests");
         answer13D.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer13D.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer13DStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout quiz13Layout = new javax.swing.GroupLayout(quiz13);
         quiz13.setLayout(quiz13Layout);
@@ -1020,6 +1291,11 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer14A.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer14A.setText("Rat plagues");
         answer14A.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer14A.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer14AStateChanged(evt);
+            }
+        });
         answer14A.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 answer14AActionPerformed(evt);
@@ -1030,16 +1306,31 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer14B.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer14B.setText("Predation");
         answer14B.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer14B.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer14BStateChanged(evt);
+            }
+        });
 
         groupForQuiz14.add(answer14C);
         answer14C.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer14C.setText("Habitat loss");
         answer14C.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer14C.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer14CStateChanged(evt);
+            }
+        });
 
         groupForQuiz14.add(answer14D);
         answer14D.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer14D.setText("Global warming");
         answer14D.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer14D.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer14DStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout quiz14Layout = new javax.swing.GroupLayout(quiz14);
         quiz14.setLayout(quiz14Layout);
@@ -1084,6 +1375,11 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer15A.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer15A.setText("Day");
         answer15A.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer15A.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer15AStateChanged(evt);
+            }
+        });
         answer15A.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 answer15AActionPerformed(evt);
@@ -1094,16 +1390,31 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer15B.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer15B.setText("Night");
         answer15B.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer15B.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer15BStateChanged(evt);
+            }
+        });
 
         groupForQuiz15.add(answer15C);
         answer15C.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer15C.setText("Dusk");
         answer15C.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer15C.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer15CStateChanged(evt);
+            }
+        });
 
         groupForQuiz15.add(answer15D);
         answer15D.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer15D.setText("Dawn");
         answer15D.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer15D.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer15DStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout quiz15Layout = new javax.swing.GroupLayout(quiz15);
         quiz15.setLayout(quiz15Layout);
@@ -1148,6 +1459,11 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer16A.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer16A.setText("2 meters");
         answer16A.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer16A.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer16AStateChanged(evt);
+            }
+        });
         answer16A.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 answer16AActionPerformed(evt);
@@ -1158,16 +1474,31 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer16B.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer16B.setText("1 meter");
         answer16B.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer16B.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer16BStateChanged(evt);
+            }
+        });
 
         groupForQuiz16.add(answer16C);
         answer16C.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer16C.setText("50 centimeters");
         answer16C.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer16C.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer16CStateChanged(evt);
+            }
+        });
 
         groupForQuiz16.add(answer16D);
         answer16D.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer16D.setText("10 centimeters");
         answer16D.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer16D.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer16DStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout quiz16Layout = new javax.swing.GroupLayout(quiz16);
         quiz16.setLayout(quiz16Layout);
@@ -1212,6 +1543,11 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer17A.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer17A.setText("Over 9000");
         answer17A.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer17A.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer17AStateChanged(evt);
+            }
+        });
         answer17A.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 answer17AActionPerformed(evt);
@@ -1222,16 +1558,31 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         answer17B.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer17B.setText("Fewer than 160");
         answer17B.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer17B.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer17BStateChanged(evt);
+            }
+        });
 
         groupForQuiz17.add(answer17C);
         answer17C.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer17C.setText("More than 500");
         answer17C.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer17C.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer17CStateChanged(evt);
+            }
+        });
 
         groupForQuiz17.add(answer17D);
         answer17D.setFont(new java.awt.Font("Gulim", 1, 15)); // NOI18N
         answer17D.setText("Less than 10");
         answer17D.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        answer17D.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                answer17DStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout quiz17Layout = new javax.swing.GroupLayout(quiz17);
         quiz17.setLayout(quiz17Layout);
@@ -1274,17 +1625,23 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         scoreLabel.setFont(new java.awt.Font("Gulim", 2, 18)); // NOI18N
         scoreLabel.setText("Your score is ");
 
+        enterNameLabel.setText("Please enter your name:");
+
         javax.swing.GroupLayout endPanelLayout = new javax.swing.GroupLayout(endPanel);
         endPanel.setLayout(endPanelLayout);
         endPanelLayout.setHorizontalGroup(
             endPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, endPanelLayout.createSequentialGroup()
-                .addContainerGap(316, Short.MAX_VALUE)
+                .addContainerGap(336, Short.MAX_VALUE)
                 .addComponent(thankLabel)
                 .addGap(309, 309, 309))
             .addGroup(endPanelLayout.createSequentialGroup()
-                .addGap(385, 385, 385)
-                .addComponent(scoreLabel)
+                .addGap(211, 211, 211)
+                .addComponent(enterNameLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(endPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(nameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(scoreLabel))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         endPanelLayout.setVerticalGroup(
@@ -1292,9 +1649,13 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
             .addGroup(endPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(thankLabel)
-                .addGap(83, 83, 83)
+                .addGap(85, 85, 85)
                 .addComponent(scoreLabel)
-                .addContainerGap(152, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(endPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(nameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(enterNameLabel))
+                .addContainerGap(83, Short.MAX_VALUE))
         );
 
         quizPanel.add(endPanel, "cardEnd");
@@ -1410,8 +1771,7 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
     }
     // to test push
     private void buttonNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonNextActionPerformed
-
-        Collections.shuffle(game.getFacts());
+        
         
         //CardLayout card = (CardLayout) quizPanel.getLayout();
         //card.next(quizPanel);
@@ -1421,226 +1781,478 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
             //card.show(quizPanel, "card"+iterator);
             //iterator++;
         }else if(iterator < 5){
+            buttonNext.setEnabled(false);
             if (game.getFacts().get(iterator-1).equals("There are about 68,000 kiwi left in all of New Zealand.")) {
-//                while(!(answer1A.isSelected() || answer1B.isSelected() || answer1C.isSelected() || answer1D.isSelected())){
-//                    buttonNext.setEnabled(false);
-//                }
                 if((answer1A.isSelected() || answer1B.isSelected() || answer1D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
                 }else{
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
-                buttonNext.setEnabled(true);
+//                buttonNext.setEnabled(true);
                 showCards();
             } else if (game.getFacts().get(iterator-1).equals("We are losing 2% of our unmanaged kiwi every year –that's around 20 per week.")) {
-//                while(!(answer2A.isSelected() || answer2B.isSelected() || answer2C.isSelected() || answer2D.isSelected())){
-//                    buttonNext.setEnabled(false);
-//                }
                 if(!(answer2B.isSelected() || answer2C.isSelected() || answer2D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
                 }else{
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
-                buttonNext.setEnabled(true);
+//                buttonNext.setEnabled(true);
                 showCards();
             } else if (game.getFacts().get(iterator-1).equals("Kiwi are mostly nocturnal.")) {
-//                while(!(answer3A.isSelected() || answer3B.isSelected() || answer3C.isSelected() || answer3D.isSelected())){
-//                    buttonNext.setEnabled(false);
-//                }
                 if((answer3A.isSelected() || answer3C.isSelected() || answer3D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
                 }else{
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
-                buttonNext.setEnabled(true);
+//                buttonNext.setEnabled(true);
                 showCards();
             } else if (game.getFacts().get(iterator-1).equals("Kiwi nest in burrows, hollow logs or under dense vegetation.")) {
-//                while(!(answer4A.isSelected() || answer4B.isSelected() || answer4C.isSelected() || answer4D.isSelected())){
-//                    buttonNext.setEnabled(false);
-//                }
                 if((answer4A.isSelected() || answer4C.isSelected() || answer4D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
                 }else{
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
-                buttonNext.setEnabled(true);
+//                buttonNext.setEnabled(true);
                 showCards();
             } else if (game.getFacts().get(iterator).equals("Kiwi are the only bird to have nostrils at the end of their very long bill. Their nostrils are used to probe in the ground, sniffing out invertebrates to eat, along with some fallen fruit.")) {
-//                while(!(answer5A.isSelected() || answer5B.isSelected() || answer5C.isSelected() || answer5D.isSelected())){
-//                    buttonNext.setEnabled(false);
-//                }
                 if((answer5A.isSelected() || answer5B.isSelected() || answer5C.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
                 }else{
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
-                buttonNext.setEnabled(true);
+//                buttonNext.setEnabled(true);
                 showCards();
             } else if (game.getFacts().get(iterator).equals("The egg averages 15% of the female's body weight (compared to 2% for the ostrich).")) {
-//                while(!(answer6A.isSelected() || answer6B.isSelected() || answer6C.isSelected() || answer6D.isSelected())){
-//                    buttonNext.setEnabled(false);
-//                }
                 if((answer6B.isSelected() || answer6C.isSelected() || answer6D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
                 }else{
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
-                buttonNext.setEnabled(true);
+//                buttonNext.setEnabled(true);
                 showCards();
             } else if (game.getFacts().get(iterator).equals("Females are larger than males (up to 3.3 kg and 45 cm).")) {
-//                while(!(answer7A.isSelected() || answer7B.isSelected() || answer7C.isSelected() || answer7D.isSelected())){
-//                    buttonNext.setEnabled(false);
-//                }
-                if((answer7A.isSelected() || answer7C.isSelected() || answer7D.isSelected())){
+               if((answer7A.isSelected() || answer7C.isSelected() || answer7D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
                 }else{
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
-                buttonNext.setEnabled(true);
+//                buttonNext.setEnabled(true);
                 showCards();
             } else if (game.getFacts().get(iterator).equals("Kiwi are long-lived, and depending on the species live for between 25 and 50 years.")) {
-//                while(!(answer8A.isSelected() || answer8B.isSelected() || answer8C.isSelected() || answer8D.isSelected())){
-//                    buttonNext.setEnabled(false);
-//                }
                 if((answer8B.isSelected() || answer8C.isSelected() || answer8D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
                 }else{
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
-                buttonNext.setEnabled(true);
+//                buttonNext.setEnabled(true);
                 showCards();
             } else if (game.getFacts().get(iterator).equals("Rats eat native animals and their eggs.")) {
-//                while(!(answer9A.isSelected() || answer9B.isSelected() || answer9C.isSelected() || answer9D.isSelected())){
-//                    buttonNext.setEnabled(false);
-//                }
                 if((answer9B.isSelected() || answer9C.isSelected() || answer9D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
                 }else{
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
-                buttonNext.setEnabled(true);
+//                buttonNext.setEnabled(true);
                 showCards();
             } else if (game.getFacts().get(iterator).equals("Cats can do alot of damage to our native species by hunting vurnerable birds such as kiwi.")) {
-//                while(!(answer10A.isSelected() || answer10B.isSelected() || answer10C.isSelected() || answer10D.isSelected())){
-//                    buttonNext.setEnabled(false);
-//                }
                 if((answer10A.isSelected() || answer10B.isSelected() || answer10D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
                 }else{
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
-                buttonNext.setEnabled(true);
+//                buttonNext.setEnabled(true);
                 showCards();
             } else if (game.getFacts().get(iterator).equals("Kiore eat a wide range of native fruit and plants, which puts them in competition with the native wildlife for food.")) {
-//                while(!(answer11A.isSelected() || answer11B.isSelected() || answer11C.isSelected() || answer11D.isSelected())){
-//                    buttonNext.setEnabled(false);
-//                }
                 if((answer11B.isSelected() || answer11C.isSelected() || answer11D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
                 }else{
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
-                buttonNext.setEnabled(true);
+//                buttonNext.setEnabled(true);
                 showCards();
             } else if (game.getFacts().get(iterator).equals("Stoats are known predators of many native birds and feed heavily on reptiles and invertebrates.")) {
-//                while(!(answer12A.isSelected() || answer12B.isSelected() || answer12C.isSelected() || answer12D.isSelected())){
-//                    buttonNext.setEnabled(false);
-//                }
                 if((answer12B.isSelected() || answer12C.isSelected() || answer12D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
                 }else{
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
-                buttonNext.setEnabled(true);
+//                buttonNext.setEnabled(true);
                 showCards();
             } else if (game.getFacts().get(iterator).equals("Possums compete with native birds for habitat and for food such as insects and berries.")) {
-//                while(!(answer13A.isSelected() || answer13B.isSelected() || answer13C.isSelected() || answer13D.isSelected())){
-//                    buttonNext.setEnabled(false);
-//                }
                 if((answer13A.isSelected() || answer13C.isSelected() || answer13D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
                 }else{
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
-                buttonNext.setEnabled(true);
+//                buttonNext.setEnabled(true);
                 showCards();
             } else if (game.getFacts().get(iterator).equals("New Zealand's bats are rapidly heading towards extinction caused by rat plagues.")) {
-//                while(!(answer14A.isSelected() || answer14B.isSelected() || answer14C.isSelected() || answer14D.isSelected())){
-//                    buttonNext.setEnabled(false);
-//                }
                 if((answer14B.isSelected() || answer14C.isSelected() || answer14D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
                 }else if(answer14A.isSelected()){
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
-                buttonNext.setEnabled(true);
+//                buttonNext.setEnabled(true);
                 showCards();
             } else if (game.getFacts().get(iterator).equals("Weta are nocturnal and live in a variety of habitats including grassland, shrub land, forests, and caves. ")) {
-//                while(!(answer15A.isSelected() || answer15B.isSelected() || answer15C.isSelected() || answer15D.isSelected())){
-//                    buttonNext.setEnabled(false);
-//                }
                 if((answer15A.isSelected() || answer15C.isSelected() || answer15D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
                 }else{
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
-                buttonNext.setEnabled(true);
+//                buttonNext.setEnabled(true);
                 showCards();
             } else if (game.getFacts().get(iterator).equals("Tuatara are New Zealand’s largest reptile, with adult males measuring up to about a half metre in length and weighing up to 1.5 kg when fully grown.")) {
-//                while(!(answer16A.isSelected() || answer16B.isSelected() || answer16C.isSelected() || answer16D.isSelected())){
-//                    buttonNext.setEnabled(false);
-//                }
                 if((answer16A.isSelected() || answer16B.isSelected() || answer16D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
                 }else{
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
-                buttonNext.setEnabled(true);
+//                buttonNext.setEnabled(true);
                 showCards();
             } else if (game.getFacts().get(iterator).equals("The kākāpō (night parrot) is one of New Zealand’s unique treasures with fewer than 160 known surviving birds.")) {
-//                while(!(answer17A.isSelected() || answer17B.isSelected() || answer17C.isSelected() || answer17D.isSelected())){
-//                    buttonNext.setEnabled(false);
-//                }
                 if((answer17A.isSelected() || answer17C.isSelected() || answer17D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
                 }else{
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
-                buttonNext.setEnabled(true);
+//                buttonNext.setEnabled(true);
                 showCards();
             }
+            if(iterator==4){
+                buttonNext.setText("Finish");
+            }
         }
-        else{
+        else if (iterator==5){
             // show endCard
             card.show(quizPanel, "cardEnd");
-            scoreLabel.setText("Your score is "+game.getPoints());
-            // set text to show score
-            // game.ifhighScore(game.getScore);
-            // popup to Save score?
-            // game.addHighScore(game.getScore, jTextField.getText().toString);
-            
-            // to set iterator to 0
-            iterator = -1;
+            if(!game.isScoreHigh(game.getPoints())){
+                scoreLabel.setText("Your score is "+game.getPoints());   
+            }                    
+            else if(game.isScoreHigh(game.getPoints())){
+                scoreLabel.setText(" Congratulations you scored "+game.getPoints()+" points!"
+                +"This is a High Score!"); 
+                nameTextField.setVisible(true);
+                enterNameLabel.setVisible(true);
+             }
+        }
+        else if(iterator == 6){
+            if(game.isScoreHigh(game.getPoints())){
+                if(nameTextField!=null && !nameTextField.getText().isEmpty()){
+                    game.addHighScore(game.getPoints(), nameTextField.getText().trim());
+                    File file = new File("scores.txt");
+                    game.saveScores(file);
+                    WelcomeScreen welcome = new WelcomeScreen();
+                    welcome.setVisible(true);
+                    dispose();
+                }
+                else{
+                    JOptionPane.showMessageDialog(this, "Please enter your name!!!", "Invalid Input!", JOptionPane.ERROR_MESSAGE);
+                    iterator--;
+                }
+            }
+            else{
+                WelcomeScreen welcome = new WelcomeScreen();
+                welcome.setVisible(true);
+                dispose();
+            }
         }
         iterator++;
     }//GEN-LAST:event_buttonNextActionPerformed
+
+    private void answer1AStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer1AStateChanged
+
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer1AStateChanged
+
+    private void answer1BStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer1BStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer1BStateChanged
+
+    private void answer1CStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer1CStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer1CStateChanged
+
+    private void answer1DStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer1DStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer1DStateChanged
+
+    private void answer2AStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer2AStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer2AStateChanged
+
+    private void answer2BStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer2BStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer2BStateChanged
+
+    private void answer2CStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer2CStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer2CStateChanged
+
+    private void answer2DStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer2DStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer2DStateChanged
+
+    private void answer3AStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer3AStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer3AStateChanged
+
+    private void answer3BStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer3BStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer3BStateChanged
+
+    private void answer3CStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer3CStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer3CStateChanged
+
+    private void answer3DStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer3DStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer3DStateChanged
+
+    private void answer4AStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer4AStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer4AStateChanged
+
+    private void answer4BStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer4BStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer4BStateChanged
+
+    private void answer4CStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer4CStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer4CStateChanged
+
+    private void answer4DStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer4DStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer4DStateChanged
+
+    private void answer5AStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer5AStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer5AStateChanged
+
+    private void answer5CStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer5CStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer5CStateChanged
+
+    private void answer5BStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer5BStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer5BStateChanged
+
+    private void answer5DStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer5DStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer5DStateChanged
+
+    private void answer6AStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer6AStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer6AStateChanged
+
+    private void answer6CStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer6CStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer6CStateChanged
+
+    private void answer6AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_answer6AActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_answer6AActionPerformed
+
+    private void answer6BStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer6BStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer6BStateChanged
+
+    private void answer6DStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer6DStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer6DStateChanged
+
+    private void answer7AStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer7AStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer7AStateChanged
+
+    private void answer7BStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer7BStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer7BStateChanged
+
+    private void answer7CStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer7CStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer7CStateChanged
+
+    private void answer7DStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer7DStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer7DStateChanged
+
+    private void answer8AStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer8AStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer8AStateChanged
+
+    private void answer8BStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer8BStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer8BStateChanged
+
+    private void answer8CStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer8CStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer8CStateChanged
+
+    private void answer8DStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer8DStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer8DStateChanged
+
+    private void answer9AStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer9AStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer9AStateChanged
+
+    private void answer9BStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer9BStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer9BStateChanged
+
+    private void answer9CStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer9CStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer9CStateChanged
+
+    private void answer9DStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer9DStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer9DStateChanged
+
+    private void answer10AStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer10AStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer10AStateChanged
+
+    private void answer10BStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer10BStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer10BStateChanged
+
+    private void answer10CStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer10CStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer10CStateChanged
+
+    private void answer10DStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer10DStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer10DStateChanged
+
+    private void answer11AStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer11AStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer11AStateChanged
+
+    private void answer11BStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer11BStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer11BStateChanged
+
+    private void answer11CStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer11CStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer11CStateChanged
+
+    private void answer11DStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer11DStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer11DStateChanged
+
+    private void answer12AStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer12AStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer12AStateChanged
+
+    private void answer12BStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer12BStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer12BStateChanged
+
+    private void answer12CStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer12CStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer12CStateChanged
+
+    private void answer12DStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer12DStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer12DStateChanged
+
+    private void answer13AStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer13AStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer13AStateChanged
+
+    private void answer13BStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer13BStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer13BStateChanged
+
+    private void answer13CStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer13CStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer13CStateChanged
+
+    private void answer13DStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer13DStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer13DStateChanged
+
+    private void answer14AStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer14AStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer14AStateChanged
+
+    private void answer14BStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer14BStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer14BStateChanged
+
+    private void answer14CStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer14CStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer14CStateChanged
+
+    private void answer14DStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer14DStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer14DStateChanged
+
+    private void answer15AStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer15AStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer15AStateChanged
+
+    private void answer15BStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer15BStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer15BStateChanged
+
+    private void answer15CStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer15CStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer15CStateChanged
+
+    private void answer15DStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer15DStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer15DStateChanged
+
+    private void answer16AStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer16AStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer16AStateChanged
+
+    private void answer16BStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer16BStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer16BStateChanged
+
+    private void answer16CStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer16CStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer16CStateChanged
+
+    private void answer16DStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer16DStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer16DStateChanged
+
+    private void answer17AStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer17AStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer17AStateChanged
+
+    private void answer17BStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer17BStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer17BStateChanged
+
+    private void answer17CStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer17CStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer17CStateChanged
+
+    private void answer17DStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_answer17DStateChanged
+        buttonNext.setEnabled(true);
+    }//GEN-LAST:event_answer17DStateChanged
     
     /**
      * @param args the command line arguments
@@ -1750,6 +2362,7 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
     private javax.swing.JButton buttonNext;
     private javax.swing.JPanel buttonPanel;
     private javax.swing.JPanel endPanel;
+    private javax.swing.JLabel enterNameLabel;
     private javax.swing.ButtonGroup groupForQuiz1;
     private javax.swing.ButtonGroup groupForQuiz10;
     private javax.swing.ButtonGroup groupForQuiz11;
@@ -1769,6 +2382,7 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
     private javax.swing.ButtonGroup groupForQuiz9;
     private javax.swing.JTextArea introductionTextField;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField nameTextField;
     private javax.swing.JPanel quiz1;
     private javax.swing.JPanel quiz10;
     private javax.swing.JLabel quiz10Label;
