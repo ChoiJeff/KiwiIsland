@@ -1632,16 +1632,19 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         endPanelLayout.setHorizontalGroup(
             endPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, endPanelLayout.createSequentialGroup()
-                .addContainerGap(336, Short.MAX_VALUE)
+                .addContainerGap(316, Short.MAX_VALUE)
                 .addComponent(thankLabel)
                 .addGap(309, 309, 309))
             .addGroup(endPanelLayout.createSequentialGroup()
-                .addGap(211, 211, 211)
-                .addComponent(enterNameLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(endPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(nameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(scoreLabel))
+                    .addGroup(endPanelLayout.createSequentialGroup()
+                        .addGap(257, 257, 257)
+                        .addComponent(scoreLabel))
+                    .addGroup(endPanelLayout.createSequentialGroup()
+                        .addGap(98, 98, 98)
+                        .addComponent(enterNameLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(nameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         endPanelLayout.setVerticalGroup(
@@ -1655,7 +1658,7 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
                 .addGroup(endPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(nameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(enterNameLabel))
-                .addContainerGap(83, Short.MAX_VALUE))
+                .addContainerGap(108, Short.MAX_VALUE))
         );
 
         quizPanel.add(endPanel, "cardEnd");
