@@ -355,19 +355,19 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         quiz2.setLayout(quiz2Layout);
         quiz2Layout.setHorizontalGroup(
             quiz2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, quiz2Layout.createSequentialGroup()
+                .addContainerGap(196, Short.MAX_VALUE)
+                .addComponent(quiz2Label)
+                .addGap(175, 175, 175))
             .addGroup(quiz2Layout.createSequentialGroup()
-                .addGroup(quiz2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(quiz2Layout.createSequentialGroup()
-                        .addGap(386, 386, 386)
-                        .addGroup(quiz2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(answer2B)
-                            .addComponent(answer2A)
-                            .addComponent(answer2C, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(answer2D, javax.swing.GroupLayout.Alignment.LEADING)))
-                    .addGroup(quiz2Layout.createSequentialGroup()
-                        .addGap(178, 178, 178)
-                        .addComponent(quiz2Label)))
-                .addContainerGap(193, Short.MAX_VALUE))
+                .addGap(399, 399, 399)
+                .addGroup(quiz2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(answer2A)
+                    .addGroup(quiz2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(answer2C)
+                        .addComponent(answer2B)
+                        .addComponent(answer2D)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         quiz2Layout.setVerticalGroup(
             quiz2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -592,11 +592,11 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
         quiz5Layout.setHorizontalGroup(
             quiz5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, quiz5Layout.createSequentialGroup()
-                .addContainerGap(385, Short.MAX_VALUE)
+                .addContainerGap(298, Short.MAX_VALUE)
                 .addComponent(quiz5Label)
-                .addGap(204, 204, 204))
+                .addGap(291, 291, 291))
             .addGroup(quiz5Layout.createSequentialGroup()
-                .addGap(341, 341, 341)
+                .addGap(359, 359, 359)
                 .addGroup(quiz5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(answer5D)
                     .addComponent(answer5B)
@@ -1785,16 +1785,16 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
             if (game.getFacts().get(iterator-1).equals("There are about 68,000 kiwi left in all of New Zealand.")) {
                 if((answer1A.isSelected() || answer1B.isSelected() || answer1D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
-                }else{
+                }else if(answer1C.isSelected()){
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
 //                buttonNext.setEnabled(true);
                 showCards();
             } else if (game.getFacts().get(iterator-1).equals("We are losing 2% of our unmanaged kiwi every year –that's around 20 per week.")) {
-                if(!(answer2B.isSelected() || answer2C.isSelected() || answer2D.isSelected())){
+                if((answer2B.isSelected() || answer2C.isSelected() || answer2D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
-                }else{
+                }else if(answer2A.isSelected()){
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
@@ -1803,7 +1803,7 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
             } else if (game.getFacts().get(iterator-1).equals("Kiwi are mostly nocturnal.")) {
                 if((answer3A.isSelected() || answer3C.isSelected() || answer3D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
-                }else{
+                }else if(answer3B.isSelected()){
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
@@ -1812,94 +1812,94 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
             } else if (game.getFacts().get(iterator-1).equals("Kiwi nest in burrows, hollow logs or under dense vegetation.")) {
                 if((answer4A.isSelected() || answer4C.isSelected() || answer4D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
-                }else{
+                }else if(answer4B.isSelected()){
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
 //                buttonNext.setEnabled(true);
                 showCards();
-            } else if (game.getFacts().get(iterator).equals("Kiwi are the only bird to have nostrils at the end of their very long bill. Their nostrils are used to probe in the ground, sniffing out invertebrates to eat, along with some fallen fruit.")) {
+            } else if (game.getFacts().get(iterator-1).equals("Kiwi are the only bird to have nostrils at the end of their very long bill. Their nostrils are used to probe in the ground, sniffing out invertebrates to eat, along with some fallen fruit.")) {
                 if((answer5A.isSelected() || answer5B.isSelected() || answer5C.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
-                }else{
+                }else if(answer5D.isSelected()){
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
 //                buttonNext.setEnabled(true);
                 showCards();
-            } else if (game.getFacts().get(iterator).equals("The egg averages 15% of the female's body weight (compared to 2% for the ostrich).")) {
+            } else if (game.getFacts().get(iterator-1).equals("The egg averages 15% of the female's body weight (compared to 2% for the ostrich).")) {
                 if((answer6B.isSelected() || answer6C.isSelected() || answer6D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
-                }else{
+                }else if(answer6A.isSelected()){
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
 //                buttonNext.setEnabled(true);
                 showCards();
-            } else if (game.getFacts().get(iterator).equals("Females are larger than males (up to 3.3 kg and 45 cm).")) {
+            } else if (game.getFacts().get(iterator-1).equals("Females are larger than males (up to 3.3 kg and 45 cm).")) {
                if((answer7A.isSelected() || answer7C.isSelected() || answer7D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
-                }else{
+                }else if(answer7B.isSelected()){
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
 //                buttonNext.setEnabled(true);
                 showCards();
-            } else if (game.getFacts().get(iterator).equals("Kiwi are long-lived, and depending on the species live for between 25 and 50 years.")) {
+            } else if (game.getFacts().get(iterator-1).equals("Kiwi are long-lived, and depending on the species live for between 25 and 50 years.")) {
                 if((answer8B.isSelected() || answer8C.isSelected() || answer8D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
-                }else{
+                }else if(answer8A.isSelected()){
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
 //                buttonNext.setEnabled(true);
                 showCards();
-            } else if (game.getFacts().get(iterator).equals("Rats eat native animals and their eggs.")) {
+            } else if (game.getFacts().get(iterator-1).equals("Rats eat native animals and their eggs.")) {
                 if((answer9B.isSelected() || answer9C.isSelected() || answer9D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
-                }else{
+                }else if(answer9A.isSelected()){
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
 //                buttonNext.setEnabled(true);
                 showCards();
-            } else if (game.getFacts().get(iterator).equals("Cats can do alot of damage to our native species by hunting vurnerable birds such as kiwi.")) {
+            } else if (game.getFacts().get(iterator-1).equals("Cats can do alot of damage to our native species by hunting vurnerable birds such as kiwi.")) {
                 if((answer10A.isSelected() || answer10B.isSelected() || answer10D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
-                }else{
+                }else if(answer10C.isSelected()){
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
 //                buttonNext.setEnabled(true);
                 showCards();
-            } else if (game.getFacts().get(iterator).equals("Kiore eat a wide range of native fruit and plants, which puts them in competition with the native wildlife for food.")) {
+            } else if (game.getFacts().get(iterator-1).equals("Kiore eat a wide range of native fruit and plants, which puts them in competition with the native wildlife for food.")) {
                 if((answer11B.isSelected() || answer11C.isSelected() || answer11D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
-                }else{
+                }else if(answer11A.isSelected()){
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
 //                buttonNext.setEnabled(true);
                 showCards();
-            } else if (game.getFacts().get(iterator).equals("Stoats are known predators of many native birds and feed heavily on reptiles and invertebrates.")) {
+            } else if (game.getFacts().get(iterator-1).equals("Stoats are known predators of many native birds and feed heavily on reptiles and invertebrates.")) {
                 if((answer12B.isSelected() || answer12C.isSelected() || answer12D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
-                }else{
+                }else if(answer12A.isSelected()){ 
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
 //                buttonNext.setEnabled(true);
                 showCards();
-            } else if (game.getFacts().get(iterator).equals("Possums compete with native birds for habitat and for food such as insects and berries.")) {
+            } else if (game.getFacts().get(iterator-1).equals("Possums compete with native birds for habitat and for food such as insects and berries.")) {
                 if((answer13A.isSelected() || answer13C.isSelected() || answer13D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
-                }else{
+                }else if(answer13B.isSelected()){
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
 //                buttonNext.setEnabled(true);
                 showCards();
-            } else if (game.getFacts().get(iterator).equals("New Zealand's bats are rapidly heading towards extinction caused by rat plagues.")) {
+            } else if (game.getFacts().get(iterator-1).equals("New Zealand's bats are rapidly heading towards extinction caused by rat plagues.")) {
                 if((answer14B.isSelected() || answer14C.isSelected() || answer14D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
                 }else if(answer14A.isSelected()){
@@ -1908,28 +1908,28 @@ public class BonusQuizUI3 extends javax.swing.JFrame {
                 }
 //                buttonNext.setEnabled(true);
                 showCards();
-            } else if (game.getFacts().get(iterator).equals("Weta are nocturnal and live in a variety of habitats including grassland, shrub land, forests, and caves. ")) {
+            } else if (game.getFacts().get(iterator-1).equals("Weta are nocturnal and live in a variety of habitats including grassland, shrub land, forests, and caves. ")) {
                 if((answer15A.isSelected() || answer15C.isSelected() || answer15D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
-                }else{
+                }else if(answer15B.isSelected()){
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
 //                buttonNext.setEnabled(true);
                 showCards();
-            } else if (game.getFacts().get(iterator).equals("Tuatara are New Zealand’s largest reptile, with adult males measuring up to about a half metre in length and weighing up to 1.5 kg when fully grown.")) {
+            } else if (game.getFacts().get(iterator-1).equals("Tuatara are New Zealand’s largest reptile, with adult males measuring up to about a half metre in length and weighing up to 1.5 kg when fully grown.")) {
                 if((answer16A.isSelected() || answer16B.isSelected() || answer16D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
-                }else{
+                }else if(answer16C.isSelected()){
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
 //                buttonNext.setEnabled(true);
                 showCards();
-            } else if (game.getFacts().get(iterator).equals("The kākāpō (night parrot) is one of New Zealand’s unique treasures with fewer than 160 known surviving birds.")) {
+            } else if (game.getFacts().get(iterator-1).equals("The kākāpō (night parrot) is one of New Zealand’s unique treasures with fewer than 160 known surviving birds.")) {
                 if((answer17A.isSelected() || answer17C.isSelected() || answer17D.isSelected())){
                     JOptionPane.showMessageDialog(this, "Your answer is wrong", "Wrong", JOptionPane.ERROR_MESSAGE);
-                }else{
+                }else if(answer17B.isSelected()){
                     JOptionPane.showMessageDialog(this, "Correct!", "Correct", JOptionPane.PLAIN_MESSAGE);
                     game.addPoints();
                 }
