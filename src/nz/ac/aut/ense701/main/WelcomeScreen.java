@@ -143,18 +143,21 @@ public class WelcomeScreen extends javax.swing.JFrame {
 
     private void easyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_easyButtonActionPerformed
         game.setDifficulty(0);
+        game.createNewGame();
         final KiwiCountUI  gui  = new KiwiCountUI(game);
         dispose();
     }//GEN-LAST:event_easyButtonActionPerformed
 
     private void normalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_normalButtonActionPerformed
         game.setDifficulty(1);
+        game.createNewGame();
         final KiwiCountUI  gui  = new KiwiCountUI(game);
         dispose();
     }//GEN-LAST:event_normalButtonActionPerformed
 
     private void hardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hardButtonActionPerformed
         game.setDifficulty(2);
+        game.createNewGame();
         final KiwiCountUI  gui  = new KiwiCountUI(game);
         dispose();
     }//GEN-LAST:event_hardButtonActionPerformed

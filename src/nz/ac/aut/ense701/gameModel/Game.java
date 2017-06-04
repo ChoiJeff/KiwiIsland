@@ -44,8 +44,10 @@ public class Game
     public Game() 
     {   
         eventListeners = new HashSet<GameEventListener>();
-        
-        createNewGame();
+        highScores = new ArrayList<Score>();
+        File file = new File("scores.txt");
+        readScores(file);
+        //createNewGame();
     }
     
     public ArrayList<String> getFacts(){
@@ -62,9 +64,7 @@ public class Game
     public void createNewGame()
     {
         //test
-        highScores = new ArrayList<Score>();
-        File file = new File("scores.txt");
-        readScores(file);
+        
         facts = new ArrayList<String>();
         totalPredators = 0;
         predators = new ArrayList<Predator>();  // to keep the list of predators
@@ -88,7 +88,8 @@ public class Game
                 initialiseIslandFromFile("EasyMap3.txt");
             break;
         }
-        if(this.difficulty == 1){
+        }
+        else if(this.difficulty == 1){
             switch(randomMediumMap){
             case 0:
                 initialiseIslandFromFile("MediumMap1.txt");
@@ -103,7 +104,7 @@ public class Game
             break;    
             }
         }
-        if(this.difficulty == 2){
+        else if(this.difficulty == 2){
             switch(randomHardMap){
             case 0:
                 initialiseIslandFromFile("HardMap1.txt");
@@ -118,8 +119,7 @@ public class Game
             break;    
             }
         }
-    }
-        drawIsland();
+//        drawIsland();
         state = GameState.PLAYING;
         winMessage = "";
         loseMessage = "";
